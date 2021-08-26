@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import { dataPath, exists } from "./util.js";
 
 export default async (data) => {
-  const path = `${dataPath}/${data.id}.csv`;
+  const path = `${dataPath}/csv/${data.id}.csv`;
 
   const lines = [];
   if (await exists(path)) {
