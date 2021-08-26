@@ -1,0 +1,7 @@
+id,timestamp,classification,name,latitude,longitude,maximum sustained wind (mph),minimum central pressure (mb),movement speed (mph), movement direction (degrees)
+AL042021,2021-06-28T15:00:00.000Z,Tropical Depression,Four,31.9,-78.3,35,1013,16,300
+AL042021,2021-06-28T18:00:00.000Z,Tropical Depression,Four,32.2,-79.3,35,1013,16,295
+AL042021,2021-06-28T21:00:00.000Z,Tropical Storm,Danny,32.3,-80.1,45,1009,16,290
+AL042021,2021-06-29T00:00:00.000Z,Tropical Storm,Danny,32.3,-80.5,40,1010,16,290
+AL042021,2021-06-29T03:00:00.000Z,Tropical Depression,Danny,32.6,-81.5,35,1013,15,285
+AL042021,2021-06-29T09:00:00.000Z,Remnants Of,Danny,33.0,-83.0,25,1019,17,295

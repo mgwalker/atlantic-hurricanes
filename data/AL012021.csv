@@ -1,0 +1,10 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)"
+AL012021,2021-05-22T09:00:00.000Z,Tropical Storm,Ana,34.2,-62.2,45,1006,3,240
+AL012021,2021-05-22T12:00:00.000Z,Tropical Storm,Ana,34.2,-62.5,45,1006,3,245
+AL012021,2021-05-22T15:00:00.000Z,Tropical Storm,Ana,34.3,-63,45,1006,3,270
+AL012021,2021-05-22T21:00:00.000Z,Tropical Storm,Ana,34.5,-62.4,40,1007,5,50
+AL012021,2021-05-23T03:00:00.000Z,Tropical Storm,Ana,35,-61.4,45,1006,9,50
+AL012021,2021-05-23T09:00:00.000Z,Tropical Storm,Ana,35.7,-60.5,45,1006,12,45
+AL012021,2021-05-23T15:00:00.000Z,Tropical Storm,Ana,36.6,-59.4,40,1007,14,55
+AL012021,2021-05-23T21:00:00.000Z,Tropical Depression,Ana,37.5,-57.7,35,1008,17,55
+AL012021,2021-05-24T03:00:00.000Z,Post-tropical Cyclone,Ana,38.3,-55.2,40,1007,28,55

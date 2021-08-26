@@ -1,0 +1,8 @@
+id,timestamp,classification,name,latitude,longitude,maximum sustained wind (mph),minimum central pressure (mb),movement speed (mph), movement direction (degrees)
+AL022021,2021-06-14T15:00:00.000Z,Tropical Depression,Two,35.0,-73.7,35,1006,21,50
+AL022021,2021-06-14T21:00:00.000Z,Tropical Depression,Two,35.5,-72.0,35,1006,18,55
+AL022021,2021-06-15T03:00:00.000Z,Tropical Storm,Bill,36.7,-69.8,45,1003,23,55
+AL022021,2021-06-15T09:00:00.000Z,Tropical Storm,Bill,38.5,-67.2,50,999,31,50
+AL022021,2021-06-15T15:00:00.000Z,Tropical Storm,Bill,40.5,-62.0,60,998,38,55
+AL022021,2021-06-15T21:00:00.000Z,Tropical Storm,Bill,41.6,-59.6,60,998,36,55
+AL022021,2021-06-16T03:00:00.000Z,Post-Tropical Cyclone,Bill,43.5,-57.0,50,1002,29,35

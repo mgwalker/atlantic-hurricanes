@@ -1,0 +1,19 @@
+{
+  "name": "nhc-data",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "prettier": {}
+}
