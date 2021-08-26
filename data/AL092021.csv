@@ -1,0 +1,4 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)"
+AL092021,2021-08-26T15:00:00.000Z,Tropical Depression,Nine,16.9,-79.2,35,1005,13,325
+AL092021,2021-08-26T18:00:00.000Z,Tropical Depression,Nine,17.5,-79.5,35,1005,13,325
+AL092021,2021-08-26T21:00:00.000Z,Tropical Depression,Nine,18,-79.8,35,1006,14,325
