@@ -50,9 +50,9 @@ export default async (url) => {
     name: ucwords(name),
     latitude: ns.toLowerCase() === "s" ? -+lat : +lat,
     longitude: ew.toLowerCase() === "w" ? -+lon : +lon,
-    "maximum sustained wind (mph)": windMph,
-    "minimum central pressure (mb)": pressureMb,
-    "movement speed (mph)": speedMph,
-    "movement direction (degrees)": directionDeg,
+    "maximum sustained wind (mph)": +windMph,
+    "minimum central pressure (mb)": +pressureMb,
+    "movement speed (mph)": +speedMph,
+    "movement direction (degrees)": +directionDeg,
   };
 };

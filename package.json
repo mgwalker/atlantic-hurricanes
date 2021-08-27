@@ -13,7 +13,8 @@
   "description": "",
   "type": "module",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "sqlite3": "^5.0.2"
   },
   "prettier": {}
 }
