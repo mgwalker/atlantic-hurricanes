@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Atlantic Hurricanes, 2021</title>
+   <!-- COMMON TAGS -->
+    <meta charset="utf-8" />
+    <!-- Search Engine -->
+    <meta name="description" content="Atlantic Hurricanes, 2021" />
+    <meta name="image" content="https://mgwalker.github.io/atlantic-hurricanes/index.html" />
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Atlantic Hurricanes, 2021" />
+    <meta itemprop="description" content="Atlantic Hurricanes, 2021" />
+    <meta itemprop="image" content="https://18f.org/social.gif" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Atlantic Hurricanes, 2021" />
+    <meta name="twitter:description" content="Atlantic Hurricanes, 2021" />
+    <meta name="twitter:image:src" content="https://18f.org/social.gif" />
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Atlantic Hurricanes, 2021" />
+    <meta name="og:description" content="Atlantic Hurricanes, 2021" />
+    <meta name="og:image" content="https://18f.org/social.gif" />
+    <meta name="og:url" content="https://mgwalker.github.io/atlantic-hurricanes/index.html" />
+    <meta name="og:site_name" content="Atlantic Hurricanes, 2021" />
+    <meta name="og:locale" content="en_US" />
+    <meta name="og:type" content="website" />
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <h1>Atlantic Storms, 2021</h1>
+
+    <ul>
+      {{#storms}}
+      <li><a href="{{ id }}.html">{{ name }}</a> <span class="updated">{{ updated }}</span></li>
+      {{/storms}}
+    </ul>
+  </body>
+</html>

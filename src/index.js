@@ -4,6 +4,7 @@ import csv from "./csv.js";
 import main from "./parse.js";
 import sqlite from "./sqlite.js";
 import { cachePath, sleep } from "./util.js";
+import web from "./web.js";
 
 const urls = await getUrls();
 
@@ -27,3 +28,5 @@ await fs.writeFile(
     encoding: "utf-8",
   }
 );
+
+await web();

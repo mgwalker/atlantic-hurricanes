@@ -13,6 +13,8 @@
   "description": "",
   "type": "module",
   "dependencies": {
+    "dayjs": "^1.10.6",
+    "mustache": "^4.2.0",
     "node-fetch": "^2.6.1",
     "sqlite3": "^5.0.2"
   },

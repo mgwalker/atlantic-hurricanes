@@ -12,6 +12,13 @@ export const dataPath = join(
   "../data"
 );
 
+export const docsPath = join(
+  dirname(fileURLToPath(import.meta.url)),
+  "../docs"
+);
+
+export const srcPath = dirname(fileURLToPath(import.meta.url));
+
 export const exists = async (path) => {
   try {
     await fs.access(path);
