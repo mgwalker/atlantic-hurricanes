@@ -1,0 +1,25 @@
+name: update NHC storm data
+
+on:
+  schedule:
+    # Run every hours, at 12-minutes past
+    - cron: '12 * * * *'
+
+jobs:
+  update:
+    name: Update NHC Atlantic storm data
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/setup-node@d6e3b5539ed7e5ccd26c3459e26c7c817f4e9068
+        with:
+          node-version: 14
+      - uses: actions/checkout@af513c7a016048ae468971c52ed77d9562c7c819
+      - name: install dependencies
+        run: npm install
+      - name: do the update
+        run: npm run update
+      - name: commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./.github/workflows/git.sh
