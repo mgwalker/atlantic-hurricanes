@@ -1,45 +1,356 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Atlantic Hurricanes, 2021</title>
-   <!-- COMMON TAGS -->
+    <!-- COMMON TAGS -->
     <meta charset="utf-8" />
     <!-- Search Engine -->
     <meta name="description" content="Atlantic Hurricanes, 2021" />
-    <meta name="image" content="https://mgwalker.github.io/atlantic-hurricanes/index.html" />
+    <meta name="image" content="https://mgwalker.github.io/atlantic-hurricanes/" />
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="Atlantic Hurricanes, 2021" />
     <meta itemprop="description" content="Atlantic Hurricanes, 2021" />
-    <meta itemprop="image" content="https://18f.org/social.gif" />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Atlantic Hurricanes, 2021" />
     <meta name="twitter:description" content="Atlantic Hurricanes, 2021" />
-    <meta name="twitter:image:src" content="https://18f.org/social.gif" />
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta name="og:title" content="Atlantic Hurricanes, 2021" />
     <meta name="og:description" content="Atlantic Hurricanes, 2021" />
-    <meta name="og:image" content="https://18f.org/social.gif" />
-    <meta name="og:url" content="https://mgwalker.github.io/atlantic-hurricanes/index.html" />
+    <meta name="og:url" content="https://mgwalker.github.io/atlantic-hurricanes/" />
     <meta name="og:site_name" content="Atlantic Hurricanes, 2021" />
     <meta name="og:locale" content="en_US" />
     <meta name="og:type" content="website" />
 
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <style type="text/css">
+      body {
+        font-family: monospace;
+        padding: 0 3em;
+      }
+
+      h2 .updated {
+        color: #888;
+        font-size: 0.8rem;
+        margin: 0;
+      }
+
+      table th.spacer, table td.spacer {
+        padding-left: 2em;
+      }
+
+      table td.storm {
+        border-top: 1px solid black;
+        border-bottom: 1px solid #bbb;
+      }
+
+      table td.storm.category-1 {
+        background-color: #ffffcc;
+      }
+
+      table td.storm.category-2 {
+        background-color: #ffe775;
+      }
+
+      table td.storm.category-3 {
+        background-color: #ffc140;
+      }
+
+      table td.storm.category-4 {
+        background-color: #ff8f20;
+      }
+
+      table td.storm.category-4 h2 .updated {
+        color: #eee;
+      }
+
+      table td.storm.category-5 {
+        background-color: #ff6060;
+      }
+
+      table td.storm.category-5 h2 .updated {
+        color: #ddd;
+      }
+
+      table th, table td {
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table th + th, table td + td {
+        padding-left: 1em;
+      }
+    </style>
   </head>
   <body>
     <h1>Atlantic Storms, 2021</h1>
 
-    <ul>
-      <li><a href="AL012021.html">Post-tropical Cyclone Ana</a> <span class="updated">Sunday, May 23, 2021, 10:00 pm CDT</span></li>
-      <li><a href="AL022021.html">Post-tropical Cyclone Bill</a> <span class="updated">Tuesday, June 15, 2021, 10:00 pm CDT</span></li>
-      <li><a href="AL032021.html">Remnants Of Claudette</a> <span class="updated">Monday, June 21, 2021, 10:00 pm CDT</span></li>
-      <li><a href="AL042021.html">Remnants Of Danny</a> <span class="updated">Tuesday, June 29, 2021, 4:00 am CDT</span></li>
-      <li><a href="AL052021.html">Post-tropical Cyclone Elsa</a> <span class="updated">Friday, July 9, 2021, 4:00 pm CDT</span></li>
-      <li><a href="AL062021.html">Post-tropical Cyclone Fred</a> <span class="updated">Thursday, August 19, 2021, 10:00 pm CDT</span></li>
-      <li><a href="AL072021.html">Remnants Of Grace</a> <span class="updated">Saturday, August 21, 2021, 4:00 pm CDT</span></li>
-      <li><a href="AL082021.html">Post-tropical Cyclone Henri</a> <span class="updated">Tuesday, August 24, 2021, 4:00 am CDT</span></li>
-      <li><a href="AL092021.html">Tropical Storm Ida</a> <span class="updated">Thursday, August 26, 2021, 7:00 pm CDT</span></li>
-    </ul>
+    <p>
+      Data of all storms:
+      <a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/storms.2021.sqlite">sqlite</a>
+    </p>
+
+    <table>
+      <tr>
+        <td colspan="6" class="storm category-1">
+          <h2>
+            Hurricane Ida - Category 1
+            <p class="updated">last updated   Friday, August 27, 2021, 7:00 pm CDT</p>
+          </h2>
+        </td>
+      </tr>
+      <tr>
+        <th class="spacer"></th>
+        <th>wind speed</th>
+        <th>central pressure</th>
+        <th>movement</th>
+        <th>data (CSV)</th>
+        <th>National Hurricane Center</th>
+      </tr>
+      <tr>
+        <td class="spacer"></td>
+        <td>80 mph</td>
+        <td>985 mb</td>
+        <td>
+          15 mph to the northwest
+          <br/>
+          <span style="display: inline-block; font-size: 1.5em; rotate: 320deg;">↑</span>
+        </td>
+        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL092021.csv">AL092021.csv</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2021/IDA.shtml?">NHC advisories</a></td>
+      </tr>
+
+      <tr>
+        <td colspan="6" class="storm category-0">
+          <h2>
+            Post-tropical Cyclone Henri
+            <p class="updated">last updated   Tuesday, August 24, 2021, 4:00 am CDT</p>
+          </h2>
+        </td>
+      </tr>
+      <tr>
+        <th class="spacer"></th>
+        <th>wind speed</th>
+        <th>central pressure</th>
+        <th>movement</th>
+        <th>data (CSV)</th>
+        <th>National Hurricane Center</th>
+      </tr>
+      <tr>
+        <td class="spacer"></td>
+        <td>25 mph</td>
+        <td>1007 mb</td>
+        <td>
+          14 mph to the east
+          <br/>
+          <span style="display: inline-block; font-size: 1.5em; rotate: 80deg;">↑</span>
+        </td>
+        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL082021.csv">AL082021.csv</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2021/HENRI.shtml?">NHC advisories</a></td>
+      </tr>
+
+      <tr>
+        <td colspan="6" class="storm category-0">
+          <h2>
+            Remnants Of Grace
+            <p class="updated">last updated   Saturday, August 21, 2021, 4:00 pm CDT</p>
+          </h2>
+        </td>
+      </tr>
+      <tr>
+        <th class="spacer"></th>
+        <th>wind speed</th>
+        <th>central pressure</th>
+        <th>movement</th>
+        <th>data (CSV)</th>
+        <th>National Hurricane Center</th>
+      </tr>
+      <tr>
+        <td class="spacer"></td>
+        <td>25 mph</td>
+        <td>1002 mb</td>
+        <td>
+          13 mph to the west
+          <br/>
+          <span style="display: inline-block; font-size: 1.5em; rotate: 260deg;">↑</span>
+        </td>
+        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL072021.csv">AL072021.csv</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2021/GRACE.shtml?">NHC advisories</a></td>
+      </tr>
+
+      <tr>
+        <td colspan="6" class="storm category-0">
+          <h2>
+            Post-tropical Cyclone Fred
+            <p class="updated">last updated   Thursday, August 19, 2021, 10:00 pm CDT</p>
+          </h2>
+        </td>
+      </tr>
+      <tr>
+        <th class="spacer"></th>
+        <th>wind speed</th>
+        <th>central pressure</th>
+        <th>movement</th>
+        <th>data (CSV)</th>
+        <th>National Hurricane Center</th>
+      </tr>
+      <tr>
+        <td class="spacer"></td>
+        <td>30 mph</td>
+        <td>1009 mb</td>
+        <td>
+          13 mph to the east-northeast
+          <br/>
+          <span style="display: inline-block; font-size: 1.5em; rotate: 70deg;">↑</span>
+        </td>
+        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL062021.csv">AL062021.csv</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2021/FRED.shtml?">NHC advisories</a></td>
+      </tr>
+
+      <tr>
+        <td colspan="6" class="storm category-0">
+          <h2>
+            Post-tropical Cyclone Elsa
+            <p class="updated">last updated   Friday, July 9, 2021, 4:00 pm CDT</p>
+          </h2>
+        </td>
+      </tr>
+      <tr>
+        <th class="spacer"></th>
+        <th>wind speed</th>
+        <th>central pressure</th>
+        <th>movement</th>
+        <th>data (CSV)</th>
+        <th>National Hurricane Center</th>
+      </tr>
+      <tr>
+        <td class="spacer"></td>
+        <td>50 mph</td>
+        <td>999 mb</td>
+        <td>
+          35 mph to the northeast
+          <br/>
+          <span style="display: inline-block; font-size: 1.5em; rotate: 45deg;">↑</span>
+        </td>
+        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL052021.csv">AL052021.csv</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2021/ELSA.shtml?">NHC advisories</a></td>
+      </tr>
+
+      <tr>
+        <td colspan="6" class="storm category-0">
+          <h2>
+            Remnants Of Danny
+            <p class="updated">last updated   Tuesday, June 29, 2021, 4:00 am CDT</p>
+          </h2>
+        </td>
+      </tr>
+      <tr>
+        <th class="spacer"></th>
+        <th>wind speed</th>
+        <th>central pressure</th>
+        <th>movement</th>
+        <th>data (CSV)</th>
+        <th>National Hurricane Center</th>
+      </tr>
+      <tr>
+        <td class="spacer"></td>
+        <td>25 mph</td>
+        <td>1019 mb</td>
+        <td>
+          17 mph to the west-northwest
+          <br/>
+          <span style="display: inline-block; font-size: 1.5em; rotate: 295deg;">↑</span>
+        </td>
+        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL042021.csv">AL042021.csv</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2021/DANNY.shtml?">NHC advisories</a></td>
+      </tr>
+
+      <tr>
+        <td colspan="6" class="storm category-0">
+          <h2>
+            Remnants Of Claudette
+            <p class="updated">last updated   Monday, June 21, 2021, 10:00 pm CDT</p>
+          </h2>
+        </td>
+      </tr>
+      <tr>
+        <th class="spacer"></th>
+        <th>wind speed</th>
+        <th>central pressure</th>
+        <th>movement</th>
+        <th>data (CSV)</th>
+        <th>National Hurricane Center</th>
+      </tr>
+      <tr>
+        <td class="spacer"></td>
+        <td>45 mph</td>
+        <td>1004 mb</td>
+        <td>
+          29 mph to the east-northeast
+          <br/>
+          <span style="display: inline-block; font-size: 1.5em; rotate: 60deg;">↑</span>
+        </td>
+        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL032021.csv">AL032021.csv</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2021/CLAUDETTE.shtml?">NHC advisories</a></td>
+      </tr>
+
+      <tr>
+        <td colspan="6" class="storm category-0">
+          <h2>
+            Post-tropical Cyclone Bill
+            <p class="updated">last updated   Tuesday, June 15, 2021, 10:00 pm CDT</p>
+          </h2>
+        </td>
+      </tr>
+      <tr>
+        <th class="spacer"></th>
+        <th>wind speed</th>
+        <th>central pressure</th>
+        <th>movement</th>
+        <th>data (CSV)</th>
+        <th>National Hurricane Center</th>
+      </tr>
+      <tr>
+        <td class="spacer"></td>
+        <td>50 mph</td>
+        <td>1002 mb</td>
+        <td>
+          29 mph to the northeast
+          <br/>
+          <span style="display: inline-block; font-size: 1.5em; rotate: 35deg;">↑</span>
+        </td>
+        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL022021.csv">AL022021.csv</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2021/BILL.shtml?">NHC advisories</a></td>
+      </tr>
+
+      <tr>
+        <td colspan="6" class="storm category-0">
+          <h2>
+            Post-tropical Cyclone Ana
+            <p class="updated">last updated   Sunday, May 23, 2021, 10:00 pm CDT</p>
+          </h2>
+        </td>
+      </tr>
+      <tr>
+        <th class="spacer"></th>
+        <th>wind speed</th>
+        <th>central pressure</th>
+        <th>movement</th>
+        <th>data (CSV)</th>
+        <th>National Hurricane Center</th>
+      </tr>
+      <tr>
+        <td class="spacer"></td>
+        <td>40 mph</td>
+        <td>1007 mb</td>
+        <td>
+          28 mph to the northeast
+          <br/>
+          <span style="display: inline-block; font-size: 1.5em; rotate: 55deg;">↑</span>
+        </td>
+        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL012021.csv">AL012021.csv</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2021/ANA.shtml?">NHC advisories</a></td>
+      </tr>
+    </table>
   </body>
 </html>
