@@ -39,6 +39,25 @@ export const formatTime = (time, ampm) => {
   return formatted.padStart(4, "0");
 };
 
+export const getStormCategory = (windSpeed) => {
+  if (windSpeed >= 157) {
+    return 5;
+  }
+  if (windSpeed >= 130) {
+    return 4;
+  }
+  if (windSpeed >= 111) {
+    return 3;
+  }
+  if (windSpeed >= 96) {
+    return 2;
+  }
+  if (windSpeed >= 74) {
+    return 1;
+  }
+  return 0;
+};
+
 export const headingFriendly = (deg) => {
   const dd = +deg;
   const range = 22.5;
@@ -67,6 +86,36 @@ export const sleep = async (ms) =>
       resolve();
     }, ms);
   });
+
+export const sqlite = {
+  get: async (db, query, params) =>
+    new Promise((resolve, reject) => {
+      db.get(query, params, (err, row) => {
+        if (err) {
+          return reject(err);
+        }
+        return resolve(row);
+      });
+    }),
+  getAll: async (db, query, params) =>
+    new Promise((resolve, reject) => {
+      db.all(query, params, (err, row) => {
+        if (err) {
+          return reject(err);
+        }
+        return resolve(row);
+      });
+    }),
+  run: async (db, query, params) =>
+    new Promise((resolve, reject) => {
+      db.run(query, params, (err) => {
+        if (err) {
+          return reject(err);
+        }
+        return resolve();
+      });
+    }),
+};
 
 export const ucwords = (text) =>
   text

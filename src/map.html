@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style type="text/css">
+      #map {
+        height: 600px;
+        width: 900px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script type="text/javascript">
+      window.draw = ({
+        category,
+        direction,
+        lat,
+        lon,
+        name,
+        pressure,
+        tracks,
+        updated,
+        wind,
+      }) => {
+        const map = L.map("map", { zoomControl: false }).setView([lat, lon], 6);
+
+        L.tileLayer(
+          "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+          {
+            attribution:
+              'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: "mapbox/streets-v11",
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken:
+              "pk.eyJ1IjoibWd3YWxrZXIiLCJhIjoiY2tzdjYxcHI3MW11cDJva3R3YzRkYWUxYSJ9.sp1YDg1pBjrarmenwWpQDg",
+          }
+        ).addTo(map);
+
+        const d1 = ((direction + 15) * Math.PI) / 180;
+        const d2 = ((direction - 15) * Math.PI) / 180;
+
+        const p1 = [lat + Math.cos(d1) * 0.6, lon + Math.sin(d1) * 0.6];
+        const p2 = [lat + Math.cos(d2) * 0.6, lon + Math.sin(d2) * 0.6];
+
+        const offsetX1 = Math.sin(d1) * 1.5;
+        const offsetY1 = Math.cos(d1) * 1.5;
+        const offsetX2 = Math.sin(d2) * 1.5;
+        const offsetY2 = Math.cos(d2) * 1.5;
+
+        L.polygon(
+          [
+            p1,
+            [p1[0] + offsetY1, p1[1] + offsetX1],
+            [p2[0] + offsetY2, p2[1] + offsetX2],
+            p2,
+            p1,
+          ],
+          { color: "white", fillColor: "white", fillOpacity: 0.7, opacity: 1 }
+        ).addTo(map);
+
+        L.circle([lat, lon], {
+          color: "red",
+          fillColor: "#f03",
+          fillOpacity: 0.5,
+          radius: 50000,
+        })
+          .bindTooltip(
+            `<h2 style="margin-top:0;">${name}<p style="font-size:0.8rem;font-weight:normal;margin:0;">${
+              category > 0 ? `Category ${category}<br/>` : ""
+            }${updated}</p></h2>${wind} mph winds<br/>${pressure} mb pressure`,
+            {
+              direction: direction > 180 ? "right" : "left",
+              permanent: true,
+              offset: [30 * (direction > 180 ? 1 : -1), 0],
+            }
+          )
+          .addTo(map);
+
+        tracks.forEach(([lat, lon]) => {
+          L.circle([lat, lon], {
+            color: "black",
+            fillColor: "black",
+            fillOpacity: 0.25,
+            opacity: 0.5,
+            radius: 15000,
+          }).addTo(map);
+        });
+      };
+
+      /*
+      draw({
+        name: "Hurricane Ira",
+        category: 1,
+        lat: 23,
+        lon: -84,
+        wind: 80,
+        pressure: 889,
+        direction: 320,
+        tracks: [
+          [16.9, -79.2],
+          [17.5, -79.5],
+          [18, -79.8],
+          [18, -80.1],
+          [18.6, -80.5],
+          [19.4, -80.9],
+          [20, -81.4],
+          [20.3, -81.7],
+          [20.7, -82.1],
+          [21.6, -82.7],
+          [22.1, -83.2],
+          [22.4, -83.5],
+        ],
+        updated: "Friday, August 27, 10pm CDT",
+      });
+      */
+    </script>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 import fs from "fs/promises";
 import getUrls from "./archive-urls.js";
 import csv from "./csv.js";
+import map from "./map.js";
 import main from "./parse.js";
 import sqlite from "./sqlite.js";
 import { cachePath, sleep } from "./util.js";
@@ -30,3 +31,4 @@ await fs.writeFile(
 );
 
 await web();
+await map();

@@ -1,57 +1,28 @@
 import dayjs from "dayjs";
 import format from "dayjs/plugin/advancedFormat.js";
 import fs from "fs/promises";
-import mustache from "mustache";
 import sqlite from "sqlite3";
 import timezone from "dayjs/plugin/timezone.js";
 import utc from "dayjs/plugin/utc.js";
 
-import { dataPath, docsPath, headingFriendly, srcPath } from "./util.js";
+import {
+  dataPath,
+  docsPath,
+  getStormCategory,
+  headingFriendly,
+  sqlite as dbUtils,
+} from "./util.js";
+
+const { getAll } = dbUtils;
 
 dayjs.extend(format);
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
-const get = async (db, query, params) =>
-  new Promise((resolve, reject) => {
-    db.all(query, params, (err, row) => {
-      if (err) {
-        return reject(err);
-      }
-      return resolve(row);
-    });
-  });
-
-const getStormCategory = (windSpeed) => {
-  if (windSpeed >= 157) {
-    return 5;
-  }
-  if (windSpeed >= 130) {
-    return 4;
-  }
-  if (windSpeed >= 111) {
-    return 3;
-  }
-  if (windSpeed >= 96) {
-    return 2;
-  }
-  if (windSpeed >= 74) {
-    return 1;
-  }
-  return 0;
-};
-
 export default async () => {
-  // const indexTemplate = await fs.readFile(`${srcPath}/web/index.mustache`, {
-  //   encoding: "utf-8",
-  // });
-  // const stormTemplate = await fs.readFile(`${srcPath}/web/storm.mustache`, {
-  //   encoding: "utf-8",
-  // });
-
   const db = new sqlite.Database(`${dataPath}/storms.2021.sqlite`);
 
-  const ids = (await get(db, "SELECT DISTINCT id FROM storms")).map(
+  const ids = (await getAll(db, "SELECT DISTINCT id FROM storms")).map(
     ({ id }) => id
   );
 
@@ -59,7 +30,7 @@ export default async () => {
 
   await Promise.all(
     ids.map(async (id) => {
-      const storm = await get(db, "SELECT * FROM storms WHERE id=?", [id]);
+      const storm = await getAll(db, "SELECT * FROM storms WHERE id=?", [id]);
       storm.sort(({ timestamp: a }, { timestamp: b }) => {
         const aa = Date.parse(a);
         const bb = Date.parse(b);
@@ -81,16 +52,12 @@ export default async () => {
         heading: `${last.movement_speed_mph} mph to the ${headingFriendly(
           last.movement_direction_degrees
         )}`,
-        // name: `${last.classification} ${last.name}`,
         updated: dayjs(last.timestamp)
           .tz("America/Chicago")
           .format("dddd, MMMM D, YYYY, h:mm a z"),
       };
 
       storms.push(stormData);
-
-      // const html = mustache.render(stormTemplate, stormData);
-      // fs.writeFile(`${docsPath}/${id}.html`, html);
     })
   );
 
@@ -149,7 +116,7 @@ export default async () => {
       }
 
       table td.storm {
-        border-top: 1px solid black;
+        border-top: 4px solid black;
         border-bottom: 1px solid #bbb;
       }
 
@@ -235,7 +202,14 @@ export default async () => {
           storm.id
         }.csv">${storm.id}.csv</a></td>
         <td><a href="https://www.nhc.noaa.gov/archive/2021/${storm.name.toUpperCase()}.shtml?">NHC advisories</a></td>
-      </tr>`
+      </tr>
+      <tr>
+        <td class="spacer">
+        <td colspan="5">
+          <img src="${storm.id}.png">
+        </td>
+      </tr>
+      `
       )
       .join("\n")}
     </table>
@@ -243,6 +217,5 @@ export default async () => {
 </html>
 `;
 
-  // const html = mustache.render(indexTemplate, { storms });
   fs.writeFile(`${docsPath}/index.html`, html);
 };
