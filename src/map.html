@@ -50,28 +50,6 @@
           }
         ).addTo(map);
 
-        const d1 = ((direction + 15) * Math.PI) / 180;
-        const d2 = ((direction - 15) * Math.PI) / 180;
-
-        const p1 = [lat + Math.cos(d1) * 0.6, lon + Math.sin(d1) * 0.6];
-        const p2 = [lat + Math.cos(d2) * 0.6, lon + Math.sin(d2) * 0.6];
-
-        const offsetX1 = Math.sin(d1) * 1.5;
-        const offsetY1 = Math.cos(d1) * 1.5;
-        const offsetX2 = Math.sin(d2) * 1.5;
-        const offsetY2 = Math.cos(d2) * 1.5;
-
-        L.polygon(
-          [
-            p1,
-            [p1[0] + offsetY1, p1[1] + offsetX1],
-            [p2[0] + offsetY2, p2[1] + offsetX2],
-            p2,
-            p1,
-          ],
-          { color: "white", fillColor: "white", fillOpacity: 0.7, opacity: 1 }
-        ).addTo(map);
-
         if(windExtent.hurricane) {
           const meters = {
             hurricane: windExtent.hurricane * 1609.344,
@@ -94,6 +72,28 @@
             radius: meters.hurricane,
           }).addTo(map);
         }
+
+        const d1 = ((direction + 15) * Math.PI) / 180;
+        const d2 = ((direction - 15) * Math.PI) / 180;
+
+        const p1 = [lat + Math.cos(d1) * 0.6, lon + Math.sin(d1) * 0.6];
+        const p2 = [lat + Math.cos(d2) * 0.6, lon + Math.sin(d2) * 0.6];
+
+        const offsetX1 = Math.sin(d1) * 1.5;
+        const offsetY1 = Math.cos(d1) * 1.5;
+        const offsetX2 = Math.sin(d2) * 1.5;
+        const offsetY2 = Math.cos(d2) * 1.5;
+
+        L.polygon(
+          [
+            p1,
+            [p1[0] + offsetY1, p1[1] + offsetX1],
+            [p2[0] + offsetY2, p2[1] + offsetX2],
+            p2,
+            p1,
+          ],
+          { color: "white", fillColor: "white", fillOpacity: 0.7, opacity: 1 }
+        ).addTo(map);
 
         L.circle([lat, lon], {
           color: "red",
