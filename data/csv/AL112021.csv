@@ -1,4 +1,5 @@
-"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)"
-AL112021,2021-08-29T03:00:00.000Z,Tropical Depression,Eleven,33,-49.7,35,1010,12,50
-AL112021,2021-08-29T09:00:00.000Z,Tropical Depression,Eleven,34,-48.6,35,1009,15,50
-AL112021,2021-08-29T15:00:00.000Z,Tropical Storm,Julian,35.1,-46.8,50,998,17,45
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL112021,2021-08-29T03:00:00.000Z,Tropical Depression,Eleven,33,-49.7,35,1010,12,50,,
+AL112021,2021-08-29T09:00:00.000Z,Tropical Depression,Eleven,34,-48.6,35,1009,15,50,,
+AL112021,2021-08-29T15:00:00.000Z,Tropical Storm,Julian,35.1,-46.8,50,998,17,45,,
+AL112021,2021-08-29T21:00:00.000Z,Tropical Storm,Julian,36.7,-44.6,60,995,24,50,,

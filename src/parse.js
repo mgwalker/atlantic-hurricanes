@@ -60,6 +60,19 @@ export default async (url) => {
       /present movement\D+(\d+) degrees at (\d+) mph/i
     );
 
+    const windExtent = {
+      "hurricane wind extent (miles)": null,
+      "tropical storm wind extent (miles)": null,
+    };
+
+    const windRegex =
+      /hurricane-?\s?force\swinds?\sextend.+?(\d+)\smi[\s\S]*?tropical-?\s?storm-?\s?force\swinds?\sextend.+?(\d+)\smi/im;
+    if (windRegex.test(advisory)) {
+      const [, hurricaneWinds, tropicalStormWinds] = advisory.match(windRegex);
+      windExtent["hurricane wind extent (miles)"] = +hurricaneWinds;
+      windExtent["tropical storm wind extent (miles)"] = +tropicalStormWinds;
+    }
+
     return {
       id,
       timestamp,
@@ -72,6 +85,7 @@ export default async (url) => {
       "minimum central pressure (mb)": +pressureMb,
       "movement speed (mph)": +speedMph,
       "movement direction (degrees)": +directionDeg,
+      ...windExtent,
     };
   } catch (e) {
     return false;
