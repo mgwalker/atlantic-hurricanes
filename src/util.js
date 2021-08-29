@@ -69,6 +69,7 @@ export const headingFriendly = (deg) => {
     "southeast", "south-southeast", "south",
     "south-southwest", "southwest", "west-southwest",
     "west", "west-northwest", "northwest", "north-northwest",
+    "north"
   ];
 
   let start = -11.25;
