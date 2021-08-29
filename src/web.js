@@ -52,9 +52,7 @@ export default async () => {
         heading: `${last.movement_speed_mph} mph to the ${headingFriendly(
           last.movement_direction_degrees
         )}`,
-        updated: dayjs(last.timestamp)
-          .tz("America/Chicago")
-          .format("dddd, MMMM D, YYYY, h:mm a z"),
+        updated: last.timestamp,
       };
 
       storms.push(stormData);
@@ -178,7 +176,9 @@ export default async () => {
             ${storm.classification} ${storm.name}${
                   storm.category > 0 ? ` - Category ${storm.category}` : ""
                 }
-            <p class="updated">last updated   ${storm.updated}</p>`
+            <p class="updated">last updated <span data-time>${
+              storm.updated
+            }</span></p>`
           }
           </h2>
         </td>
@@ -222,6 +222,22 @@ export default async () => {
       )
       .join("\n")}
     </table>
+    <script type="text/javascript">
+      const formatter = new Intl.DateTimeFormat([], {
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        month: "long",
+        timeZoneName: "short",
+        weekday: "long",
+        year: "numeric"
+      });
+
+      Array.from(document.querySelectorAll("[data-time]")).forEach((e) => {
+        const d = new Date(Date.parse(e.innerText));
+        e.innerText = formatter.format(d);
+      });
+    </script>
   </body>
 </html>
 `;

@@ -95,7 +95,7 @@
         <td colspan="6" class="storm category-2">
           <h2>
             Hurricane Ida - Category 2
-            <p class="updated">last updated   Saturday, August 28, 2021, 7:00 pm CDT</p>
+            <p class="updated">last updated <span data-time>2021-08-29T00:00:00.000Z</span></p>
           </h2>
         </td>
       </tr>
@@ -132,7 +132,7 @@
         <td colspan="6" class="storm category-0">
           <h2>
             Tropical Depression Ten
-            <p class="updated">last updated   Saturday, August 28, 2021, 4:00 pm CDT</p>
+            <p class="updated">last updated <span data-time>2021-08-28T21:00:00.000Z</span></p>
           </h2>
         </td>
       </tr>
@@ -237,5 +237,21 @@
       
       
     </table>
+    <script type="text/javascript">
+      const formatter = new Intl.DateTimeFormat([], {
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        month: "long",
+        timeZoneName: "short",
+        weekday: "long",
+        year: "numeric"
+      });
+
+      Array.from(document.querySelectorAll("[data-time]")).forEach((e) => {
+        const d = new Date(Date.parse(e.innerText));
+        e.innerText = formatter.format(d);
+      });
+    </script>
   </body>
 </html>
