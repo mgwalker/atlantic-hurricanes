@@ -9,10 +9,15 @@ export default async (url) => {
 
   const [, advisory] = d.match(/<pre>([\s\S]*)<\/pre>/im);
 
-  const final = !!advisory
-    .match(/next advisory\n-+\n([\s\S]*?)\n\s?\n/im)[1]
-    .replace(/\n/g, " ")
-    .match(/this is the last public advisory/i);
+  // If the url is an intermediate/partial update, that implies a full update
+  // is still scheduled, so this storm is not final. Partial updates don't
+  // include the "next advisory" text, so skip that checka nd just say false.
+  const final = /\.update\./.test(url)
+    ? false
+    : !!advisory
+        .match(/next advisory\n-+\n([\s\S]*?)\n\s?\n/im)[1]
+        .replace(/\n/g, " ")
+        .match(/this is the last public advisory/i);
 
   const [, classification, , name] = advisory
     .match(
@@ -28,9 +33,10 @@ export default async (url) => {
 
   const timestamp = new Date(
     Date.parse(
-      `${year}-${months[month]}-${day}T${time.slice(0, 2)}:${time.slice(2)}${
-        tzOffsets[tz]
-      }`
+      `${year}-${months[month]}-${day.padStart(2, 0)}T${time.slice(
+        0,
+        2
+      )}:${time.slice(2)}${tzOffsets[tz]}`
     )
   ).toISOString();
 
@@ -38,27 +44,36 @@ export default async (url) => {
     /NWS (Weather Prediction|National Hurricane) Center (Miami FL|College Park MD)\s*(AL\d+)/i
   );
 
-  const [, lat, ns, lon, ew] = advisory.match(
-    /location\.+(\d{1,2}\.\d)(n|s) (\d{1,3}\.\d)(e|w)/i
-  );
+  try {
+    // Some advisories don't contain updates to location or storm position and
+    // are just notices that other governments have issued storm warnings, etc.
+    const [, lat, ns, lon, ew] = advisory.match(
+      /location\.+(\d{1,2}\.\d)(n|s) (\d{1,3}\.\d)(e|w)/i
+    );
+    const [, windMph] = advisory.match(
+      /maximum sustained winds[\D]+(\d+) mph/i
+    );
+    const [, pressureMb] = advisory.match(
+      /minimum central pressure\D+(\d+) mb/i
+    );
+    const [, directionDeg, speedMph] = advisory.match(
+      /present movement\D+(\d+) degrees at (\d+) mph/i
+    );
 
-  const [, windMph] = advisory.match(/maximum sustained winds[\D]+(\d+) mph/i);
-  const [, pressureMb] = advisory.match(/minimum central pressure\D+(\d+) mb/i);
-  const [, directionDeg, speedMph] = advisory.match(
-    /present movement\D+(\d+) degrees at (\d+) mph/i
-  );
-
-  return {
-    id,
-    timestamp,
-    classification: ucwords(classification),
-    final,
-    name: ucwords(name),
-    latitude: ns.toLowerCase() === "s" ? -+lat : +lat,
-    longitude: ew.toLowerCase() === "w" ? -+lon : +lon,
-    "maximum sustained wind (mph)": +windMph,
-    "minimum central pressure (mb)": +pressureMb,
-    "movement speed (mph)": +speedMph,
-    "movement direction (degrees)": +directionDeg,
-  };
+    return {
+      id,
+      timestamp,
+      classification: ucwords(classification),
+      final,
+      name: ucwords(name),
+      latitude: ns.toLowerCase() === "s" ? -+lat : +lat,
+      longitude: ew.toLowerCase() === "w" ? -+lon : +lon,
+      "maximum sustained wind (mph)": +windMph,
+      "minimum central pressure (mb)": +pressureMb,
+      "movement speed (mph)": +speedMph,
+      "movement direction (degrees)": +directionDeg,
+    };
+  } catch (e) {
+    return false;
+  }
 };

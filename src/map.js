@@ -57,9 +57,10 @@ export default async () => {
 
   await sleep(500);
 
-  const ids = (await getAll(db, "SELECT DISTINCT id FROM storms")).map(
-    ({ id }) => id
-  );
+  // Only draw maps for active storms
+  const ids = (
+    await getAll(db, "SELECT DISTINCT id FROM storms WHERE final=0")
+  ).map(({ id }) => id);
 
   for await (const id of ids) {
     const storm = await getAll(db, "SELECT * FROM storms WHERE id=?", id);

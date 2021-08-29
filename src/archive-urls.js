@@ -1,9 +1,28 @@
 import fetch from "node-fetch";
 import fs from "fs/promises";
 import sqlite from "sqlite3";
-import { cachePath, dataPath, sleep, sqlite as dbUtils } from "./util.js";
+import {
+  cachePath,
+  dataPath,
+  exists,
+  sleep,
+  sqlite as dbUtils,
+} from "./util.js";
 
 const baseUrl = "https://www.nhc.noaa.gov/archive/2021/";
+
+const getStormsThatAreFinal = async () => {
+  // If the sqlite database doesn't exist, we can't really query it yet. So, in
+  // that case, return an empty list because there aren't any known-final storms
+  // not to scrape yet.
+  if (await exists(`${dataPath}/storms.2021.sqlite`)) {
+    const db = new sqlite.Database(`${dataPath}/storms.2021.sqlite`);
+    return (
+      await dbUtils.getAll(db, "SELECT DISTINCT name FROM storms WHERE final=1")
+    ).map(({ name }) => name.toLowerCase());
+  }
+  return [];
+};
 
 const promise = fetch(baseUrl)
   .then((r) => r.text())
@@ -12,10 +31,7 @@ const promise = fetch(baseUrl)
       await fs.readFile(`${cachePath}/visited.json`, { encoding: "utf-8" })
     );
 
-    const db = new sqlite.Database(`${dataPath}/storms.2021.sqlite`);
-    const final = (
-      await dbUtils.getAll(db, "SELECT DISTINCT name FROM storms WHERE final=1")
-    ).map(({ name }) => name.toLowerCase());
+    const final = await getStormsThatAreFinal();
 
     const [, links] = text.match(
       /(<td valign="top" headers="al">([\s\S]*?)<\/td>)/im
@@ -32,6 +48,10 @@ const promise = fetch(baseUrl)
     const advisoryUrls = [];
 
     for await (const url of urls) {
+      if (advisoryUrls.length > 0) {
+        await sleep(1500);
+      }
+
       const page = await fetch(url);
       const text = await page.text();
 
@@ -47,10 +67,7 @@ const promise = fetch(baseUrl)
           .reduce((all, v) => [...all, ...v], [])
           .map((u) => `https://www.nhc.noaa.gov${u}`)
           .filter((u) => !visited.includes(u))
-          .filter((u) => !/\.update\.\d+\./i.test(u))
       );
-
-      await sleep(1500);
     }
 
     return advisoryUrls;

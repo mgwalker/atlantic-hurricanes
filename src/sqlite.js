@@ -7,12 +7,16 @@ const { get, run } = dbUtils;
 const columnize = (name) => name.replace(/[^a-z]+/gi, "_").replace(/_$/, "");
 
 const createIfNecessary = async (db, data) => {
-  const columns = Object.keys(data).map((k) => {
-    const column = columnize(k);
-    const type = typeof data[k];
+  const columns = Object.keys(data)
+    // specify the final column separately, so we can make enforce its range
+    // and default
+    .filter((k) => k !== "final")
+    .map((k) => {
+      const column = columnize(k);
+      const type = typeof data[k];
 
-    return `${column} ${type === "number" ? "REAL" : "TEXT"}`;
-  });
+      return `${column} ${type === "number" ? "REAL" : "TEXT"}`;
+    });
   columns.push("final BOOLEAN NOT NULL CHECK (final IN (0,1)) DEFAULT 0");
 
   const sql = `CREATE TABLE IF NOT EXISTS storms (${columns.join(",")})`;

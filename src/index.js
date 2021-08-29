@@ -14,13 +14,26 @@ const visited = JSON.parse(
   await fs.readFile(`${cachePath}/visited.json`, { encoding: "utf-8" })
 );
 
+let on = 1;
 for await (const url of urls) {
-  console.log(url);
+  if (on > 1) {
+    await sleep(1500);
+  }
+
+  process.stdout.clearLine();
+  process.stdout.cursorTo(0);
+  process.stdout.write(`[${on} of ${urls.length}]: ${url}`);
+
   const data = await main(url);
-  await csv(data);
-  await sql(data);
+
+  // data can be false, for advisories that don't update the storm location,
+  // wind, or movement.
+  if (data) {
+    await csv(data);
+    await sql(data);
+  }
   visited.push(url);
-  await sleep(1500);
+  on += 1;
 }
 
 const db = new sqlite.Database(`${dataPath}/storms.2021.sqlite`);
