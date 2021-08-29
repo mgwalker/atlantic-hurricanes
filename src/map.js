@@ -86,6 +86,29 @@ export default async () => {
 
     console.log(`Updating map for storm ${id}`);
 
+    const wind = {
+      hurricane: latest.hurricane_wind_extent_miles,
+      tropical: latest.tropical_storm_wind_extent_miles,
+    };
+
+    // Some intermediate hurricane updates don't include new wind extents. In
+    // those cases, fall back to the nearest update that does have extents.
+    if (
+      latest.classification.toLowerCase() === "hurricane" &&
+      wind.hurricane === 0
+    ) {
+      let previous = storm.pop();
+      while (
+        previous.classification.toLowerCase() === "hurricane" &&
+        previous.hurricane_wind_extent_miles === 0
+      ) {
+        previous = storm.pop();
+      }
+
+      wind.hurricane = previous.hurricane_wind_extent_miles;
+      wind.tropical = previous.tropical_storm_wind_extent_miles;
+    }
+
     const metadata = {
       name: `${latest.classification} ${latest.name}`,
       updated: dayjs(latest.timestamp)
@@ -97,6 +120,7 @@ export default async () => {
       wind: latest.maximum_sustained_wind_mph,
       pressure: latest.minimum_central_pressure_mb,
       direction: latest.movement_direction_degrees,
+      windExtent: wind,
       tracks: storm.map(({ latitude, longitude }) => [latitude, longitude]),
     };
 

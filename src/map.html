@@ -32,6 +32,7 @@
         tracks,
         updated,
         wind,
+        windExtent,
       }) => {
         const map = L.map("map", { zoomControl: false }).setView([lat, lon], 6);
 
@@ -71,11 +72,32 @@
           { color: "white", fillColor: "white", fillOpacity: 0.7, opacity: 1 }
         ).addTo(map);
 
+        if(windExtent.hurricane) {
+          const meters = {
+            hurricane: windExtent.hurricane * 1609.344,
+            tropical: windExtent.tropical*1609.344,
+          };
+
+          L.circle([lat,lon], {
+            color: 'black',
+            dashArray: "10 15",
+            fillOpacity: 0,
+            radius: meters.hurricane,
+          }).addTo(map);
+
+          L.circle([lat,lon], {
+            color: 'black',
+            dashArray: "2 20",
+            fillOpacity: 0,
+            radius: meters.tropical,
+          }).addTo(map);
+        }
+
         L.circle([lat, lon], {
           color: "red",
           fillColor: "#f03",
           fillOpacity: 0.5,
-          radius: 50000,
+          radius: 30000,
         })
           .bindTooltip(
             `<h2 style="margin-top:0;">${name}<p style="font-size:0.8rem;font-weight:normal;margin:0;">${
@@ -99,33 +121,6 @@
           }).addTo(map);
         });
       };
-
-      /*
-      draw({
-        name: "Hurricane Ira",
-        category: 1,
-        lat: 23,
-        lon: -84,
-        wind: 80,
-        pressure: 889,
-        direction: 320,
-        tracks: [
-          [16.9, -79.2],
-          [17.5, -79.5],
-          [18, -79.8],
-          [18, -80.1],
-          [18.6, -80.5],
-          [19.4, -80.9],
-          [20, -81.4],
-          [20.3, -81.7],
-          [20.7, -82.1],
-          [21.6, -82.7],
-          [22.1, -83.2],
-          [22.4, -83.5],
-        ],
-        updated: "Friday, August 27, 10pm CDT",
-      });
-      */
     </script>
   </body>
 </html>
