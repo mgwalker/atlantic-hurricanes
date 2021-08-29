@@ -1,9 +1,5 @@
-import dayjs from "dayjs";
-import format from "dayjs/plugin/advancedFormat.js";
 import fs from "fs/promises";
 import sqlite from "sqlite3";
-import timezone from "dayjs/plugin/timezone.js";
-import utc from "dayjs/plugin/utc.js";
 
 import {
   dataPath,
@@ -14,10 +10,6 @@ import {
 } from "./util.js";
 
 const { getAll } = dbUtils;
-
-dayjs.extend(format);
-dayjs.extend(utc);
-dayjs.extend(timezone);
 
 export default async () => {
   const db = new sqlite.Database(`${dataPath}/storms.2021.sqlite`);
