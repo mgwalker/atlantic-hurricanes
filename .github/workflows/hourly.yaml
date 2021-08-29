@@ -2,8 +2,8 @@ name: update NHC storm data
 
 on:
   schedule:
-    # Run every hours, at 12-minutes past
-    - cron: '12 * * * *'
+    # Run every 20 minutes
+    - cron: '*/20 * * * *'
 
 jobs:
   update:
