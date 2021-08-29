@@ -15,6 +15,7 @@ const createIfNecessary = async (db, data) => {
       return `${column} ${type === "number" ? "REAL" : "TEXT"}`;
     })
     .join(",");
+  columns.add("final BOOLEAN NOT NULL CHECK (final IN (0,1)) DEFAULT 0");
 
   const sql = `CREATE TABLE IF NOT EXISTS storms (${columns})`;
   await run(db, sql);
@@ -41,5 +42,10 @@ export default async (data) => {
       .join(",")})`;
 
     await run(db, sql, values);
+  }
+
+  if (data.final) {
+    const sql = `UPDATE storms SET final=1 WHERE id=?`;
+    await run(db, sql, [data.id]);
   }
 };

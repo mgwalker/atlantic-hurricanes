@@ -9,6 +9,11 @@ export default async (url) => {
 
   const [, advisory] = d.match(/<pre>([\s\S]*)<\/pre>/im);
 
+  const final = !!advisory
+    .match(/next advisory\n-+\n([\s\S]*?)\n\s?\n/im)[1]
+    .replace(/\n/g, " ")
+    .match(/this is the last public advisory/i);
+
   const [, classification, , name] = advisory
     .match(
       /(hurricane|tropical depression|tropical storm|post(-|\s)?tropical cyclone|remnants of|potential tropical cyclone) (.+?)\b(intermediate|advisory)?/i
@@ -47,6 +52,7 @@ export default async (url) => {
     id,
     timestamp,
     classification: ucwords(classification),
+    final,
     name: ucwords(name),
     latitude: ns.toLowerCase() === "s" ? -+lat : +lat,
     longitude: ew.toLowerCase() === "w" ? -+lon : +lon,

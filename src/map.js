@@ -114,7 +114,19 @@ export default async () => {
   await browser.close();
   server.close();
 
-  fs.writeFile(
+  const final = (
+    await getAll(db, "SELECT DISTINCT id FROM STORMS WHERE final=1")
+  ).map(({ id }) => id);
+
+  await Promise.all(
+    final.map(async (id) => {
+      try {
+        await fs.rm(`${docsPath}/${id}.png`);
+      } catch (e) {}
+    })
+  );
+
+  await fs.writeFile(
     `${cachePath}/lastUpdated.json`,
     JSON.stringify(lastUpdated, null, 2),
     { encoding: "utf-8" }

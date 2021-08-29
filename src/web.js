@@ -171,14 +171,22 @@ export default async () => {
         (storm) => `
       <tr>
         <td colspan="6" class="storm category-${storm.category}">
-          <h2>
+          <h2>${
+            storm.final
+              ? `🏁 ${storm.name}`
+              : `
             ${storm.classification} ${storm.name}${
-          storm.category > 0 ? ` - Category ${storm.category}` : ""
-        }
-            <p class="updated">last updated   ${storm.updated}</p>
+                  storm.category > 0 ? ` - Category ${storm.category}` : ""
+                }
+            <p class="updated">last updated   ${storm.updated}</p>`
+          }
           </h2>
         </td>
       </tr>
+      ${
+        storm.final
+          ? ""
+          : `
       <tr>
         <th class="spacer"></th>
         <th>wind speed</th>
@@ -208,7 +216,8 @@ export default async () => {
         <td colspan="5">
           <img src="${storm.id}.png">
         </td>
-      </tr>
+      </tr>`
+      }
       `
       )
       .join("\n")}
