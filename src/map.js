@@ -95,12 +95,12 @@ export default async () => {
     // those cases, fall back to the nearest update that does have extents.
     if (
       latest.classification.toLowerCase() === "hurricane" &&
-      wind.hurricane === 0
+      !wind.hurricane
     ) {
       let previous = storm.pop();
       while (
         previous.classification.toLowerCase() === "hurricane" &&
-        previous.hurricane_wind_extent_miles === 0
+        !previous.hurricane_wind_extent_miles
       ) {
         previous = storm.pop();
       }

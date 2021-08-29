@@ -80,16 +80,18 @@
 
           L.circle([lat,lon], {
             color: 'black',
-            dashArray: "10 15",
-            fillOpacity: 0,
-            radius: meters.hurricane,
+            dashArray: "2 20",
+            fillColor:'blue',
+            fillOpacity: 0.1,
+            radius: meters.tropical,
           }).addTo(map);
 
           L.circle([lat,lon], {
             color: 'black',
-            dashArray: "2 20",
-            fillOpacity: 0,
-            radius: meters.tropical,
+            dashArray: "10 15",
+            fillColor: 'red',
+            fillOpacity: 0.2,
+            radius: meters.hurricane,
           }).addTo(map);
         }
 
