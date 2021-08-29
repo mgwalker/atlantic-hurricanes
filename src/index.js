@@ -20,9 +20,13 @@ for await (const url of urls) {
     await sleep(1500);
   }
 
-  process.stdout.clearLine();
-  process.stdout.cursorTo(0);
-  process.stdout.write(`[${on} of ${urls.length}]: ${url}`);
+  if (process.env.CI !== "true") {
+    process.stdout.clearLine();
+    process.stdout.cursorTo(0);
+    process.stdout.write(`[${on} of ${urls.length}]: ${url}`);
+  } else {
+    console.log(`[${on} of ${urls.length}]: ${url}`);
+  }
 
   const data = await main(url);
 
