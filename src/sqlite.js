@@ -15,7 +15,7 @@ const createIfNecessary = async (db, data) => {
       return `${column} ${type === "number" ? "REAL" : "TEXT"}`;
     })
     .join(",");
-  columns.add("final BOOLEAN NOT NULL CHECK (final IN (0,1)) DEFAULT 0");
+  columns.push("final BOOLEAN NOT NULL CHECK (final IN (0,1)) DEFAULT 0");
 
   const sql = `CREATE TABLE IF NOT EXISTS storms (${columns})`;
   await run(db, sql);
