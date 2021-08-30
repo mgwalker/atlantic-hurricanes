@@ -199,9 +199,9 @@ export default async () => {
         <td>
           ${storm.heading}
           <br/>
-          <span style="display: inline-block; font-size: 1.5em; rotate: ${
+          <span style="display: inline-block; font-size: 1.5em; transform: rotate(${
             storm.movement_direction_degrees
-          }deg;">↑</span>
+          }deg);">↑</span>
         </td>
         <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/${
           storm.id
