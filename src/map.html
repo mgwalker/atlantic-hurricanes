@@ -30,17 +30,23 @@
         name,
         pressure,
         tracks,
+        type,
         updated,
         wind,
         windExtent,
       }) => {
         const map = L.map("map", { zoomControl: false }).setView([lat, lon], 6);
 
+        const icon = {
+          hurricane: "data:image/png;base64,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",
+          "tropical storm": "data:image/png;base64,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"
+        };
+
         L.tileLayer(
           "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
           {
             attribution:
-              'Map data &copy; OpenStreetMap contributors, Imagery &copy; Mapbox',
+              "Map data &copy; OpenStreetMap contributors, Imagery &copy; Mapbox",
             maxZoom: 18,
             id: "mapbox/streets-v11",
             tileSize: 512,
@@ -50,24 +56,24 @@
           }
         ).addTo(map);
 
-        if(windExtent.hurricane) {
+        if (windExtent.hurricane) {
           const meters = {
             hurricane: windExtent.hurricane * 1609.344,
-            tropical: windExtent.tropical*1609.344,
+            tropical: windExtent.tropical * 1609.344,
           };
 
-          L.circle([lat,lon], {
-            color: 'black',
+          L.circle([lat, lon], {
+            color: "black",
             dashArray: "2 20",
-            fillColor:'blue',
+            fillColor: "blue",
             fillOpacity: 0.1,
             radius: meters.tropical,
           }).addTo(map);
 
-          L.circle([lat,lon], {
-            color: 'black',
+          L.circle([lat, lon], {
+            color: "black",
             dashArray: "10 15",
-            fillColor: 'red',
+            fillColor: "red",
             fillOpacity: 0.2,
             radius: meters.hurricane,
           }).addTo(map);
@@ -95,12 +101,23 @@
           { color: "white", fillColor: "white", fillOpacity: 0.7, opacity: 1 }
         ).addTo(map);
 
-        L.circle([lat, lon], {
-          color: "red",
-          fillColor: "#f03",
-          fillOpacity: 0.5,
-          radius: 30000,
-        })
+        const marker =
+          type === "hurricane" || type === "tropical storm"
+            ? L.marker([lat, lon], {
+                icon: L.icon({
+                  iconUrl: icon[type],
+                  iconSize: [40, 40],
+                  iconAnchor: [18, 16],
+                }),
+              })
+            : L.circle([lat, lon], {
+                color: "red",
+                fillColor: "#f03",
+                fillOpacity: 0.5,
+                radius: 30000,
+              });
+
+        marker
           .bindTooltip(
             `<h2 style="margin-top:0;">${name}<p style="font-size:0.8rem;font-weight:normal;margin:0;">${
               category > 0 ? `Category ${category}<br/>` : ""

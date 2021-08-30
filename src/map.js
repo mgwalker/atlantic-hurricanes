@@ -110,6 +110,7 @@ export default async () => {
     }
 
     const metadata = {
+      type: `${latest.classification.toLowerCase()}`,
       name: `${latest.classification} ${latest.name}`,
       updated: dayjs(latest.timestamp)
         .tz("America/Chicago")
