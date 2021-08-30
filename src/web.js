@@ -216,7 +216,7 @@ export default async () => {
             <figcaption>
               Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
               Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="<a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
             </figcaption>
           </figure>
         </td>
