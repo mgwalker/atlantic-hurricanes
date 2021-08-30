@@ -146,6 +146,11 @@ export default async () => {
       table th + th, table td + td {
         padding-left: 1em;
       }
+
+      figcaption {
+        font-size: 0.7em;
+        text-align: right;
+      }
     </style>
   </head>
   <body>
@@ -206,7 +211,14 @@ export default async () => {
       <tr>
         <td class="spacer">
         <td colspan="5">
-          <img src="${storm.id}.png">
+          <figure>
+            <img src="${storm.id}.png">
+            <figcaption>
+              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
+              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
+              <a href="<a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+            </figcaption>
+          </figure>
         </td>
       </tr>`
       }
