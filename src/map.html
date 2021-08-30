@@ -56,6 +56,16 @@
           }
         ).addTo(map);
 
+        tracks.forEach(([lat, lon]) => {
+          L.circle([lat, lon], {
+            color: "black",
+            fillColor: "black",
+            fillOpacity: 0.5,
+            opacity: 0,
+            radius: 7000,
+          }).addTo(map);
+        });
+
         if (windExtent.hurricane) {
           const meters = {
             hurricane: windExtent.hurricane * 1609.344,
@@ -129,16 +139,6 @@
             }
           )
           .addTo(map);
-
-        tracks.forEach(([lat, lon]) => {
-          L.circle([lat, lon], {
-            color: "black",
-            fillColor: "black",
-            fillOpacity: 0.25,
-            opacity: 0.5,
-            radius: 15000,
-          }).addTo(map);
-        });
       };
     </script>
   </body>
