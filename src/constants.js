@@ -7,6 +7,7 @@ export const months = {
 
 export const tzOffsets = {
   gmt: "+0000",
+  cvt: "-0100",
   adt: "-0300",
   ast: "-0400",
   cdt: "-0500",
