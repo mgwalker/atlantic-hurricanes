@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL132021,2021-09-08T21:00:00.000Z,Tropical Storm,Mindy,29,-86.3,40,1008,21,50,,
+AL132021,2021-09-08T22:00:00.000Z,Tropical Storm,Mindy,29.2,-86.1,45,1004,21,50,,
