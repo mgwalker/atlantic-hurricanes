@@ -1,11 +1,11 @@
 import dayjs from "dayjs";
 import format from "dayjs/plugin/advancedFormat.js";
 import fs from "fs/promises";
-import http from "http";
 import path from "path";
 import { chromium } from "playwright";
 import sqlite from "sqlite3";
 import timezone from "dayjs/plugin/timezone.js";
+import { pathToFileURL } from "url";
 import utc from "dayjs/plugin/utc.js";
 
 import {
@@ -30,30 +30,12 @@ export default async () => {
   );
 
   const db = new sqlite.Database(`${dataPath}/storms.2021.sqlite`);
-  const html = await fs.readFile(path.join(srcPath, "map.html"));
 
-  const serve = async () =>
-    new Promise((resolve) => {
-      const requestListener = async (req, res) => {
-        res.writeHead(200);
-        res.end(html);
-      };
-
-      const server = http.createServer(requestListener);
-      server.listen(8080, () => {
-        resolve({
-          close: () => {
-            server.close();
-          },
-        });
-      });
-    });
-
-  const server = await serve();
+  const url = pathToFileURL(path.join(srcPath, "map.html")).href;
 
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  await page.goto("http://localhost:8080");
+  await page.goto(url);
 
   await sleep(500);
 
@@ -138,19 +120,6 @@ export default async () => {
   }
 
   await browser.close();
-  server.close();
-
-  const final = (
-    await getAll(db, "SELECT DISTINCT id FROM STORMS WHERE final=1")
-  ).map(({ id }) => id);
-
-  await Promise.all(
-    final.map(async (id) => {
-      try {
-        await fs.rm(`${docsPath}/${id}.png`);
-      } catch (e) {}
-    })
-  );
 
   await fs.writeFile(
     `${cachePath}/lastUpdated.json`,

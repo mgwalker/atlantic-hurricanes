@@ -165,7 +165,11 @@ export default async () => {
       .map(
         (storm) => `
       <tr>
-        <td colspan="6" class="storm category-${storm.category}">
+        <td colspan="6" class="storm category-${storm.category}" ${
+          storm.final
+            ? `style="cursor:pointer;" onClick="toggle('${storm.id}')"`
+            : ""
+        }>
           <h2>${
             storm.final
               ? `🏁 ${storm.name}`
@@ -207,8 +211,9 @@ export default async () => {
           storm.id
         }.csv">${storm.id}.csv</a></td>
         <td><a href="https://www.nhc.noaa.gov/archive/2021/${storm.name.toUpperCase()}.shtml?">NHC advisories</a></td>
-      </tr>
-      <tr>
+      </tr>`
+      }
+      <tr id="storm_${storm.id}" ${storm.final ? 'style="display:none;"' : ""}>
         <td class="spacer">
         <td colspan="5">
           <figure>
@@ -220,8 +225,7 @@ export default async () => {
             </figcaption>
           </figure>
         </td>
-      </tr>`
-      }
+      </tr>
       `
       )
       .join("\n")}
@@ -241,6 +245,15 @@ export default async () => {
         const d = new Date(Date.parse(e.innerText));
         e.innerText = formatter.format(d);
       });
+
+      const toggle = (id) => {
+        const el = document.querySelector(\`#storm_\${id}\`);
+        if(el.style.display === "none") {
+          el.style.display = "";
+        } else {
+          el.style.display = "none";
+        }
+      }
     </script>
   </body>
 </html>
