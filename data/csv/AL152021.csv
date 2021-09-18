@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL152021,2021-09-17T21:00:00.000Z,Tropical Storm,Odette,36.7,-71.8,40,1010,15,45,,
+AL152021,2021-09-18T03:00:00.000Z,Tropical Storm,Odette,36.4,-71.2,40,1010,10,50,,
