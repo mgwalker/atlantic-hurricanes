@@ -1,12 +1,4 @@
 [
-  "https://www.nhc.noaa.gov/archive/2021/al16/al162021.public.001.shtml?",
-  "https://www.nhc.noaa.gov/archive/2021/al16/al162021.public.002.shtml?",
-  "https://www.nhc.noaa.gov/archive/2021/al17/al172021.public.001.shtml?",
-  "https://www.nhc.noaa.gov/archive/2021/al16/al162021.public.003.shtml?",
-  "https://www.nhc.noaa.gov/archive/2021/al16/al162021.public.004.shtml?",
-  "https://www.nhc.noaa.gov/archive/2021/al17/al172021.public.002.shtml?",
-  "https://www.nhc.noaa.gov/archive/2021/al16/al162021.public.005.shtml?",
-  "https://www.nhc.noaa.gov/archive/2021/al17/al172021.public.003.shtml?",
   "https://www.nhc.noaa.gov/archive/2021/al06/al062021.public.001.shtml?",
   "https://www.nhc.noaa.gov/archive/2021/al06/al062021.update.08092213.shtml?",
   "https://www.nhc.noaa.gov/archive/2021/al06/al062021.update.08092248.shtml?",
@@ -544,5 +536,13 @@
   "https://www.nhc.noaa.gov/archive/2021/al05/al052021.public_a.037.shtml?",
   "https://www.nhc.noaa.gov/archive/2021/al05/al052021.public.038.shtml?",
   "https://www.nhc.noaa.gov/archive/2021/al05/al052021.public_a.038.shtml?",
-  "https://www.nhc.noaa.gov/archive/2021/al05/al052021.public.039.shtml?"
+  "https://www.nhc.noaa.gov/archive/2021/al05/al052021.public.039.shtml?",
+  "https://www.nhc.noaa.gov/archive/2021/al16/al162021.public.001.shtml?",
+  "https://www.nhc.noaa.gov/archive/2021/al16/al162021.public.002.shtml?",
+  "https://www.nhc.noaa.gov/archive/2021/al16/al162021.public.003.shtml?",
+  "https://www.nhc.noaa.gov/archive/2021/al16/al162021.public.004.shtml?",
+  "https://www.nhc.noaa.gov/archive/2021/al16/al162021.public.005.shtml?",
+  "https://www.nhc.noaa.gov/archive/2021/al17/al172021.public.001.shtml?",
+  "https://www.nhc.noaa.gov/archive/2021/al17/al172021.public.002.shtml?",
+  "https://www.nhc.noaa.gov/archive/2021/al17/al172021.public.003.shtml?"
 ]
