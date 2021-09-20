@@ -1,4 +1,3 @@
-import fs from "fs/promises";
 import sqlite from "sqlite3";
 import { dataPath, sqlite as dbUtils } from "./util.js";
 
@@ -48,6 +47,9 @@ export default async (data) => {
 
   if (data.final) {
     const sql = `UPDATE storms SET final=1 WHERE id=?`;
+    await run(db, sql, [data.id]);
+  } else {
+    const sql = `UPDATE storms SET final=0 WHERE id=?`;
     await run(db, sql, [data.id]);
   }
 };

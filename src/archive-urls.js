@@ -1,28 +1,8 @@
 import fetch from "node-fetch";
 import fs from "fs/promises";
-import sqlite from "sqlite3";
-import {
-  cachePath,
-  dataPath,
-  exists,
-  sleep,
-  sqlite as dbUtils,
-} from "./util.js";
+import { cachePath, sleep } from "./util.js";
 
 const baseUrl = "https://www.nhc.noaa.gov/archive/2021/";
-
-const getStormsThatAreFinal = async () => {
-  // If the sqlite database doesn't exist, we can't really query it yet. So, in
-  // that case, return an empty list because there aren't any known-final storms
-  // not to scrape yet.
-  if (await exists(`${dataPath}/storms.2021.sqlite`)) {
-    const db = new sqlite.Database(`${dataPath}/storms.2021.sqlite`);
-    return (
-      await dbUtils.getAll(db, "SELECT DISTINCT name FROM storms WHERE final=1")
-    ).map(({ name }) => name.toLowerCase());
-  }
-  return [];
-};
 
 const promise = fetch(baseUrl)
   .then((r) => r.text())
@@ -31,19 +11,13 @@ const promise = fetch(baseUrl)
       await fs.readFile(`${cachePath}/visited.json`, { encoding: "utf-8" })
     );
 
-    const final = await getStormsThatAreFinal();
-
     const [, links] = text.match(
       /(<td valign="top" headers="al">([\s\S]*?)<\/td>)/im
     );
     const urls = links
       .match(/<a href="([^"]+)"/gi)
       .map((l) => l.match(/href="([^"]+)"/i)[1])
-      .map((u) => `${baseUrl}${u}`)
-      .filter(
-        (u) =>
-          !final.includes(u.split("/").pop().split(".").shift().toLowerCase())
-      );
+      .map((u) => `${baseUrl}${u}`);
 
     const advisoryUrls = [];
 

@@ -1,15 +1,11 @@
-import dayjs from "dayjs";
-import format from "dayjs/plugin/advancedFormat.js";
 import fs from "fs/promises";
 import path from "path";
 import { chromium } from "playwright";
 import sqlite from "sqlite3";
-import timezone from "dayjs/plugin/timezone.js";
+
 import { pathToFileURL } from "url";
-import utc from "dayjs/plugin/utc.js";
 
 import {
-  cachePath,
   dataPath,
   docsPath,
   getStormCategory,
