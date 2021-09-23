@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL182021,2021-09-22T21:00:00.000Z,Tropical Depression,Eighteen,10.1,-33.9,35,1008,15,270,,
+AL182021,2021-09-23T03:00:00.000Z,Tropical Depression,Eighteen,10.2,-35,35,1008,15,275,,
