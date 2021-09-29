@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL202021,2021-09-29T15:00:00.000Z,Tropical Depression,Twenty,8.3,-24.6,35,1007,14,290,,
+AL202021,2021-09-29T21:00:00.000Z,Tropical Storm,Victor,8.3,-25.5,40,1005,13,290,,
