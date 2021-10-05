@@ -97,35 +97,13 @@
 
     <table>
       <tr>
-        <td colspan="6" class="storm category-1" >
-          <h2>
-            Hurricane Sam - Category 1
-            <p class="updated">last updated <span data-time>2021-10-05T03:00:00.000Z</span></p>
+        <td colspan="6" class="storm category-1" style="cursor:pointer;" onClick="toggle('AL182021')">
+          <h2>🏁 Sam
           </h2>
         </td>
       </tr>
       
-      <tr>
-        <th class="spacer"></th>
-        <th>wind speed</th>
-        <th>central pressure</th>
-        <th>movement</th>
-        <th>data (CSV)</th>
-        <th>National Hurricane Center</th>
-      </tr>
-      <tr>
-        <td class="spacer"></td>
-        <td>85 mph</td>
-        <td>965 mb</td>
-        <td>
-          29 mph to the north-northeast
-          <br/>
-          <span style="display: inline-block; font-size: 1.5em; transform: rotate(30deg);">↑</span>
-        </td>
-        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL182021.csv">AL182021.csv</a></td>
-        <td><a href="https://www.nhc.noaa.gov/archive/2021/SAM.shtml?">NHC advisories</a></td>
-      </tr>
-      <tr id="storm_AL182021" >
+      <tr id="storm_AL182021" style="display:none;">
         <td class="spacer">
         <td colspan="5">
           <figure>
