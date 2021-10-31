@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL212021,2021-10-31T03:00:00.000Z,Tropical Storm,Wanda,36.2,-45.4,50,988,21,125,,
