@@ -2,8 +2,11 @@ name: update NHC storm data
 
 on:
   schedule:
-    # Run every 20 minutes
-    - cron: '*/20 * * * *'
+    # Run every hour
+    - cron: '20 * * * *'
+
+permissions:
+  contents: write
 
 jobs:
   update:
@@ -15,11 +18,36 @@ jobs:
         with:
           node-version: 16
       - uses: actions/checkout@af513c7a016048ae468971c52ed77d9562c7c819
+
       - name: install dependencies
         run: npm install
+
       - name: do the update
         run: npm run update
+
       - name: commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./.github/workflows/git.sh
+
+      - name: cleanup old runs
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const runs = await github.rest.actions.listWorkflowRunsForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+
+            const deletions = runs.data.workflow_runs
+              .filter((run) => run.id !== context.runId)
+              .map((run) => {
+                console.log(`Deleting run #${run.run_number} (${run.id})`);
+                return github.rest.actions.deleteWorkflowRun({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  run_id: run.id
+                });
+              });
+
+            await Promise.all(deletions);
