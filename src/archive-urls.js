@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import fs from "fs/promises";
 import { cachePath, sleep } from "./util.js";
 
-const baseUrl = "https://www.nhc.noaa.gov/archive/2021/";
+const baseUrl = "https://www.nhc.noaa.gov/archive/2022/";
 
 const promise = fetch(baseUrl)
   .then((r) => r.text())
@@ -14,8 +14,8 @@ const promise = fetch(baseUrl)
     const [, links] = text.match(
       /(<td valign="top" headers="al">([\s\S]*?)<\/td>)/im
     );
-    const urls = links
-      .match(/<a href="([^"]+)"/gi)
+
+    const urls = (links.match(/<a href="([^"]+)"/gi) || [])
       .map((l) => l.match(/href="([^"]+)"/i)[1])
       .map((u) => `${baseUrl}${u}`);
 

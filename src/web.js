@@ -12,7 +12,7 @@ import {
 const { getAll } = dbUtils;
 
 export default async () => {
-  const db = new sqlite.Database(`${dataPath}/storms.2021.sqlite`);
+  const db = new sqlite.Database(`${dataPath}/storms.2022.sqlite`);
 
   const ids = (await getAll(db, "SELECT DISTINCT id FROM storms")).map(
     ({ id }) => id
@@ -68,24 +68,24 @@ export default async () => {
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Atlantic Hurricanes, 2021</title>
+    <title>Atlantic Hurricanes, 2022</title>
     <!-- COMMON TAGS -->
     <meta charset="utf-8" />
     <!-- Search Engine -->
-    <meta name="description" content="Atlantic Hurricanes, 2021" />
+    <meta name="description" content="Atlantic Hurricanes, 2022" />
     <meta name="image" content="https://mgwalker.github.io/atlantic-hurricanes/" />
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Atlantic Hurricanes, 2021" />
-    <meta itemprop="description" content="Atlantic Hurricanes, 2021" />
+    <meta itemprop="name" content="Atlantic Hurricanes, 2022" />
+    <meta itemprop="description" content="Atlantic Hurricanes, 2022" />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Atlantic Hurricanes, 2021" />
-    <meta name="twitter:description" content="Atlantic Hurricanes, 2021" />
+    <meta name="twitter:title" content="Atlantic Hurricanes, 2022" />
+    <meta name="twitter:description" content="Atlantic Hurricanes, 2022" />
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="Atlantic Hurricanes, 2021" />
-    <meta name="og:description" content="Atlantic Hurricanes, 2021" />
+    <meta name="og:title" content="Atlantic Hurricanes, 2022" />
+    <meta name="og:description" content="Atlantic Hurricanes, 2022" />
     <meta name="og:url" content="https://mgwalker.github.io/atlantic-hurricanes/" />
-    <meta name="og:site_name" content="Atlantic Hurricanes, 2021" />
+    <meta name="og:site_name" content="Atlantic Hurricanes, 2022" />
     <meta name="og:locale" content="en_US" />
     <meta name="og:type" content="website" />
 
@@ -154,11 +154,11 @@ export default async () => {
     </style>
   </head>
   <body>
-    <h1>Atlantic Storms, 2021</h1>
+    <h1>Atlantic Storms, 2022</h1>
 
     <p>
       Data of all storms:
-      <a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/storms.2021.sqlite">sqlite</a>
+      <a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/storms.2022.sqlite">sqlite</a>
     </p>
 
     <table>${storms
@@ -210,7 +210,7 @@ export default async () => {
         <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/${
           storm.id
         }.csv">${storm.id}.csv</a></td>
-        <td><a href="https://www.nhc.noaa.gov/archive/2021/${storm.name.toUpperCase()}.shtml?">NHC advisories</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2022/${storm.name.toUpperCase()}.shtml?">NHC advisories</a></td>
       </tr>`
       }
       <tr id="storm_${storm.id}" ${storm.final ? 'style="display:none;"' : ""}>
