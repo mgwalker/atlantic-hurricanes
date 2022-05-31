@@ -1,13 +1,11 @@
 name: update NHC storm data
 
-on: [push]
-# on:
-  # schedule:
+on:
+  schedule:
     # Run every hour
-    # - cron: '20 * * * *'
+    - cron: '20 * * * *'
 
 permissions: write-all
-  # contents: write
 
 jobs:
   update:
