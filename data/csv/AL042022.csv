@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL042022,2022-08-19T21:00:00.000Z,Potential Tropical Cyclone,Four,20.7,-94.5,35,1009,14,315,,
