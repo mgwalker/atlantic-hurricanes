@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL072022,2022-09-14T15:00:00.000Z,Tropical Depression,Seven,16.6,-49.6,35,1009,14,280,,
+AL072022,2022-09-14T21:00:00.000Z,Tropical Depression,Seven,16.8,-50.5,35,1008,13,280,,
