@@ -1,3 +1,2 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
-AL092022,2022-09-23T09:00:00.000Z,Tropical Depression,Nine,13.9,-68.6,35,1006,13,290,,
-AL092022,2022-09-23T15:00:00.000Z,Tropical Depression,Nine,14.2,-70.1,35,1006,14,290,,
+AL102022,2022-09-23T15:00:00.000Z,Tropical Depression,Ten,17.9,-19.8,35,1003,12,340,,
