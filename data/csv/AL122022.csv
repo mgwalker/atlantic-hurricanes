@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL122022,2022-10-04T21:00:00.000Z,Tropical Depression,Twelve,14.9,-30.5,35,1007,12,315,,
