@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL142022,2022-10-11T21:00:00.000Z,Tropical Storm,Karl,19.6,-94.4,40,1008,6,315,,
