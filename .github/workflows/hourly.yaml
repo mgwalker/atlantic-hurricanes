@@ -38,15 +38,24 @@ jobs:
               repo: context.repo.repo
             });
 
-            const deletions = runs.data.workflow_runs
-              .filter((run) => run.id !== context.runId)
-              .map((run) => {
+            const doneStates = new Set([
+              "completed",
+              "cancelled",
+              "failure",
+              "neutral",
+              "skipped",
+              "stale",
+              "success",
+              "timed_out",
+            ]);
+
+            for await(const run of runs.data.workflow_runs) {
+              if(run.id !== context.runId && doneStates.has(run.status)) {
                 console.log(`Deleting run #${run.run_number} (${run.id})`);
-                return github.rest.actions.deleteWorkflowRun({
+                await github.rest.actions.deleteWorkflowRun({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   run_id: run.id
                 });
-              });
-
-            await Promise.all(deletions);
+              }
+            }
