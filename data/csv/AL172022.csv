@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL172022,2022-11-07T09:00:00.000Z,Tropical Storm,Nicole,25.5,-68.5,45,1004,14,330,,
