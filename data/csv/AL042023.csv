@@ -1,0 +1,11 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL042023,2023-06-22T09:00:00.000Z,Tropical Depression,Four,10.9,-41.1,35,1007,12,280,,
+AL042023,2023-06-22T15:00:00.000Z,Tropical Depression,Four,11.3,-42.9,35,1007,15,285,,
+AL042023,2023-06-22T21:00:00.000Z,Tropical Depression,Four,11.5,-44,35,1007,14,285,,
+AL042023,2023-06-23T03:00:00.000Z,Tropical Storm,Cindy,11.7,-45.2,40,1006,14,285,,
+AL042023,2023-06-23T09:00:00.000Z,Tropical Storm,Cindy,12.1,-46.9,45,1005,15,285,,
+AL042023,2023-06-23T15:00:00.000Z,Tropical Storm,Cindy,12.5,-48,50,1003,16,290,,
+AL042023,2023-06-23T21:00:00.000Z,Tropical Storm,Cindy,13.3,-49.3,50,1003,16,295,,
+AL042023,2023-06-24T03:00:00.000Z,Tropical Storm,Cindy,13.9,-50.4,50,1003,15,295,,
+AL042023,2023-06-24T09:00:00.000Z,Tropical Storm,Cindy,14.6,-51.2,60,1001,15,300,,
+AL042023,2023-06-24T15:00:00.000Z,Tropical Storm,Cindy,16.4,-53.3,60,1001,20,310,,

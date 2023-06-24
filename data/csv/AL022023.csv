@@ -1,0 +1,11 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL022023,2023-06-01T21:00:00.000Z,Tropical Depression,Two,28,-86.6,35,1007,2,290,,
+AL022023,2023-06-02T03:00:00.000Z,Tropical Depression,Two,27.5,-86.5,35,1007,3,180,,
+AL022023,2023-06-02T09:00:00.000Z,Tropical Depression,Two,27,-86.5,35,1007,5,180,,
+AL022023,2023-06-02T15:00:00.000Z,Tropical Depression,Two,26.7,-86.3,35,1002,5,175,,
+AL022023,2023-06-02T18:00:00.000Z,Tropical Storm,Arlene,26.7,-86.2,40,1002,5,175,,
+AL022023,2023-06-02T21:00:00.000Z,Tropical Storm,Arlene,26.4,-85.8,40,1002,7,165,,
+AL022023,2023-06-03T03:00:00.000Z,Tropical Storm,Arlene,25.4,-85.5,40,998,7,155,,
+AL022023,2023-06-03T09:00:00.000Z,Tropical Storm,Arlene,24.5,-85.5,40,998,9,150,,
+AL022023,2023-06-03T15:00:00.000Z,Tropical Depression,Arlene,24.2,-85.1,35,1000,7,160,,
+AL022023,2023-06-03T21:00:00.000Z,Post-tropical Cyclone,Arlene,23.7,-84.7,30,1001,7,150,,

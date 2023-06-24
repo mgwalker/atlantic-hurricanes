@@ -2,24 +2,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Atlantic Hurricanes, 2022</title>
+    <title>Atlantic Hurricanes, 2023</title>
     <!-- COMMON TAGS -->
     <meta charset="utf-8" />
     <!-- Search Engine -->
-    <meta name="description" content="Atlantic Hurricanes, 2022" />
+    <meta name="description" content="Atlantic Hurricanes, 2023" />
     <meta name="image" content="https://mgwalker.github.io/atlantic-hurricanes/" />
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Atlantic Hurricanes, 2022" />
-    <meta itemprop="description" content="Atlantic Hurricanes, 2022" />
+    <meta itemprop="name" content="Atlantic Hurricanes, 2023" />
+    <meta itemprop="description" content="Atlantic Hurricanes, 2023" />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Atlantic Hurricanes, 2022" />
-    <meta name="twitter:description" content="Atlantic Hurricanes, 2022" />
+    <meta name="twitter:title" content="Atlantic Hurricanes, 2023" />
+    <meta name="twitter:description" content="Atlantic Hurricanes, 2023" />
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="Atlantic Hurricanes, 2022" />
-    <meta name="og:description" content="Atlantic Hurricanes, 2022" />
+    <meta name="og:title" content="Atlantic Hurricanes, 2023" />
+    <meta name="og:description" content="Atlantic Hurricanes, 2023" />
     <meta name="og:url" content="https://mgwalker.github.io/atlantic-hurricanes/" />
-    <meta name="og:site_name" content="Atlantic Hurricanes, 2022" />
+    <meta name="og:site_name" content="Atlantic Hurricanes, 2023" />
     <meta name="og:locale" content="en_US" />
     <meta name="og:type" content="website" />
 
@@ -88,92 +88,48 @@
     </style>
   </head>
   <body>
-    <h1>Atlantic Storms, 2022</h1>
+    <h1>Atlantic Storms, 2023</h1>
 
     <p>
       Data of all storms:
-      <a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/storms.2022.sqlite">sqlite</a>
+      <a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/storms.2023.sqlite">sqlite</a>
     </p>
 
     <table>
       <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL172022')">
-          <h2>🏁 Nicole
+        <td colspan="6" class="storm category-0" >
+          <h2>
+            Tropical Storm Bret
+            <p class="updated">last updated <span data-time>2023-06-24T15:00:00.000Z</span></p>
           </h2>
         </td>
       </tr>
       
-      <tr id="storm_AL172022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL172022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
       <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL152022')">
-          <h2>🏁 Lisa
-          </h2>
-        </td>
+        <th class="spacer"></th>
+        <th>wind speed</th>
+        <th>central pressure</th>
+        <th>movement</th>
+        <th>data (CSV)</th>
+        <th>National Hurricane Center</th>
       </tr>
-      
-      <tr id="storm_AL152022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL152022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
       <tr>
-        <td colspan="6" class="storm category-1" style="cursor:pointer;" onClick="toggle('AL162022')">
-          <h2>🏁 Martin
-          </h2>
+        <td class="spacer"></td>
+        <td>45 mph</td>
+        <td>1007 mb</td>
+        <td>
+          21 mph to the west
+          <br/>
+          <span style="display: inline-block; font-size: 1.5em; transform: rotate(270deg);">↑</span>
         </td>
+        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL032023.csv">AL032023.csv</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2032/BRET.shtml?">NHC advisories</a></td>
       </tr>
-      
-      <tr id="storm_AL162022" style="display:none;">
+      <tr id="storm_AL032023" >
         <td class="spacer">
         <td colspan="5">
           <figure>
-            <img src="AL162022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL142022')">
-          <h2>🏁 Karl
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL142022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL142022.png">
+            <img src="AL032023.png">
             <figcaption>
               Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
               Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
@@ -187,8 +143,8 @@
       <tr>
         <td colspan="6" class="storm category-0" >
           <h2>
-            Tropical Storm Julia
-            <p class="updated">last updated <span data-time>2022-10-09T18:00:00.000Z</span></p>
+            Tropical Storm Cindy
+            <p class="updated">last updated <span data-time>2023-06-24T15:00:00.000Z</span></p>
           </h2>
         </td>
       </tr>
@@ -204,20 +160,20 @@
       <tr>
         <td class="spacer"></td>
         <td>60 mph</td>
-        <td>996 mb</td>
+        <td>1001 mb</td>
         <td>
-          16 mph to the west
+          20 mph to the northwest
           <br/>
-          <span style="display: inline-block; font-size: 1.5em; transform: rotate(270deg);">↑</span>
+          <span style="display: inline-block; font-size: 1.5em; transform: rotate(310deg);">↑</span>
         </td>
-        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL132022.csv">AL132022.csv</a></td>
-        <td><a href="https://www.nhc.noaa.gov/archive/2022/JULIA.shtml?">NHC advisories</a></td>
+        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL042023.csv">AL042023.csv</a></td>
+        <td><a href="https://www.nhc.noaa.gov/archive/2032/CINDY.shtml?">NHC advisories</a></td>
       </tr>
-      <tr id="storm_AL132022" >
+      <tr id="storm_AL042023" >
         <td class="spacer">
         <td colspan="5">
           <figure>
-            <img src="AL132022.png">
+            <img src="AL042023.png">
             <figcaption>
               Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
               Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
@@ -229,259 +185,17 @@
       
 
       <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL122022')">
-          <h2>🏁 Twelve
+        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL022023')">
+          <h2>🏁 Arlene
           </h2>
         </td>
       </tr>
       
-      <tr id="storm_AL122022" style="display:none;">
+      <tr id="storm_AL022023" style="display:none;">
         <td class="spacer">
         <td colspan="5">
           <figure>
-            <img src="AL122022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL092022')">
-          <h2>🏁 Ian
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL092022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL092022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL112022')">
-          <h2>🏁 Eleven
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL112022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL112022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL082022')">
-          <h2>🏁 Gaston
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL082022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL082022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL102022')">
-          <h2>🏁 Hermine
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL102022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL102022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL072022')">
-          <h2>🏁 Fiona
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL072022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL072022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-1" style="cursor:pointer;" onClick="toggle('AL062022')">
-          <h2>🏁 Earl
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL062022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL062022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL052022')">
-          <h2>🏁 Danielle
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL052022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL052022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL042022')">
-          <h2>🏁 Four
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL042022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL042022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL032022')">
-          <h2>🏁 Colin
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL032022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL032022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL022022')">
-          <h2>🏁 Bonnie
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL022022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL022022.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-
-      <tr>
-        <td colspan="6" class="storm category-0" style="cursor:pointer;" onClick="toggle('AL012022')">
-          <h2>🏁 Alex
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL012022" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL012022.png">
+            <img src="AL022023.png">
             <figcaption>
               Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
               Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |

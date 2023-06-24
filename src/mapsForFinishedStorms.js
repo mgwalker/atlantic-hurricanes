@@ -19,7 +19,7 @@ const { getAll } = dbUtils;
 export default async () => {
   const fileIds = await fs.readdir(docsPath);
 
-  const db = new sqlite.Database(`${dataPath}/storms.2022.sqlite`);
+  const db = new sqlite.Database(`${dataPath}/storms.2023.sqlite`);
   const stormIds = (
     await getAll(db, "SELECT DISTINCT id FROM storms WHERE final=1")
   )

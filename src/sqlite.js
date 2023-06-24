@@ -23,7 +23,7 @@ const createIfNecessary = async (db, data) => {
 };
 
 export default async (data) => {
-  const path = `${dataPath}/storms.2022.sqlite`;
+  const path = `${dataPath}/storms.2023.sqlite`;
 
   const db = new sqlite.Database(path);
   await createIfNecessary(db, data);

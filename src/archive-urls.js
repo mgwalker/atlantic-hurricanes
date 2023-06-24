@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import fs from "fs/promises";
 import { cachePath, sleep } from "./util.js";
 
-const baseUrl = "https://www.nhc.noaa.gov/archive/2022/";
+const baseUrl = "https://www.nhc.noaa.gov/archive/2023/";
 
 const promise = fetch(baseUrl)
   .then((r) => r.text())

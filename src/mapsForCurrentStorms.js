@@ -29,7 +29,7 @@ export default async () => {
     await fs.readFile(`${cachePath}/lastUpdated.json`, { encoding: "utf-8" })
   );
 
-  const db = new sqlite.Database(`${dataPath}/storms.2022.sqlite`);
+  const db = new sqlite.Database(`${dataPath}/storms.2023.sqlite`);
 
   const url = pathToFileURL(path.join(srcPath, "map.html")).href;
 
