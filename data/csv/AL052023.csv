@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL052023,2023-07-14T09:00:00.000Z,Tropical Storm,Don,32.9,-46.8,50,1002,6,360,,
