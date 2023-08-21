@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL082023,2023-08-20T21:00:00.000Z,Tropical Storm,Franklin,14.6,-67.1,45,1002,14,290,,
+AL082023,2023-08-21T00:00:00.000Z,Tropical Storm,Franklin,14.8,-67.8,45,1001,14,290,,
