@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL122023,2023-09-01T15:00:00.000Z,Tropical Depression,Twelve,19.6,-28.3,35,1007,8,340,,
