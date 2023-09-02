@@ -44,6 +44,8 @@ export default async () => {
     await getAll(db, "SELECT DISTINCT id FROM storms WHERE final=0")
   ).map(({ id }) => id);
 
+  const allActive = [];
+
   for await (const id of ids) {
     const storm = await getAll(db, "SELECT * FROM storms WHERE id=?", id);
     storm.sort(({ timestamp: a }, { timestamp: b }) => {
@@ -60,13 +62,6 @@ export default async () => {
     });
 
     const latest = storm.pop();
-
-    if (lastUpdated[id] === latest.timestamp) {
-      continue;
-    }
-    lastUpdated[id] = latest.timestamp;
-
-    console.log(`Updating map for storm ${id}`);
 
     const wind = {
       hurricane: latest.hurricane_wind_extent_miles,
@@ -106,6 +101,14 @@ export default async () => {
       windExtent: wind,
       tracks: storm.map(({ latitude, longitude }) => [latitude, longitude]),
     };
+    allActive.push(metadata);
+
+    if (lastUpdated[id] === latest.timestamp) {
+      continue;
+    }
+    lastUpdated[id] = latest.timestamp;
+
+    console.log(`Updating map for storm ${id}`);
 
     await page.evaluate((metadata) => {
       window.draw(metadata);
@@ -118,6 +121,14 @@ export default async () => {
     await page.reload();
     await sleep(500);
   }
+
+  await page.evaluate((allActive) => {
+    window.draw(allActive);
+  }, allActive);
+  await sleep(3000);
+
+  const activeMap = await page.$("#map");
+  await activeMap.screenshot({ path: `${docsPath}/active.png` });
 
   await browser.close();
 

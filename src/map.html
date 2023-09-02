@@ -29,118 +29,143 @@
           "data:image/png;base64,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",
       };
 
-      window.draw = ({
-        category,
-        direction,
-        lat,
-        lon,
-        name,
-        pressure,
-        tracks,
-        type,
-        updated,
-        wind,
-        windExtent,
-      }) => {
-        const map = L.map("map", { zoomControl: false }).setView([lat, lon], 6);
+      window.draw = (m) => {
+        const meta = Array.isArray(m) ? m : [m];
 
-        L.tileLayer(
-          "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
-          {
-            attribution:
-              "Map data &copy; OpenStreetMap contributors, Imagery &copy; Mapbox",
-            maxZoom: 18,
-            id: "mapbox/streets-v11",
-            tileSize: 512,
-            zoomOffset: -1,
-            accessToken:
-              "pk.eyJ1IjoibWd3YWxrZXIiLCJhIjoiY2tzdjYxcHI3MW11cDJva3R3YzRkYWUxYSJ9.sp1YDg1pBjrarmenwWpQDg",
-          }
-        ).addTo(map);
-
-        tracks.forEach(([lat, lon]) => {
-          L.circle([lat, lon], {
-            color: "black",
-            fillColor: "black",
-            fillOpacity: 0.5,
-            opacity: 0,
-            radius: 7000,
-          }).addTo(map);
-        });
-
-        if (windExtent.hurricane) {
-          const meters = {
-            hurricane: windExtent.hurricane * 1609.344,
-            tropical: windExtent.tropical * 1609.344,
-          };
-
-          L.circle([lat, lon], {
-            color: "black",
-            dashArray: "2 20",
-            fillColor: "blue",
-            fillOpacity: 0.1,
-            radius: meters.tropical,
-          }).addTo(map);
-
-          L.circle([lat, lon], {
-            color: "black",
-            dashArray: "10 15",
-            fillColor: "red",
-            fillOpacity: 0.2,
-            radius: meters.hurricane,
-          }).addTo(map);
+        const map = L.map("map", { zoomControl: false }); //.setView([lat, lon], 6);
+        if (meta.length === 1) {
+          map.setView([meta[0].lat, meta[0].lon], 6);
         }
 
-        const d1 = ((direction + 15) * Math.PI) / 180;
-        const d2 = ((direction - 15) * Math.PI) / 180;
+        const bounds = L.latLngBounds([meta[0].lat, meta[0].lon]);
 
-        const p1 = [lat + Math.cos(d1) * 0.6, lon + Math.sin(d1) * 0.6];
-        const p2 = [lat + Math.cos(d2) * 0.6, lon + Math.sin(d2) * 0.6];
+        for (const storm of meta) {
+          const {
+            category,
+            direction,
+            lat,
+            lon,
+            name,
+            pressure,
+            tracks,
+            type,
+            updated,
+            wind,
+            windExtent,
+          } = storm;
 
-        const offsetX1 = Math.sin(d1) * 1.5;
-        const offsetY1 = Math.cos(d1) * 1.5;
-        const offsetX2 = Math.sin(d2) * 1.5;
-        const offsetY2 = Math.cos(d2) * 1.5;
+          const center = L.latLng(lat, lon);
+          bounds.extend(center);
 
-        L.polygon(
-          [
-            p1,
-            [p1[0] + offsetY1, p1[1] + offsetX1],
-            [p2[0] + offsetY2, p2[1] + offsetX2],
-            p2,
-            p1,
-          ],
-          { color: "white", fillColor: "white", fillOpacity: 0.7, opacity: 1 }
-        ).addTo(map);
-
-        const marker =
-          type === "hurricane" || type === "tropical storm"
-            ? L.marker([lat, lon], {
-                icon: L.icon({
-                  iconUrl: icon[type],
-                  iconSize: [40, 40],
-                  iconAnchor: [18, 16],
-                }),
-              })
-            : L.circle([lat, lon], {
-                color: "red",
-                fillColor: "#f03",
-                fillOpacity: 0.5,
-                radius: 30000,
-              });
-
-        marker
-          .bindTooltip(
-            `<h2 style="margin-top:0;">${name}<p style="font-size:0.8rem;font-weight:normal;margin:0;">${
-              category > 0 ? `Category ${category}<br/>` : ""
-            }${updated}</p></h2>${wind} mph winds<br/>${pressure} mb pressure`,
+          L.tileLayer(
+            "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
             {
+              attribution:
+                "Map data &copy; OpenStreetMap contributors, Imagery &copy; Mapbox",
+              maxZoom: 18,
+              id: "mapbox/streets-v11",
+              tileSize: 512,
+              zoomOffset: -1,
+              accessToken:
+                "pk.eyJ1IjoibWd3YWxrZXIiLCJhIjoiY2tzdjYxcHI3MW11cDJva3R3YzRkYWUxYSJ9.sp1YDg1pBjrarmenwWpQDg",
+            }
+          ).addTo(map);
+
+          tracks.forEach(([lat, lon]) => {
+            L.circle([lat, lon], {
+              color: "black",
+              fillColor: "black",
+              fillOpacity: 0.5,
+              opacity: 0,
+              radius: 7000,
+            }).addTo(map);
+          });
+
+          if (windExtent.hurricane) {
+            const meters = {
+              hurricane: windExtent.hurricane * 1609.344,
+              tropical: windExtent.tropical * 1609.344,
+            };
+
+            L.circle([lat, lon], {
+              color: "black",
+              dashArray: "2 20",
+              fillColor: "blue",
+              fillOpacity: 0.1,
+              radius: meters.tropical,
+            }).addTo(map);
+
+            L.circle([lat, lon], {
+              color: "black",
+              dashArray: "10 15",
+              fillColor: "red",
+              fillOpacity: 0.2,
+              radius: meters.hurricane,
+            }).addTo(map);
+          }
+
+          const d1 = ((direction + 15) * Math.PI) / 180;
+          const d2 = ((direction - 15) * Math.PI) / 180;
+
+          const p1 = [lat + Math.cos(d1) * 0.6, lon + Math.sin(d1) * 0.6];
+          const p2 = [lat + Math.cos(d2) * 0.6, lon + Math.sin(d2) * 0.6];
+
+          const offsetX1 = Math.sin(d1) * 1.5;
+          const offsetY1 = Math.cos(d1) * 1.5;
+          const offsetX2 = Math.sin(d2) * 1.5;
+          const offsetY2 = Math.cos(d2) * 1.5;
+
+          L.polygon(
+            [
+              p1,
+              [p1[0] + offsetY1, p1[1] + offsetX1],
+              [p2[0] + offsetY2, p2[1] + offsetX2],
+              p2,
+              p1,
+            ],
+            { color: "white", fillColor: "white", fillOpacity: 0.7, opacity: 1 }
+          ).addTo(map);
+
+          const marker =
+            type === "hurricane" || type === "tropical storm"
+              ? L.marker([lat, lon], {
+                  icon: L.icon({
+                    iconUrl: icon[type],
+                    iconSize: [40, 40],
+                    iconAnchor: [18, 16],
+                  }),
+                })
+              : L.circle([lat, lon], {
+                  color: "red",
+                  fillColor: "#f03",
+                  fillOpacity: 0.5,
+                  radius: 30000,
+                });
+
+          if (meta.length === 1) {
+            marker.bindTooltip(
+              `<h2 style="margin-top:0;">${name}<p style="font-size:0.8rem;font-weight:normal;margin:0;">${
+                category > 0 ? `Category ${category}<br/>` : ""
+              }${updated}</p></h2>${wind} mph winds<br/>${pressure} mb pressure`,
+              {
+                direction: direction > 180 ? "right" : "left",
+                permanent: true,
+                offset: [30 * (direction > 180 ? 1 : -1), 0],
+              }
+            );
+          } else {
+            marker.bindTooltip(`<h3 style="margin:0;">${name}</h3>`, {
               direction: direction > 180 ? "right" : "left",
               permanent: true,
-              offset: [30 * (direction > 180 ? 1 : -1), 0],
-            }
-          )
-          .addTo(map);
+              offset: [8 * (direction > 180 ? 1 : -1), 0],
+            });
+          }
+          marker.addTo(map);
+        }
+
+        if (meta.length > 1) {
+          map.fitBounds(bounds.pad(0.05));
+        }
       };
     </script>
   </body>

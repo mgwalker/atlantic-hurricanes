@@ -37,6 +37,15 @@ export default async () => {
       });
 
       const last = storm.slice(-1).pop();
+      const prev = storm.slice(-2, -1).pop();
+
+      const w =
+        last.maximum_sustained_wind_mph - prev.maximum_sustained_wind_mph;
+      const deltaWind = `${w > 0 ? "+" : ""}${w} mph since last update`;
+      const p =
+        last.minimum_central_pressure_mb - prev.minimum_central_pressure_mb;
+      const deltaPressure = `${p > 0 ? "+" : ""}${p} mb since last update`;
+
       const stormData = {
         ...last,
         id,
@@ -44,6 +53,8 @@ export default async () => {
         heading: `${last.movement_speed_mph} mph to the ${headingFriendly(
           last.movement_direction_degrees
         )}`,
+        deltaWind,
+        deltaPressure,
         updated: last.timestamp,
       };
 
@@ -63,6 +74,8 @@ export default async () => {
     }
     return 0;
   });
+
+  const active = storms.filter(({ final }) => !final);
 
   const html = `
 <!DOCTYPE html>
@@ -161,6 +174,14 @@ export default async () => {
       <a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/storms.2023.sqlite">sqlite</a>
     </p>
 
+    ${
+      active.length === 0
+        ? ""
+        : `
+    <h2>${active.length} active storm${active.length > 1 ? "s" : ""}</h2>
+    <img src="active.png">`
+    }
+
     <table>${storms
       .map(
         (storm) => `
@@ -198,8 +219,10 @@ export default async () => {
       </tr>
       <tr>
         <td class="spacer"></td>
-        <td>${storm.maximum_sustained_wind_mph} mph</td>
-        <td>${storm.minimum_central_pressure_mb} mb</td>
+        <td>${storm.maximum_sustained_wind_mph} mph<br>${storm.deltaWind}</td>
+        <td>${storm.minimum_central_pressure_mb} mb<br>${
+              storm.deltaPressure
+            }</td>
         <td>
           ${storm.heading}
           <br/>
