@@ -175,10 +175,10 @@ export default async () => {
     </p>
 
     ${
-      active.length === 0
+      active.length < 2
         ? ""
         : `
-    <h2>${active.length} active storm${active.length > 1 ? "s" : ""}</h2>
+    <h2>${active.length} active storms</h2>
     <img src="active.png">`
     }
 
@@ -186,7 +186,9 @@ export default async () => {
       .map(
         (storm) => `
       <tr>
-        <td colspan="6" class="storm category-${storm.category}" ${
+        <td colspan="6" class="storm ${
+          storm.final ? "" : `category-${storm.category}`
+        }" ${
           storm.final
             ? `style="cursor:pointer;" onClick="toggle('${storm.id}')"`
             : ""
