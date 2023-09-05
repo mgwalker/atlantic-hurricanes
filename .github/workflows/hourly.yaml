@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/setup-node@d6e3b5539ed7e5ccd26c3459e26c7c817f4e9068
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - uses: actions/checkout@af513c7a016048ae468971c52ed77d9562c7c819
+      - uses: actions/checkout@v3
 
       - name: install dependencies
         run: npm install
