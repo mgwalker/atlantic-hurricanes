@@ -122,13 +122,15 @@ export default async () => {
     await sleep(500);
   }
 
-  await page.evaluate((allActive) => {
-    window.draw(allActive);
-  }, allActive);
-  await sleep(3000);
+  if (allActive.length > 0) {
+    await page.evaluate((allActive) => {
+      window.draw(allActive);
+    }, allActive);
+    await sleep(3000);
 
-  const activeMap = await page.$("#map");
-  await activeMap.screenshot({ path: `${docsPath}/active.png` });
+    const activeMap = await page.$("#map");
+    await activeMap.screenshot({ path: `${docsPath}/active.png` });
+  }
 
   await browser.close();
 
