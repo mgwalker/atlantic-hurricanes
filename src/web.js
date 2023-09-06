@@ -15,7 +15,7 @@ export default async () => {
   const db = new sqlite.Database(`${dataPath}/storms.2023.sqlite`);
 
   const ids = (await getAll(db, "SELECT DISTINCT id FROM storms")).map(
-    ({ id }) => id,
+    ({ id }) => id
   );
 
   const storms = [];
@@ -51,25 +51,25 @@ export default async () => {
         id,
         category: getStormCategory(last.maximum_sustained_wind_mph),
         heading: `${last.movement_speed_mph} mph to the ${headingFriendly(
-          last.movement_direction_degrees,
+          last.movement_direction_degrees
         )}`,
         deltaWind: prev
           ? `<br>${delta(
               last.maximum_sustained_wind_mph,
-              prev.maximum_sustained_wind_mph,
+              prev.maximum_sustained_wind_mph
             )} mph since last update`
           : "",
         deltaPressure: prev
           ? `<br>${delta(
               last.minimum_central_pressure_mb,
-              prev.minimum_central_pressure_mb,
+              prev.minimum_central_pressure_mb
             )} mb since last update`
           : "",
         updated: last.timestamp,
       };
 
       storms.push(stormData);
-    }),
+    })
   );
 
   storms.sort(({ timestamp: a }, { timestamp: b }) => {
@@ -208,8 +208,8 @@ export default async () => {
               ? `🏁 ${storm.name}`
               : `
             ${storm.classification} ${storm.name}${
-              storm.category > 0 ? ` - Category ${storm.category}` : ""
-            }
+                  storm.category > 0 ? ` - Category ${storm.category}` : ""
+                }
             <p class="updated">last updated <span data-time>${
               storm.updated
             }</span></p>`
@@ -231,10 +231,8 @@ export default async () => {
       </tr>
       <tr>
         <td class="spacer"></td>
-        <td>${storm.maximum_sustained_wind_mph} mph<br>${storm.deltaWind}</td>
-        <td>${storm.minimum_central_pressure_mb} mb<br>${
-          storm.deltaPressure
-        }</td>
+        <td>${storm.maximum_sustained_wind_mph} mph${storm.deltaWind}</td>
+        <td>${storm.minimum_central_pressure_mb} mb${storm.deltaPressure}</td>
         <td>
           ${storm.heading}
           <br/>
@@ -261,7 +259,7 @@ export default async () => {
           </figure>
         </td>
       </tr>
-      `,
+      `
       )
       .join("\n")}
     </table>
