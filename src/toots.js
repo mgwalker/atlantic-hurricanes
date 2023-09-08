@@ -4,10 +4,38 @@ import { dataPath, getStormCategory, sqlite as dbUtils } from "./util.js";
 
 const { getAll } = dbUtils;
 
-const TOOT_URL = process.env.MASTODON_SERVER_URL;
-const API_TOKEN = process.env.MASTODON_API_TOKEN;
+const doCredentials = async () => {
+  // const TOOT_URL = process.env.MASTODON_SERVER_URL;
+  // const API_TOKEN = process.env.MASTODON_API_TOKEN;
+  // const client = generator.default("mastodon", TOOT_URL);
+  ///////// register client and get auth code /////////////
+  // client
+  //   .registerApp("Hurricane bot", { scopes: ["write:statuses"] })
+  //   .then((appData) => {
+  //     console.log(appData.client_id);
+  //     console.log(appData.client_secret);
+  //     console.log("\n\n");
+  //     console.log("Authorization URL is generated.");
+  //     console.log(appData.url);
+  //   });
+  ///////// get access token /////////////
+  // const clientId = "---fill in---";
+  // const clientSecret = "---fill in---";
+  // const code = "---fill in---";
+  // client
+  //   .fetchAccessToken(clientId, clientSecret, code)
+  //   .then((tokenData) => {
+  //     console.log(tokenData.accessToken);
+  //     console.log(tokenData.refreshToken);
+  //   })
+  //   .catch((err) => console.error(err));
+};
 
 export default async (updatedStorms) => {
+  const TOOT_URL = process.env.MASTODON_SERVER_URL;
+  const API_TOKEN = process.env.MASTODON_API_TOKEN;
+
+  await doCredentials();
   if (!TOOT_URL || !API_TOKEN) {
     return;
   }
@@ -77,41 +105,10 @@ Central pressure: ${latest.minimum_central_pressure_mb} mb`
       );
       text.push(`\n\n#${latest.id}`);
 
+      console.log(`tooting update about ${latest.id}`);
+
       const client = new generator.Mastodon(TOOT_URL, API_TOKEN);
       await client.postStatus(text.join(" "), {});
     }
   }
-
-  // const BASE_URL = "--- fill in ---";
-  // const client = generator.default("mastodon", BASE_URL);
-
-  // let clientId;
-  // let clientSecret;
-  // client
-  //   .registerApp("Hurricane bot", { scopes: ["write:statuses"] })
-  //   .then((appData) => {
-  //     console.log(appData.client_id);
-  //     console.log(appData.client_secret);
-  //     console.log("\n\n");
-  //     console.log("Authorization URL is generated.");
-  //     console.log(appData.url);
-  //   });
-
-  // console.log("\n\n");
-  // console.log(clientId);
-  // console.log(clientSecret);
-
-  ///////// get access token /////////////
-  // const clientId = "---fill in---";
-  // const clientSecret = "---fill in---";
-  // const code = "---fill in---";
-
-  // client
-  //   .fetchAccessToken(clientId, clientSecret, code)
-
-  //   .then((tokenData) => {
-  //     console.log(tokenData.accessToken);
-  //     console.log(tokenData.refreshToken);
-  //   })
-  //   .catch((err) => console.error(err));
 };
