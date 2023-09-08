@@ -6,6 +6,7 @@ import mapsForCurrentStorms from "./mapsForCurrentStorms.js";
 import mapsForFinishedStorms from "./mapsForFinishedStorms.js";
 import main from "./parse.js";
 import sql from "./sqlite.js";
+import toots from "./toots.js";
 import { cachePath, docsPath, sleep } from "./util.js";
 import web from "./web.js";
 
@@ -14,6 +15,8 @@ const urls = await getUrls();
 const visited = JSON.parse(
   await fs.readFile(`${cachePath}/visited.json`, { encoding: "utf-8" })
 );
+
+const updatedStorms = new Set();
 
 let on = 1;
 for await (const url of urls) {
@@ -36,6 +39,7 @@ for await (const url of urls) {
   if (data) {
     await csv(data);
     await sql(data);
+    updatedStorms.add(data.id);
 
     // If this storm is now final, delete the current map. Otherwise, the map's
     // final form won't be rendered.
@@ -58,3 +62,4 @@ await fs.writeFile(
 await mapsForFinishedStorms();
 await mapsForCurrentStorms();
 await web();
+await toots(updatedStorms);
