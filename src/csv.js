@@ -5,6 +5,7 @@ export default async (data) => {
   const path = `${dataPath}/csv/${data.id}.csv`;
 
   const storm = { ...data };
+  delete storm.position;
   delete storm.final;
 
   const lines = [];

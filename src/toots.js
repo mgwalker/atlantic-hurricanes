@@ -31,7 +31,7 @@ const doCredentials = async () => {
   //   .catch((err) => console.error(err));
 };
 
-export default async (updatedStorms) => {
+export default async (updatedStorms, positionMap) => {
   // await doCredentials();
   const TOOT_URL = process.env.MASTODON_SERVER_URL;
   const API_TOKEN = process.env.MASTODON_API_TOKEN;
@@ -78,6 +78,9 @@ export default async (updatedStorms) => {
 
     const text = [];
     if (previous) {
+      if (latest.classification === previous.classification) {
+        text.push("Updating");
+      }
       text.push(`${previous.classification} ${previous.name}`);
       if (latest.classification !== previous.classification) {
         text.push(`is now ${latest.classification} ${latest.name}`);
@@ -93,23 +96,26 @@ export default async (updatedStorms) => {
             text.push(`\nDowngraded to category ${catLatest}`);
           }
         }
+      } else if (catLatest > 0) {
+        text.push(`\nCategory ${catLatest}`);
       }
     } else {
       text.push(`${latest.classification} ${latest.name} has formed`);
     }
-    if (text.length > 1) {
-      text.push(
-        `
+
+    text.push(
+      `
+
+${positionMap.get(latest.id)}
 
 Max winds: ${latest.maximum_sustained_wind_mph} mph
 Central pressure: ${latest.minimum_central_pressure_mb} mb`
-      );
-      text.push(`\n\n#${latest.id}`);
+    );
+    text.push(`\n\n#${latest.id}`);
 
-      console.log(`tooting update about ${latest.id}`);
+    console.log(`tooting update about ${latest.id}`);
 
-      const client = new generator.Mastodon(TOOT_URL, API_TOKEN);
-      await client.postStatus(text.join(" "), {});
-    }
+    const client = new generator.Mastodon(TOOT_URL, API_TOKEN);
+    await client.postStatus(text.join(" "), {});
   }
 };

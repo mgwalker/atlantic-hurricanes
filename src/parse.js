@@ -50,6 +50,15 @@ export default async (url) => {
     const [, lat, ns, lon, ew] = advisory.match(
       /location\.+(\d{1,2}\.\d)(n|s) (\d{1,3}\.\d)(e|w)/i
     );
+    const [, milesFrom, directionFrom, referenceLocation] = advisory.match(
+      /about (\d+) mi...\d+ km ([a-z]{1,3}) of (.+)/i
+    );
+    const position = `${milesFrom} miles ${directionFrom} of ${referenceLocation
+      .toLowerCase()
+      .replace(/\w\S*/g, (txt) =>
+        txt === "the" ? "the" : `${txt.charAt(0).toUpperCase()}${txt.substr(1)}`
+      )}`;
+
     const [, windMph] = advisory.match(
       /maximum sustained winds[\D]+(\d+) mph/i
     );
@@ -81,6 +90,7 @@ export default async (url) => {
       name: ucwords(name),
       latitude: ns.toLowerCase() === "s" ? -+lat : +lat,
       longitude: ew.toLowerCase() === "w" ? -+lon : +lon,
+      position,
       "maximum sustained wind (mph)": +windMph,
       "minimum central pressure (mb)": +pressureMb,
       "movement speed (mph)": +speedMph,
@@ -88,6 +98,7 @@ export default async (url) => {
       ...windExtent,
     };
   } catch (e) {
+    console.log(e);
     return false;
   }
 };

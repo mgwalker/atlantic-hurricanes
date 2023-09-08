@@ -23,20 +23,23 @@ const createIfNecessary = async (db, data) => {
 };
 
 export default async (data) => {
+  const storm = { ...data };
+  delete storm.position;
+
   const path = `${dataPath}/storms.2023.sqlite`;
 
   const db = new sqlite.Database(path);
-  await createIfNecessary(db, data);
+  await createIfNecessary(db, storm);
 
   const { count } = await get(
     db,
     `SELECT COUNT(*) as count FROM storms WHERE id=? AND timestamp=?`,
-    [data.id, data.timestamp]
+    [storm.id, storm.timestamp]
   );
 
   if (count === 0) {
-    const columns = Object.keys(data).map(columnize);
-    const values = Object.values(data);
+    const columns = Object.keys(storm).map(columnize);
+    const values = Object.values(storm);
 
     const sql = `INSERT INTO storms (${columns.join(",")}) VALUES(${values
       .map(() => "?")
@@ -45,11 +48,11 @@ export default async (data) => {
     await run(db, sql, values);
   }
 
-  if (data.final) {
+  if (storm.final) {
     const sql = `UPDATE storms SET final=1 WHERE id=?`;
-    await run(db, sql, [data.id]);
+    await run(db, sql, [storm.id]);
   } else {
     const sql = `UPDATE storms SET final=0 WHERE id=?`;
-    await run(db, sql, [data.id]);
+    await run(db, sql, [storm.id]);
   }
 };

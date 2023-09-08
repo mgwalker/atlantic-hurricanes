@@ -21,6 +21,7 @@ const visited = JSON.parse(
 );
 
 const updatedStorms = new Set();
+const positions = new Map();
 
 let on = 1;
 for await (const url of urls) {
@@ -44,6 +45,7 @@ for await (const url of urls) {
     await csv(data);
     await sql(data);
     updatedStorms.add(data.id);
+    positions.set(data.id, data.position);
 
     // If this storm is now final, delete the current map. Otherwise, the map's
     // final form won't be rendered.
@@ -66,4 +68,4 @@ await fs.writeFile(
 await mapsForFinishedStorms();
 await mapsForCurrentStorms();
 await web();
-await toots(updatedStorms);
+await toots(updatedStorms, positions);
