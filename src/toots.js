@@ -32,11 +32,12 @@ const doCredentials = async () => {
 };
 
 export default async (updatedStorms) => {
+  // await doCredentials();
   const TOOT_URL = process.env.MASTODON_SERVER_URL;
   const API_TOKEN = process.env.MASTODON_API_TOKEN;
 
-  await doCredentials();
   if (!TOOT_URL || !API_TOKEN) {
+    console.log("No credentials. Not tooting.");
     return;
   }
 

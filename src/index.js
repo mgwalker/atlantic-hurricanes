@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+
 import fs from "fs/promises";
 import path from "path";
 import getUrls from "./archive-urls.js";
@@ -9,6 +11,8 @@ import sql from "./sqlite.js";
 import toots from "./toots.js";
 import { cachePath, docsPath, sleep } from "./util.js";
 import web from "./web.js";
+
+dotenv.config();
 
 const urls = await getUrls();
 
