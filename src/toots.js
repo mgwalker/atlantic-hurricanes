@@ -31,7 +31,7 @@ const doCredentials = async () => {
   //   .catch((err) => console.error(err));
 };
 
-export default async (updatedStorms, positionMap) => {
+export default async (updatedStorms, metadataMap) => {
   // await doCredentials();
   const TOOT_URL = process.env.MASTODON_SERVER_URL;
   const API_TOKEN = process.env.MASTODON_API_TOKEN;
@@ -106,14 +106,12 @@ export default async (updatedStorms, positionMap) => {
     text.push(
       `
 
-${positionMap.get(latest.id)}
+${metadataMap.get(latest.id).position}
 
 Max winds: ${latest.maximum_sustained_wind_mph} mph
 Central pressure: ${latest.minimum_central_pressure_mb} mb`
     );
-    text.push(`\n\n#${latest.id}`);
-
-    console.log(`tooting update about ${latest.id}`);
+    text.push(`\n\n${metadataMap.get(latest.id).url}\n#${latest.id}`);
 
     const client = new generator.Mastodon(TOOT_URL, API_TOKEN);
     await client.postStatus(text.join(" "), {});

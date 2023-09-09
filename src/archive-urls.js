@@ -26,8 +26,7 @@ const promise = fetch(baseUrl)
         await sleep(1500);
       }
 
-      const page = await fetch(url);
-      const text = await page.text();
+      const text = await fetch(url).then((page) => page.text());
 
       advisoryUrls.push(
         ...text
@@ -38,7 +37,7 @@ const promise = fetch(baseUrl)
               ?.map((a) => a.match(/<a href="([^"]+)"/i)[1])
           )
           .filter((v) => Array.isArray(v))
-          .reduce((all, v) => [...all, ...v], [])
+          .flat()
           .map((u) => `https://www.nhc.noaa.gov${u}`)
           .filter((u) => !visited.includes(u))
       );

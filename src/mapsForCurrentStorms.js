@@ -45,6 +45,7 @@ export default async () => {
   ).map(({ id }) => id);
 
   const allActive = [];
+  let redrawOverviewMap = false;
 
   for await (const id of ids) {
     const storm = await getAll(db, "SELECT * FROM storms WHERE id=?", id);
@@ -108,6 +109,9 @@ export default async () => {
     }
     lastUpdated[id] = latest.timestamp;
 
+    // If we update any individual maps, also update the overview map
+    redrawOverviewMap = true;
+
     console.log(`Updating map for storm ${id}`);
 
     await page.evaluate((metadata) => {
@@ -122,7 +126,7 @@ export default async () => {
     await sleep(500);
   }
 
-  if (allActive.length > 0) {
+  if (redrawOverviewMap) {
     await page.evaluate((allActive) => {
       window.draw(allActive);
     }, allActive);

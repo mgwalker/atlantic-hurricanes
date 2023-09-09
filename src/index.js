@@ -45,7 +45,7 @@ for await (const url of urls) {
     await csv(data);
     await sql(data);
     updatedStorms.add(data.id);
-    positions.set(data.id, data.position);
+    positions.set(data.id, { position: data.position, url });
 
     // If this storm is now final, delete the current map. Otherwise, the map's
     // final form won't be rendered.
