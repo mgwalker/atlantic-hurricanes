@@ -33,6 +33,7 @@ const doCredentials = async () => {
 
 export default async (updatedStorms, metadataMap) => {
   // await doCredentials();
+
   const TOOT_URL = process.env.MASTODON_SERVER_URL;
   const API_TOKEN = process.env.MASTODON_API_TOKEN;
 
@@ -60,6 +61,8 @@ export default async (updatedStorms, metadataMap) => {
   );
 
   for await (const storm of storms.values()) {
+    let isTootable = false;
+
     storm.sort(({ timestamp: a }, { timestamp: b }) => {
       const aa = Date.parse(a);
       const bb = Date.parse(b);
@@ -84,12 +87,14 @@ export default async (updatedStorms, metadataMap) => {
       text.push(`${previous.classification} ${previous.name}`);
       if (latest.classification !== previous.classification) {
         text.push(`is now ${latest.classification} ${latest.name}`);
+        isTootable = true;
       }
       const catLatest = getStormCategory(latest.maximum_sustained_wind_mph);
       const catPrevious = getStormCategory(previous.maximum_sustained_wind_mph);
       if (catLatest !== catPrevious && catLatest > 0) {
         if (catPrevious > 0) {
           // storm category changed
+          isTootable = true;
           if (catLatest > catPrevious) {
             text.push(`\nUpgraded to category ${catLatest}`);
           } else {
@@ -101,6 +106,7 @@ export default async (updatedStorms, metadataMap) => {
       }
     } else {
       text.push(`${latest.classification} ${latest.name} has formed`);
+      isTootable = true;
     }
 
     text.push(
@@ -113,7 +119,9 @@ Central pressure: ${latest.minimum_central_pressure_mb} mb`
     );
     text.push(`\n\n${metadataMap.get(latest.id).url}\n#${latest.id}`);
 
-    const client = new generator.Mastodon(TOOT_URL, API_TOKEN);
-    await client.postStatus(text.join(" "), {});
+    if (isTootable) {
+      const client = new generator.Mastodon(TOOT_URL, API_TOKEN);
+      await client.postStatus(text.join(" "), {});
+    }
   }
 };
