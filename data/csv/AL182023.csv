@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL182023,2023-09-28T15:00:00.000Z,Tropical Storm,Rina,17.4,-45,40,1005,10,330,,
+AL182023,2023-09-28T21:00:00.000Z,Tropical Storm,Rina,18.1,-46.2,40,1004,14,310,,
