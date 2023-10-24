@@ -96,15 +96,13 @@
     </p>
 
     
-    <h2>2 active storms</h2>
-    <img src="active.png">
 
     <table>
       <tr>
         <td colspan="6" class="storm category-1" >
           <h2>
             Hurricane Tammy - Category 1
-            <p class="updated">last updated <span data-time>2023-10-24T09:00:00.000Z</span></p>
+            <p class="updated">last updated <span data-time>2023-10-24T15:00:00.000Z</span></p>
           </h2>
         </td>
       </tr>
@@ -122,9 +120,9 @@
         <td>75 mph<br>0 mph since last update</td>
         <td>987 mb<br>0 mb since last update</td>
         <td>
-          9 mph to the northeast
+          8 mph to the northeast
           <br/>
-          <span style="display: inline-block; font-size: 1.5em; transform: rotate(45deg);">↑</span>
+          <span style="display: inline-block; font-size: 1.5em; transform: rotate(35deg);">↑</span>
         </td>
         <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL202023.csv">AL202023.csv</a></td>
         <td><a href="https://www.nhc.noaa.gov/archive/2023/TAMMY.shtml?">NHC advisories</a></td>
@@ -145,35 +143,13 @@
       
 
       <tr>
-        <td colspan="6" class="storm category-0" >
-          <h2>
-            Tropical Depression Twenty
-            <p class="updated">last updated <span data-time>2023-10-24T09:00:00.000Z</span></p>
+        <td colspan="6" class="storm " style="cursor:pointer;" onClick="toggle('AL212023')">
+          <h2>🏁 Twenty
           </h2>
         </td>
       </tr>
       
-      <tr>
-        <th class="spacer"></th>
-        <th>wind speed</th>
-        <th>central pressure</th>
-        <th>movement</th>
-        <th>data (CSV)</th>
-        <th>National Hurricane Center</th>
-      </tr>
-      <tr>
-        <td class="spacer"></td>
-        <td>30 mph<br>0 mph since last update</td>
-        <td>1007 mb<br>0 mb since last update</td>
-        <td>
-          6 mph to the northwest
-          <br/>
-          <span style="display: inline-block; font-size: 1.5em; transform: rotate(310deg);">↑</span>
-        </td>
-        <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL212023.csv">AL212023.csv</a></td>
-        <td><a href="https://www.nhc.noaa.gov/archive/2023/TWENTY.shtml?">NHC advisories</a></td>
-      </tr>
-      <tr id="storm_AL212023" >
+      <tr id="storm_AL212023" style="display:none;">
         <td class="spacer">
         <td colspan="5">
           <figure>
