@@ -1,8 +1,8 @@
 import fetch from "node-fetch";
 import fs from "fs/promises";
-import { cachePath, sleep } from "./util.js";
+import { cachePath, sleep, year } from "./util.js";
 
-const baseUrl = "https://www.nhc.noaa.gov/archive/2023/";
+const baseUrl = `https://www.nhc.noaa.gov/archive/${year}/`;
 
 const promise = fetch(baseUrl)
   .then((r) => r.text())

@@ -1,6 +1,6 @@
 import generator from "megalodon";
 import sqlite from "sqlite3";
-import { dataPath, getStormCategory, sqlite as dbUtils } from "./util.js";
+import { dataPath, getStormCategory, sqlite as dbUtils, year } from "./util.js";
 
 const { getAll } = dbUtils;
 
@@ -42,7 +42,7 @@ export default async (updatedStorms, metadataMap) => {
     return;
   }
 
-  const db = new sqlite.Database(`${dataPath}/storms.2023.sqlite`);
+  const db = new sqlite.Database(`${dataPath}/storms.${year}.sqlite`);
 
   const storms = await getAll(
     db,

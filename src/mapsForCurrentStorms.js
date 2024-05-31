@@ -16,6 +16,7 @@ import {
   srcPath,
   sleep,
   sqlite as dbUtils,
+  year,
 } from "./util.js";
 
 const { getAll } = dbUtils;
@@ -29,7 +30,7 @@ export default async () => {
     await fs.readFile(`${cachePath}/lastUpdated.json`, { encoding: "utf-8" })
   );
 
-  const db = new sqlite.Database(`${dataPath}/storms.2023.sqlite`);
+  const db = new sqlite.Database(`${dataPath}/storms.${year}.sqlite`);
 
   const url = pathToFileURL(path.join(srcPath, "map.html")).href;
 

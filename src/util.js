@@ -2,6 +2,8 @@ import fs from "fs/promises";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
+export const year = 2024;
+
 export const cachePath = join(
   dirname(fileURLToPath(import.meta.url)),
   "../cache"

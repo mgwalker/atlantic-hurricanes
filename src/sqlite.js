@@ -1,11 +1,11 @@
 import sqlite from "sqlite3";
-import { dataPath, sqlite as dbUtils } from "./util.js";
+import { dataPath, sqlite as dbUtils, year } from "./util.js";
 
 const { get, run } = dbUtils;
 
 const columnize = (name) => name.replace(/[^a-z]+/gi, "_").replace(/_$/, "");
 
-const createIfNecessary = async (db, data) => {
+export const createIfNecessary = async (db, data) => {
   const columns = Object.keys(data)
     // specify the final column separately, so we can make enforce its range
     // and default
@@ -26,7 +26,7 @@ export default async (data) => {
   const storm = { ...data };
   delete storm.position;
 
-  const path = `${dataPath}/storms.2023.sqlite`;
+  const path = `${dataPath}/storms.${year}.sqlite`;
 
   const db = new sqlite.Database(path);
   await createIfNecessary(db, storm);

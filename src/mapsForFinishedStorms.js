@@ -12,6 +12,7 @@ import {
   srcPath,
   sleep,
   sqlite as dbUtils,
+  year,
 } from "./util.js";
 
 const { getAll } = dbUtils;
@@ -19,7 +20,7 @@ const { getAll } = dbUtils;
 export default async () => {
   const fileIds = await fs.readdir(docsPath);
 
-  const db = new sqlite.Database(`${dataPath}/storms.2023.sqlite`);
+  const db = new sqlite.Database(`${dataPath}/storms.${year}.sqlite`);
   const stormIds = (
     await getAll(db, "SELECT DISTINCT id FROM storms WHERE final=1")
   )
