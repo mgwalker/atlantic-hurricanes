@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL022024,2024-06-28T21:00:00.000Z,Tropical Depression,Two,9.1,-41.9,35,1007,21,275,,
+AL022024,2024-06-29T03:00:00.000Z,Tropical Storm,Beryl,9.3,-43.6,40,1006,18,275,,
