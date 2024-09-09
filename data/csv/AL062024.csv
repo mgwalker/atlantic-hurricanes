@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL062024,2024-09-08T21:00:00.000Z,Potential Tropical Cyclone,Six,21.6,-94.6,50,1003,5,320,,
+AL062024,2024-09-09T00:00:00.000Z,Potential Tropical Cyclone,Six,21.9,-94.7,50,1003,5,320,,
