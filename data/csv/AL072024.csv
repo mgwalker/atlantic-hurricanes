@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL072024,2024-09-11T15:00:00.000Z,Tropical Depression,Seven,16,-28.7,35,1007,18,285,,
+AL072024,2024-09-11T21:00:00.000Z,Tropical Depression,Seven,16.2,-30.3,35,1007,18,285,,
