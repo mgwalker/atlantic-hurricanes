@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 import { months, tzOffsets } from "./constants.js";
 import { formatTime, ucwords } from "./util.js";
 
