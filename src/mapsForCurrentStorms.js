@@ -5,7 +5,7 @@ import path from "path";
 import { chromium } from "playwright";
 import sqlite from "sqlite3";
 import timezone from "dayjs/plugin/timezone.js";
-import { pathToFileURL } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 import utc from "dayjs/plugin/utc.js";
 
 import {
@@ -25,10 +25,14 @@ dayjs.extend(format);
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
-export default async () => {
-  const lastUpdated = JSON.parse(
-    await fs.readFile(`${cachePath}/lastUpdated.json`, { encoding: "utf-8" })
-  );
+const makeMaps = async (force = false) => {
+  const lastUpdated = force
+    ? {}
+    : JSON.parse(
+        await fs.readFile(`${cachePath}/lastUpdated.json`, {
+          encoding: "utf-8",
+        })
+      );
 
   const db = new sqlite.Database(`${dataPath}/storms.${year}.sqlite`);
 
@@ -188,3 +192,9 @@ export default async () => {
     { encoding: "utf-8" }
   );
 };
+
+if (fileURLToPath(import.meta.url) === process.argv[1]) {
+  makeMaps(true);
+}
+
+export default makeMaps;

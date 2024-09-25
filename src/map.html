@@ -7,17 +7,9 @@
         width: 900px;
       }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""
-    ></script>
+    <link rel="stylesheet" href="web/leaflet.css" />
+    <script src="web/leaflet.js"></script>
+    <script src="web/leaflet.curve.js"></script>
   </head>
   <body>
     <div id="map"></div>
@@ -32,7 +24,7 @@
       window.draw = (m) => {
         const meta = Array.isArray(m) ? m : [m];
 
-        const map = L.map("map", { zoomControl: false }); //.setView([lat, lon], 6);
+        const map = L.map("map", { zoomControl: false });
         if (meta.length === 1) {
           map.setView([meta[0].lat, meta[0].lon], 6);
         }
@@ -82,15 +74,25 @@
             }).addTo(map);
           });
 
+          const forecastTrack = [[lat, lon]];
+
           forecast.forEach(({ lat, lon }) => {
             L.circle([lat, lon], {
-              color: "#FF7700",
-              fillColor: "#FF7700",
+              color: "green",
+              fillColor: "green",
               fillOpacity: 0.5,
-              opacity: 0,
-              radius: 7000,
+              opacity: 1,
+              radius: 10_000,
             }).addTo(map);
+
+            forecastTrack.push([lat, lon]);
           });
+
+          L.polyline(forecastTrack, {
+            color: "green",
+            dashArray: "1 20",
+            dashOffset: 0,
+          }).addTo(map);
 
           if (windExtent.hurricane) {
             const meters = {
