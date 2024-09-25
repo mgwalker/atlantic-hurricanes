@@ -113,6 +113,49 @@ export default async () => {
     // If we update any individual maps, also update the overview map
     redrawOverviewMap = true;
 
+    const discussionUrl = await fetch(
+      `https://www.nhc.noaa.gov/archive/${year}/${latest.name.toUpperCase()}.shtml`
+    )
+      .then((response) => response.text())
+      .then((text) =>
+        text
+          .match(/<td.+? headers="col3">([\s\S]*?)<\/td>/gim)
+          .map((block) =>
+            block
+              .match(/<a href="([^"]+)"/gi)
+              ?.map((a) => a.match(/<a href="([^"]+)"/i)[1])
+          )
+          .filter((v) => Array.isArray(v))
+          .flat()
+          .map((u) => `https://www.nhc.noaa.gov${u}`)
+          .pop()
+      );
+
+    metadata.forecast = await fetch(discussionUrl)
+      .then((response) => response.text())
+      .then((text) => {
+        const [, discussion] = text.match(/<pre>([\s\S]*)<\/pre>/im);
+
+        const [, forecastText] = discussion
+          .replace(/ ?\n ?/gm, "\n")
+          .match(/FORECAST POSITIONS AND MAX WINDS\n\n([\s\S]+?)\n\n/im);
+
+        return (
+          forecastText
+            .split("\n")
+            .map((line) => line.split(/[a-z] /i))
+            // Slice off the first one since it's the current state and we're
+            // already handling that.
+            .slice(1)
+            .map(([, , lat, lon]) => ({
+              lat,
+              lon,
+            }))
+            .filter(({ lat, lon }) => lat && lon)
+            .map(({ lat, lon }) => ({ lat: +lat, lon: -+lon }))
+        );
+      });
+
     console.log(`Updating map for storm ${id}`);
 
     await page.evaluate((metadata) => {

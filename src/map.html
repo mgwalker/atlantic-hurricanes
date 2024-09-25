@@ -43,6 +43,7 @@
           const {
             category,
             direction,
+            forecast,
             lat,
             lon,
             name,
@@ -75,6 +76,16 @@
             L.circle([lat, lon], {
               color: "black",
               fillColor: "black",
+              fillOpacity: 0.5,
+              opacity: 0,
+              radius: 7000,
+            }).addTo(map);
+          });
+
+          forecast.forEach(({ lat, lon }) => {
+            L.circle([lat, lon], {
+              color: "#FF7700",
+              fillColor: "#FF7700",
               fillOpacity: 0.5,
               opacity: 0,
               radius: 7000,
