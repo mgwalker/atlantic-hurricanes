@@ -186,11 +186,13 @@ const makeMaps = async (force = false) => {
 
   await browser.close();
 
-  await fs.writeFile(
-    `${cachePath}/lastUpdated.json`,
-    JSON.stringify(lastUpdated, null, 2),
-    { encoding: "utf-8" }
-  );
+  if (!force) {
+    await fs.writeFile(
+      `${cachePath}/lastUpdated.json`,
+      JSON.stringify(lastUpdated, null, 2),
+      { encoding: "utf-8" }
+    );
+  }
 };
 
 if (fileURLToPath(import.meta.url) === process.argv[1]) {
