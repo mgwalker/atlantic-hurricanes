@@ -1,39 +1,17 @@
-import generator from "megalodon";
+import fs from "node:fs/promises";
+import { FormData } from "formdata-node";
 import sqlite from "sqlite3";
-import { dataPath, getStormCategory, sqlite as dbUtils, year } from "./util.js";
+import {
+  dataPath,
+  getStormCategory,
+  sqlite as dbUtils,
+  year,
+  exists,
+} from "./util.js";
 
 const { getAll } = dbUtils;
 
-const doCredentials = async () => {
-  // const TOOT_URL = process.env.MASTODON_SERVER_URL;
-  // const API_TOKEN = process.env.MASTODON_API_TOKEN;
-  // const client = generator.default("mastodon", TOOT_URL);
-  ///////// register client and get auth code /////////////
-  // client
-  //   .registerApp("Hurricane bot", { scopes: ["write:statuses"] })
-  //   .then((appData) => {
-  //     console.log(appData.client_id);
-  //     console.log(appData.client_secret);
-  //     console.log("\n\n");
-  //     console.log("Authorization URL is generated.");
-  //     console.log(appData.url);
-  //   });
-  ///////// get access token /////////////
-  // const clientId = "---fill in---";
-  // const clientSecret = "---fill in---";
-  // const code = "---fill in---";
-  // client
-  //   .fetchAccessToken(clientId, clientSecret, code)
-  //   .then((tokenData) => {
-  //     console.log(tokenData.accessToken);
-  //     console.log(tokenData.refreshToken);
-  //   })
-  //   .catch((err) => console.error(err));
-};
-
 export default async (updatedStorms, metadataMap) => {
-  // await doCredentials();
-
   const TOOT_URL = process.env.MASTODON_SERVER_URL;
   const API_TOKEN = process.env.MASTODON_API_TOKEN;
 
@@ -120,8 +98,33 @@ Central pressure: ${latest.minimum_central_pressure_mb} mb`
     text.push(`\n\n${metadataMap.get(latest.id).url}\n#${latest.id}`);
 
     if (isTootable) {
-      const client = new generator.Mastodon(TOOT_URL, API_TOKEN);
-      await client.postStatus(text.join(" "), {});
+      const body = new FormData();
+      body.set("status", text.join(" "));
+
+      const mediaPath = `./docs/${storm[0].id}.png`;
+      if (await exists(mediaPath)) {
+        const buffer = await fs.readFile(mediaPath);
+        const blob = new Blob([buffer], { type: "image/png" });
+
+        const mediaBody = new FormData();
+        mediaBody.set("file", blob, `${storm[0].id}.png`);
+
+        const upload = await fetch(`${TOOT_URL}/api/v2/media`, {
+          method: "POST",
+          headers: { Authorization: `Bearer ${API_TOKEN}` },
+          body: mediaBody,
+        }).then((response) => response.json());
+
+        if (upload.id) {
+          body.set("media_ids[]", upload.id);
+        }
+      }
+
+      await fetch(`${TOOT_URL}/api/v1/statuses`, {
+        method: "POST",
+        headers: { Authorization: `Bearer ${API_TOKEN}` },
+        body,
+      });
     }
   }
 };
