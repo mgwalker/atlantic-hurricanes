@@ -162,6 +162,9 @@ const makeMaps = async (force = false) => {
 
     console.log(`Updating map for storm ${id}`);
 
+    page.on("console", (msg) => {
+      console.log(msg);
+    });
     await page.evaluate((metadata) => {
       window.draw(metadata);
     }, metadata);

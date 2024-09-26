@@ -74,25 +74,29 @@
             }).addTo(map);
           });
 
-          const forecastTrack = [[lat, lon]];
+          // The overview image of all active storms won't have forecast tracks,
+          // so in that case, just skip this whole part.
+          if (forecast) {
+            const forecastTrack = [[lat, lon]];
 
-          forecast.forEach(({ lat, lon }) => {
-            L.circle([lat, lon], {
+            forecast.forEach(({ lat, lon }) => {
+              L.circle([lat, lon], {
+                color: "green",
+                fillColor: "green",
+                fillOpacity: 0.5,
+                opacity: 1,
+                radius: 10_000,
+              }).addTo(map);
+
+              forecastTrack.push([lat, lon]);
+            });
+
+            L.polyline(forecastTrack, {
               color: "green",
-              fillColor: "green",
-              fillOpacity: 0.5,
-              opacity: 1,
-              radius: 10_000,
+              dashArray: "1 20",
+              dashOffset: 0,
             }).addTo(map);
-
-            forecastTrack.push([lat, lon]);
-          });
-
-          L.polyline(forecastTrack, {
-            color: "green",
-            dashArray: "1 20",
-            dashOffset: 0,
-          }).addTo(map);
+          }
 
           if (windExtent.hurricane) {
             const meters = {
