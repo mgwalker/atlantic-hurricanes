@@ -1,3 +1,4 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL142024,2024-10-05T15:00:00.000Z,Tropical Depression,Fourteen,22.1,-95.1,35,1007,3,25,,
 AL142024,2024-10-05T17:25:00.000Z,Tropical Storm,Milton,22.3,-95.3,40,1006,3,15,,
+AL142024,2024-10-05T21:00:00.000Z,Tropical Storm,Milton,22.7,-95.5,40,1006,3,20,,
