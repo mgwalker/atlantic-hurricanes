@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL152024,2024-10-18T21:00:00.000Z,Potential Tropical Cyclone,Fifteen,17.5,-85,35,1005,7,300,,
+AL152024,2024-10-19T00:00:00.000Z,Potential Tropical Cyclone,Fifteen,17.5,-85.7,35,1005,7,290,,
