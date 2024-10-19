@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL162024,2024-10-19T15:00:00.000Z,Tropical Storm,Oscar,21.3,-70.2,40,1007,13,270,,
+AL162024,2024-10-19T18:00:00.000Z,Hurricane,Oscar,21.4,-70.6,80,989,12,270,5,45
