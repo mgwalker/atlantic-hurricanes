@@ -155,8 +155,8 @@ const makeMaps = async (force = false) => {
               lat,
               lon,
             }))
-            .filter(({ lat, lon }) => lat && lon)
             .map(({ lat, lon }) => ({ lat: +lat, lon: -+lon }))
+            .filter(({ lat, lon }) => lat && lon)
         );
       });
 
