@@ -1,3 +1,4 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL172024,2024-11-02T09:00:00.000Z,Tropical Storm,Patty,39.9,-34.4,50,986,7,105,,
 AL172024,2024-11-02T15:00:00.000Z,Tropical Storm,Patty,39,-32.4,65,982,13,130,,
+AL172024,2024-11-02T18:00:00.000Z,Tropical Storm,Patty,38.2,-31.1,65,982,13,125,,
