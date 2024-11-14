@@ -1,3 +1,4 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL192024,2024-11-13T21:00:00.000Z,Potential Tropical Cyclone,Nineteen,16.2,-79,30,1007,6,270,,
 AL192024,2024-11-14T00:00:00.000Z,Potential Tropical Cyclone,Nineteen,16.1,-79.5,30,1005,6,270,,
+AL192024,2024-11-14T03:00:00.000Z,Potential Tropical Cyclone,Nineteen,16.1,-80.2,30,1005,9,270,,
