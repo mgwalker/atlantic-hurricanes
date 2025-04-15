@@ -12,7 +12,7 @@ const promise = fetch(baseUrl)
 
     const [, links] = text.match(
       /(<td valign="top" headers="al">([\s\S]*?)<\/td>)/im
-    );
+    ) ?? [, ""];
 
     const urls = (links.match(/<a href="([^"]+)"/gi) || [])
       .map((l) => l.match(/href="([^"]+)"/i)[1])

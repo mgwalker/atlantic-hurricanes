@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-export const year = 2024;
+export const year = 2025;
 
 export const cachePath = join(
   dirname(fileURLToPath(import.meta.url)),
