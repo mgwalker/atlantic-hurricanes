@@ -1,0 +1,8 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL022025,2025-06-28T21:00:00.000Z,Tropical Depression,Two,19.3,-94.2,30,1011,7,290,,
+AL022025,2025-06-29T03:00:00.000Z,Tropical Depression,Two,19.7,-95.1,30,1011,8,295,,
+AL022025,2025-06-29T09:00:00.000Z,Tropical Depression,Two,19.9,-95.9,35,1010,9,290,,
+AL022025,2025-06-29T15:00:00.000Z,Tropical Storm,Barry,20.4,-96.2,40,1006,6,310,,
+AL022025,2025-06-29T21:00:00.000Z,Tropical Storm,Barry,21.2,-96.9,45,1006,9,315,,
+AL022025,2025-06-30T03:00:00.000Z,Tropical Depression,Barry,22,-97.8,35,1007,9,320,,
+AL022025,2025-06-30T09:00:00.000Z,Remnants Of,Barry,23,-99.2,30,1008,12,305,,

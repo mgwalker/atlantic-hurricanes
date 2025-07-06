@@ -1,0 +1,6 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL032025,2025-07-04T21:00:00.000Z,Tropical Depression,Three,30.8,-79,35,1012,2,360,,
+AL032025,2025-07-05T09:00:00.000Z,Tropical Depression,Three,30.8,-78.6,35,1010,2,30,,
+AL032025,2025-07-05T15:00:00.000Z,Tropical Storm,Chantal,31.1,-78.7,40,1007,1,10,,
+AL032025,2025-07-05T21:00:00.000Z,Tropical Storm,Chantal,31.9,-78.7,45,1006,7,360,,
+AL032025,2025-07-05T03:00:00.000Z,Tropical Depression,Three,30.6,-78.9,35,1012,NaN,0,,

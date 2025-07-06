@@ -1,0 +1,4 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL012025,2025-06-24T15:00:00.000Z,Tropical Storm,Andrea,36.6,-48.9,40,1014,17,60,,
+AL012025,2025-06-24T21:00:00.000Z,Tropical Storm,Andrea,37.9,-47.4,40,1015,20,50,,
+AL012025,2025-06-25T03:00:00.000Z,Post-tropical Cyclone,Andrea,38.7,-45.2,35,1015,20,60,,
