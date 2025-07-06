@@ -11,7 +11,7 @@ const promise = fetch(baseUrl)
     );
 
     const [, links] = text.match(
-      /(<td valign="top" headers="al">([\s\S]*?)<\/td>)/im
+      /(<td valign="top" headers="at">([\s\S]*?)<\/td>)/im
     ) ?? [, ""];
 
     const urls = (links.match(/<a href="([^"]+)"/gi) || [])
@@ -29,14 +29,15 @@ const promise = fetch(baseUrl)
 
       advisoryUrls.push(
         ...text
-          .match(/<td.+? headers="col2">([\s\S]*?)<\/td>/gim)
-          .map((block) =>
-            block
+          .match(/<td.+? headers="col1">([\s\S]*?)<\/td>/gim)
+          .map((block) => {
+            return block
               .match(/<a href="([^"]+)"/gi)
-              ?.map((a) => a.match(/<a href="([^"]+)"/i)[1])
-          )
+              ?.map((a) => a.match(/<a href="([^"]+)"/i)[1]);
+          })
           .filter((v) => Array.isArray(v))
           .flat()
+          .filter((v) => /\.public\./.test(v))
           .map((u) => `https://www.nhc.noaa.gov${u}`)
           .filter((u) => !visited.includes(u))
       );

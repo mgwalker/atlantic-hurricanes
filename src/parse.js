@@ -63,9 +63,12 @@ export default async (url) => {
     const [, pressureMb] = advisory.match(
       /minimum central pressure\D+(\d+) mb/i
     );
+
+    // A stationary storm doesn't match this regex, so if there's no match,
+    // just zero everything out.
     const [, directionDeg, speedMph] = advisory.match(
-      /present movement\D+(\d+) degrees at (\d+) mph/i
-    );
+      /present movement\D+ or (\d+) degrees at (\d+) mph/i
+    ) ?? [0, 0];
 
     const windExtent = {
       "hurricane wind extent (miles)": null,

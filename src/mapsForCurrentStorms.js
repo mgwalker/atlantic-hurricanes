@@ -123,7 +123,7 @@ const makeMaps = async (force = false) => {
       .then((response) => response.text())
       .then((text) =>
         text
-          .match(/<td.+? headers="col3">([\s\S]*?)<\/td>/gim)
+          .match(/<td.+? headers="col1">([\s\S]*?)<\/td>/gim)
           .map((block) =>
             block
               .match(/<a href="([^"]+)"/gi)
@@ -131,6 +131,9 @@ const makeMaps = async (force = false) => {
           )
           .filter((v) => Array.isArray(v))
           .flat()
+          // For some reason, forecast discussion URLs are sometimes spelled
+          // as discus instead of discuss.
+          .filter((v) => /\.discuss?\./.test(v))
           .map((u) => `https://www.nhc.noaa.gov${u}`)
           .pop()
       );
