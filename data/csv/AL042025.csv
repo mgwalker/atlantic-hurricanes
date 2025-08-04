@@ -1,0 +1,3 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL042025,2025-08-04T03:00:00.000Z,Tropical Storm,Dexter,34.3,-69.4,45,1002,12,70,,
+AL042025,2025-08-04T09:00:00.000Z,Tropical Storm,Dexter,34.6,-68.3,45,1002,12,65,,
