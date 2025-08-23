@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL062025,2025-08-23T21:00:00.000Z,Tropical Storm,Fernand,27.2,-61.4,40,1010,15,10,,
