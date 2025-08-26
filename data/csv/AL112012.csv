@@ -1,0 +1,22 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL112012,2012-08-28T21:00:00.000Z,Tropical Depression,Eleven,23.8,-43.9,35,1008,10,285,,
+AL112012,2012-08-29T03:00:00.000Z,Tropical Storm,Kirk,23.9,-45,45,1007,12,280,,
+AL112012,2012-08-29T09:00:00.000Z,Tropical Storm,Kirk,24.3,-45.3,45,1007,9,290,,
+AL112012,2012-08-29T15:00:00.000Z,Tropical Storm,Kirk,24.7,-46.9,45,1007,12,290,,
+AL112012,2012-08-29T21:00:00.000Z,Tropical Storm,Kirk,25.3,-47.6,50,1005,12,300,,
+AL112012,2012-08-30T03:00:00.000Z,Tropical Storm,Kirk,25.9,-48.3,60,1002,9,300,,
+AL112012,2012-08-30T09:00:00.000Z,Tropical Storm,Kirk,26.5,-49,65,997,10,310,,
+AL112012,2012-08-30T15:00:00.000Z,Hurricane,Kirk,27.2,-49.5,75,989,12,325,10,70
+AL112012,2012-08-30T21:00:00.000Z,Hurricane,Kirk,28.2,-50.3,90,982,13,330,15,70
+AL112012,2012-08-31T03:00:00.000Z,Hurricane,Kirk,29,-50.7,100,980,12,335,15,70
+AL112012,2012-08-31T09:00:00.000Z,Hurricane,Kirk,30.1,-50.9,105,970,12,345,15,70
+AL112012,2012-08-31T15:00:00.000Z,Hurricane,Kirk,31.2,-50.8,105,972,13,5,15,70
+AL112012,2012-08-31T21:00:00.000Z,Hurricane,Kirk,32.2,-50.2,90,981,13,10,15,70
+AL112012,2012-09-01T03:00:00.000Z,Hurricane,Kirk,33.9,-49.5,80,988,16,15,15,70
+AL112012,2012-09-01T09:00:00.000Z,Hurricane,Kirk,35.3,-48.2,75,989,23,35,15,70
+AL112012,2012-09-01T15:00:00.000Z,Tropical Storm,Kirk,37.4,-46.5,70,989,25,35,,
+AL112012,2012-09-01T21:00:00.000Z,Tropical Storm,Kirk,39.5,-44.3,65,997,29,35,,
+AL112012,2012-09-02T03:00:00.000Z,Tropical Storm,Kirk,41.2,-41.8,60,999,29,40,,
+AL112012,2012-09-02T09:00:00.000Z,Tropical Storm,Kirk,43.5,-39.2,50,1002,32,45,,
+AL112012,2012-09-02T15:00:00.000Z,Tropical Storm,Kirk,46.2,-36.5,50,1002,37,35,,
+AL112012,2012-09-02T21:00:00.000Z,Post-tropical Cyclone,Kirk,49.7,-32.6,50,1002,47,35,,

@@ -1,0 +1,8 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL042016,2016-06-19T21:00:00.000Z,Tropical Depression,Four,19.9,-94.7,35,1009,8,270,,
+AL042016,2016-06-20T03:00:00.000Z,Tropical Depression,Four,20.1,-95.4,35,1009,7,275,,
+AL042016,2016-06-20T09:00:00.000Z,Tropical Depression,Four,20.2,-95.9,35,1009,7,280,,
+AL042016,2016-06-20T15:00:00.000Z,Tropical Storm,Danielle,20.7,-96.3,45,1007,7,280,,
+AL042016,2016-06-20T21:00:00.000Z,Tropical Storm,Danielle,21.3,-97,45,1007,7,285,,
+AL042016,2016-06-21T03:00:00.000Z,Tropical Depression,Danielle,21.2,-97.8,35,1011,8,270,,
+AL042016,2016-06-21T09:00:00.000Z,Remnants Of,Danielle,20.6,-99.3,25,1014,13,250,,

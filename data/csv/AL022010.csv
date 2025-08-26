@@ -1,0 +1,5 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL022010,2010-07-08T03:00:00.000Z,Tropical Depression,Two,23.9,-93.9,35,1005,14,310,,
+AL022010,2010-07-08T09:00:00.000Z,Tropical Depression,Two,24.8,-95.2,35,1006,14,310,,
+AL022010,2010-07-08T15:00:00.000Z,Tropical Depression,Two,26,-97,35,1007,15,305,,
+AL022010,2010-07-08T21:00:00.000Z,Tropical Depression,Two,26.2,-98.4,30,1008,13,285,,

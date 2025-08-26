@@ -1,0 +1,10 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL062017,2017-07-31T10:00:00.000Z,Tropical Depression,Six,27.7,-83.5,35,1008,8,90,,
+AL062017,2017-07-31T12:00:00.000Z,Tropical Storm,Emily,27.7,-83.2,45,1006,8,95,,
+AL062017,2017-07-31T15:00:00.000Z,Tropical Storm,Emily,27.6,-82.8,45,1005,9,90,,
+AL062017,2017-07-31T21:00:00.000Z,Tropical Depression,Emily,27.8,-81.7,35,1007,12,70,,
+AL062017,2017-08-01T03:00:00.000Z,Tropical Depression,Emily,27.5,-81,30,1010,9,95,,
+AL062017,2017-08-01T09:00:00.000Z,Tropical Depression,Emily,28.3,-80.1,30,1011,12,65,,
+AL062017,2017-08-01T15:00:00.000Z,Tropical Depression,Emily,29.3,-78.9,30,1011,14,50,,
+AL062017,2017-08-01T21:00:00.000Z,Tropical Depression,Emily,30.3,-77.7,35,1010,15,50,,
+AL062017,2017-08-02T03:00:00.000Z,Post-tropical Cyclone,Emily,30.9,-78,35,1012,9,20,,

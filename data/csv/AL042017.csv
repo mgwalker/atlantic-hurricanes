@@ -1,0 +1,9 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL042017,2017-07-06T03:00:00.000Z,Tropical Depression,Four,12.8,-38.4,30,1009,14,290,,
+AL042017,2017-07-06T09:00:00.000Z,Tropical Depression,Four,13.2,-40,30,1008,17,290,,
+AL042017,2017-07-06T15:00:00.000Z,Tropical Depression,Four,13.2,-42.6,30,1008,21,285,,
+AL042017,2017-07-06T21:00:00.000Z,Tropical Depression,Four,13.1,-44.9,30,1009,23,275,,
+AL042017,2017-07-07T03:00:00.000Z,Tropical Depression,Four,13.4,-46.7,30,1012,23,280,,
+AL042017,2017-07-07T09:00:00.000Z,Tropical Depression,Four,15,-48.8,30,1011,22,285,,
+AL042017,2017-07-07T15:00:00.000Z,Tropical Depression,Four,15.6,-50.9,30,1011,21,290,,
+AL042017,2017-07-07T21:00:00.000Z,Remnants Of,Four,16.5,-52.5,25,1012,21,290,,

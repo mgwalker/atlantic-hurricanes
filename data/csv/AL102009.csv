@@ -1,0 +1,10 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL102009,2009-10-06T21:00:00.000Z,Tropical Storm,Henri,17.8,-54,40,1007,18,300,,
+AL102009,2009-10-07T03:00:00.000Z,Tropical Storm,Henri,18.4,-55.3,45,1006,17,290,,
+AL102009,2009-10-07T09:00:00.000Z,Tropical Storm,Henri,18.1,-56.1,50,1005,13,280,,
+AL102009,2009-10-07T15:00:00.000Z,Tropical Storm,Henri,18.9,-57.4,45,1007,15,290,,
+AL102009,2009-10-07T21:00:00.000Z,Tropical Storm,Henri,19.4,-58.6,40,1008,15,290,,
+AL102009,2009-10-08T03:00:00.000Z,Tropical Depression,Henri,19.5,-59.7,35,1009,15,285,,
+AL102009,2009-10-08T09:00:00.000Z,Tropical Depression,Henri,19.9,-61.3,35,1009,15,285,,
+AL102009,2009-10-08T15:00:00.000Z,Tropical Depression,Henri,19.8,-62,35,1010,13,280,,
+AL102009,2009-10-08T21:00:00.000Z,Tropical Depression,Henri,20.4,-62.2,30,1012,12,305,,

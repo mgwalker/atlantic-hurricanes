@@ -1,0 +1,8 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL112018,2018-09-22T03:00:00.000Z,Tropical Depression,Eleven,13.1,-53.4,35,1007,6,290,,
+AL112018,2018-09-22T09:00:00.000Z,Tropical Depression,Eleven,13,-53.5,35,1007,5,270,,
+AL112018,2018-09-22T15:00:00.000Z,Tropical Depression,Eleven,13.2,-53.8,30,1008,3,280,,
+AL112018,2018-09-22T21:00:00.000Z,Tropical Depression,Eleven,13.6,-53.9,30,1008,3,305,,
+AL112018,2018-09-23T03:00:00.000Z,Tropical Depression,Eleven,13.8,-54.5,30,1008,3,310,,
+AL112018,2018-09-23T09:00:00.000Z,Tropical Depression,Eleven,14.5,-55,30,1009,6,315,,
+AL112018,2018-09-23T15:00:00.000Z,Remnants Of,Eleven,14.5,-56,25,1009,12,280,,

@@ -1,0 +1,11 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL062009,2009-09-01T21:00:00.000Z,Tropical Storm,Erika,17.2,-57.3,50,1007,9,300,,
+AL062009,2009-09-02T03:00:00.000Z,Tropical Storm,Erika,17.5,-57.6,60,1004,8,300,,
+AL062009,2009-09-02T09:00:00.000Z,Tropical Storm,Erika,17,-59,50,1005,5,270,,
+AL062009,2009-09-02T15:00:00.000Z,Tropical Storm,Erika,16.5,-60.4,40,1008,10,275,,
+AL062009,2009-09-02T21:00:00.000Z,Tropical Storm,Erika,16.4,-61.7,40,1007,10,275,,
+AL062009,2009-09-03T03:00:00.000Z,Tropical Storm,Erika,16.1,-62.4,40,1008,9,270,,
+AL062009,2009-09-03T09:00:00.000Z,Tropical Storm,Erika,16.5,-62.7,40,1008,7,295,,
+AL062009,2009-09-03T15:00:00.000Z,Tropical Storm,Erika,16.9,-63.5,40,1010,8,300,,
+AL062009,2009-09-03T21:00:00.000Z,Tropical Depression,Erika,16.7,-65.3,35,1007,12,275,,
+AL062009,2009-09-04T03:00:00.000Z,Tropical Depression,Erika,16.8,-65.6,30,1009,7,280,,

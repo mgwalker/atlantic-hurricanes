@@ -1,0 +1,24 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL192010,2010-10-21T03:00:00.000Z,Tropical Depression,Nineteen,17.5,-81.1,35,1006,2,100,,
+AL192010,2010-10-21T09:00:00.000Z,Tropical Depression,Nineteen,17,-80.7,35,1005,3,135,,
+AL192010,2010-10-21T15:00:00.000Z,Tropical Storm,Richard,16.2,-80.4,40,1006,6,135,,
+AL192010,2010-10-21T21:00:00.000Z,Tropical Storm,Richard,16,-80.4,40,1005,3,155,,
+AL192010,2010-10-22T03:00:00.000Z,Tropical Storm,Richard,15.9,-80.5,40,1006,2,160,,
+AL192010,2010-10-22T09:00:00.000Z,Tropical Storm,Richard,16,-80.3,40,1005,NaN,0,,
+AL192010,2010-10-22T15:00:00.000Z,Tropical Storm,Richard,15.8,-81.1,40,1006,3,265,,
+AL192010,2010-10-22T21:00:00.000Z,Tropical Storm,Richard,16.2,-81.7,45,1005,5,270,,
+AL192010,2010-10-23T03:00:00.000Z,Tropical Storm,Richard,15.8,-82.4,45,1007,7,270,,
+AL192010,2010-10-23T09:00:00.000Z,Tropical Storm,Richard,15.8,-83.2,45,1006,8,270,,
+AL192010,2010-10-23T15:00:00.000Z,Tropical Storm,Richard,15.9,-83.5,65,1000,8,280,,
+AL192010,2010-10-23T21:00:00.000Z,Tropical Storm,Richard,16.1,-84.2,65,1000,8,280,,
+AL192010,2010-10-24T03:00:00.000Z,Tropical Storm,Richard,16.3,-84.6,70,995,7,285,,
+AL192010,2010-10-24T09:00:00.000Z,Tropical Storm,Richard,16.5,-85.5,70,995,10,285,,
+AL192010,2010-10-24T15:00:00.000Z,Hurricane,Richard,16.9,-86.9,85,991,12,290,15,105
+AL192010,2010-10-24T21:00:00.000Z,Hurricane,Richard,17.2,-88,90,981,13,285,15,105
+AL192010,2010-10-25T03:00:00.000Z,Hurricane,Richard,17.3,-88.6,90,981,9,285,15,105
+AL192010,2010-10-25T09:00:00.000Z,Tropical Storm,Richard,17.6,-89.6,65,993,12,285,,
+AL192010,2010-10-25T15:00:00.000Z,Tropical Depression,Richard,17.8,-90.2,35,1006,8,285,,
+AL192010,2010-10-25T21:00:00.000Z,Tropical Depression,Richard,18.1,-91.2,35,1005,9,290,,
+AL192010,2010-10-26T03:00:00.000Z,Tropical Depression,Richard,18.4,-91.6,30,1004,7,295,,
+AL192010,2010-10-26T09:00:00.000Z,Tropical Depression,Richard,19.4,-92.5,30,1005,10,310,,
+AL192010,2010-10-26T15:00:00.000Z,Tropical Depression,Richard,20.4,-93.1,30,1004,12,330,,

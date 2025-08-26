@@ -1,0 +1,17 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL132017,2017-09-05T21:00:00.000Z,Tropical Depression,Thirteen,22.4,-96.7,35,1008,2,90,,
+AL132017,2017-09-06T03:00:00.000Z,Tropical Depression,Thirteen,22.2,-96.4,35,1008,2,100,,
+AL132017,2017-09-06T09:00:00.000Z,Tropical Storm,Katia,22.1,-96.3,40,1006,2,110,,
+AL132017,2017-09-06T15:00:00.000Z,Tropical Storm,Katia,21.7,-95.9,45,1004,5,120,,
+AL132017,2017-09-06T21:00:00.000Z,Hurricane,Katia,21.7,-95.1,75,992,3,135,15,60
+AL132017,2017-09-07T03:00:00.000Z,Hurricane,Katia,21.7,-94.8,80,989,2,105,,
+AL132017,2017-09-07T09:00:00.000Z,Hurricane,Katia,21.5,-94.5,80,989,NaN,0,10,70
+AL132017,2017-09-07T15:00:00.000Z,Hurricane,Katia,21.6,-94.6,80,980,NaN,0,10,45
+AL132017,2017-09-07T21:00:00.000Z,Hurricane,Katia,21.6,-94.6,80,980,NaN,0,,
+AL132017,2017-09-08T03:00:00.000Z,Hurricane,Katia,21.5,-95.1,85,982,3,265,10,60
+AL132017,2017-09-08T09:00:00.000Z,Hurricane,Katia,21.3,-95.4,90,977,3,250,10,60
+AL132017,2017-09-08T15:00:00.000Z,Hurricane,Katia,21,-95.8,100,975,5,240,25,70
+AL132017,2017-09-08T21:00:00.000Z,Hurricane,Katia,21,-96.5,105,972,7,250,25,70
+AL132017,2017-09-09T03:00:00.000Z,Hurricane,Katia,20.6,-97.2,75,988,7,250,15,65
+AL132017,2017-09-09T09:00:00.000Z,Tropical Storm,Katia,20.3,-97.5,40,1001,2,270,,
+AL132017,2017-09-09T15:00:00.000Z,Remnants Of,Katia,20,-97.9,35,1004,5,240,,

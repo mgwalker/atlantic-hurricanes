@@ -1,0 +1,8 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL152019,2019-10-14T21:00:00.000Z,Tropical Depression,Fifteen,13.2,-20.2,35,1006,8,310,,
+AL152019,2019-10-15T03:00:00.000Z,Tropical Depression,Fifteen,14.5,-20.8,35,1006,10,320,,
+AL152019,2019-10-15T09:00:00.000Z,Tropical Depression,Fifteen,15.6,-20.9,35,1006,12,325,,
+AL152019,2019-10-15T15:00:00.000Z,Tropical Depression,Fifteen,15.6,-21.6,35,1006,9,325,,
+AL152019,2019-10-15T21:00:00.000Z,Tropical Depression,Fifteen,16.8,-22.9,35,1007,10,315,,
+AL152019,2019-10-16T03:00:00.000Z,Tropical Depression,Fifteen,16.8,-23.7,35,1009,10,300,,
+AL152019,2019-10-16T09:00:00.000Z,Remnants Of,Fifteen,17.3,-24.1,30,1009,8,305,,

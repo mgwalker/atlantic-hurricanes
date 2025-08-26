@@ -1,0 +1,23 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL022018,2018-07-05T15:00:00.000Z,Tropical Depression,Two,10.2,-41.4,35,1009,16,270,,
+AL022018,2018-07-05T21:00:00.000Z,Tropical Storm,Beryl,10.3,-42.8,50,1004,16,275,,
+AL022018,2018-07-06T03:00:00.000Z,Tropical Storm,Beryl,10.4,-44,65,999,14,275,,
+AL022018,2018-07-06T09:00:00.000Z,Hurricane,Beryl,10.6,-45.1,75,995,14,275,,
+AL022018,2018-07-06T15:00:00.000Z,Hurricane,Beryl,10.7,-46.5,80,994,15,275,,
+AL022018,2018-07-06T21:00:00.000Z,Hurricane,Beryl,10.6,-47.8,80,994,15,270,10,35
+AL022018,2018-07-07T03:00:00.000Z,Hurricane,Beryl,10.9,-48.9,80,994,14,280,10,35
+AL022018,2018-07-07T09:00:00.000Z,Hurricane,Beryl,11.1,-49.8,75,995,14,285,,
+AL022018,2018-07-07T15:00:00.000Z,Tropical Storm,Beryl,12.1,-51.1,65,999,14,295,,
+AL022018,2018-07-07T21:00:00.000Z,Tropical Storm,Beryl,12.7,-52.7,50,1003,17,295,,
+AL022018,2018-07-08T03:00:00.000Z,Tropical Storm,Beryl,13.1,-54.3,45,1005,18,290,,
+AL022018,2018-07-08T09:00:00.000Z,Tropical Storm,Beryl,13.7,-56,45,1005,20,290,,
+AL022018,2018-07-08T15:00:00.000Z,Tropical Storm,Beryl,14.4,-57.9,45,1007,23,290,,
+AL022018,2018-07-08T21:00:00.000Z,Remnants Of,Beryl,15.2,-60.3,45,1007,26,290,,
+AL022018,2018-07-09T03:00:00.000Z,Remnants Of,Beryl,15.8,-62.4,40,1010,26,290,,
+AL022018,2018-07-14T17:00:00.000Z,Tropical Storm,Beryl,36.4,-65.7,40,1010,12,35,,
+AL022018,2018-07-14T21:00:00.000Z,Tropical Storm,Beryl,37.3,-65.2,40,1010,14,35,,
+AL022018,2018-07-15T03:00:00.000Z,Tropical Storm,Beryl,38.1,-65.4,40,1010,13,25,,
+AL022018,2018-07-15T09:00:00.000Z,Tropical Storm,Beryl,38.3,-65.2,40,1010,3,50,,
+AL022018,2018-07-15T15:00:00.000Z,Tropical Storm,Beryl,38.1,-64.7,40,1010,3,75,,
+AL022018,2018-07-15T21:00:00.000Z,Tropical Storm,Beryl,38.2,-63.8,40,1010,6,75,,
+AL022018,2018-07-16T03:00:00.000Z,Post-tropical Cyclone,Beryl,38.6,-62.4,35,1011,13,65,,

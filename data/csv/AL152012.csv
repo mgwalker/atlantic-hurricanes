@@ -1,0 +1,10 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL152012,2012-10-03T15:00:00.000Z,Tropical Depression,Fifteen,17.3,-41.5,35,1008,15,320,,
+AL152012,2012-10-03T21:00:00.000Z,Tropical Depression,Fifteen,18.6,-42,35,1008,14,330,,
+AL152012,2012-10-04T03:00:00.000Z,Tropical Storm,Oscar,19.3,-42.2,40,1006,12,335,,
+AL152012,2012-10-04T09:00:00.000Z,Tropical Storm,Oscar,20,-42.5,40,1006,9,345,,
+AL152012,2012-10-04T15:00:00.000Z,Tropical Storm,Oscar,20.6,-41.7,45,1001,9,20,,
+AL152012,2012-10-04T21:00:00.000Z,Tropical Storm,Oscar,21.3,-41,45,1000,12,35,,
+AL152012,2012-10-05T03:00:00.000Z,Tropical Storm,Oscar,22,-40.2,50,998,12,40,,
+AL152012,2012-10-05T09:00:00.000Z,Tropical Storm,Oscar,23,-38.9,50,997,15,50,,
+AL152012,2012-10-05T15:00:00.000Z,Remnants Of,Oscar,24.1,-37.1,40,1000,17,45,,

@@ -1,0 +1,8 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL032015,2015-07-13T17:00:00.000Z,Tropical Storm,Claudette,37.4,-68.1,50,1004,15,45,,
+AL032015,2015-07-13T21:00:00.000Z,Tropical Storm,Claudette,38.1,-66.9,50,1004,17,45,,
+AL032015,2015-07-14T03:00:00.000Z,Tropical Storm,Claudette,38.9,-64.9,50,1004,20,60,,
+AL032015,2015-07-14T09:00:00.000Z,Tropical Storm,Claudette,40.1,-63.3,45,1004,20,50,,
+AL032015,2015-07-14T15:00:00.000Z,Tropical Storm,Claudette,41.4,-61.3,40,1005,21,50,,
+AL032015,2015-07-14T21:00:00.000Z,Tropical Storm,Claudette,42.5,-59.8,45,1005,21,50,,
+AL032015,2015-07-15T03:00:00.000Z,Post-tropical Cyclone,Claudette,43.8,-57.8,45,1004,21,45,,

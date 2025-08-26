@@ -1,0 +1,15 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL122015,2015-11-09T03:00:00.000Z,Tropical Depression,Twelve,23,-73,35,1010,14,305,,
+AL122015,2015-11-09T09:00:00.000Z,Tropical Depression,Twelve,23.6,-74.6,35,1010,15,295,,
+AL122015,2015-11-09T15:00:00.000Z,Tropical Storm,Kate,24.5,-75.3,45,1008,15,305,,
+AL122015,2015-11-09T21:00:00.000Z,Tropical Storm,Kate,25.5,-76.1,45,1008,14,315,,
+AL122015,2015-11-10T03:00:00.000Z,Tropical Storm,Kate,27.2,-76,60,1005,16,360,,
+AL122015,2015-11-10T09:00:00.000Z,Tropical Storm,Kate,28.8,-75.8,60,1003,17,10,,
+AL122015,2015-11-10T15:00:00.000Z,Tropical Storm,Kate,30.2,-74.7,70,999,21,35,,
+AL122015,2015-11-10T21:00:00.000Z,Tropical Storm,Kate,32.2,-72.7,70,999,30,50,,
+AL122015,2015-11-11T03:00:00.000Z,Tropical Storm,Kate,33.9,-69.5,70,998,35,55,,
+AL122015,2015-11-11T09:00:00.000Z,Hurricane,Kate,36,-65.7,75,996,40,55,25,90
+AL122015,2015-11-11T15:00:00.000Z,Hurricane,Kate,36.8,-60.5,75,985,45,65,35,205
+AL122015,2015-11-11T21:00:00.000Z,Hurricane,Kate,38.2,-56.4,75,985,44,65,45,240
+AL122015,2015-11-12T03:00:00.000Z,Tropical Storm,Kate,40.1,-52.3,70,983,41,65,,
+AL122015,2015-11-12T09:00:00.000Z,Post-tropical Cyclone,Kate,40.7,-50.8,70,983,26,60,,

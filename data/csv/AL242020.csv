@@ -1,0 +1,4 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL242020,2020-09-18T16:30:00.000Z,Tropical Storm,Alpha,39.9,-9.3,50,999,17,35,,
+AL242020,2020-09-18T21:00:00.000Z,Tropical Storm,Alpha,40.4,-8.4,45,998,17,40,,
+AL242020,2020-09-19T03:00:00.000Z,Post-tropical Cyclone,Alpha,40.9,-6.9,30,1005,16,50,,

@@ -1,0 +1,13 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL032012,2012-06-19T21:00:00.000Z,Tropical Storm,Chris,39.3,-57.7,45,1005,8,90,,
+AL032012,2012-06-20T03:00:00.000Z,Tropical Storm,Chris,38.8,-56,45,1005,13,110,,
+AL032012,2012-06-20T09:00:00.000Z,Tropical Storm,Chris,38.2,-53.5,45,1005,17,100,,
+AL032012,2012-06-20T15:00:00.000Z,Tropical Storm,Chris,38.1,-51.3,50,1000,22,90,,
+AL032012,2012-06-20T21:00:00.000Z,Tropical Storm,Chris,38.5,-49,60,997,21,85,,
+AL032012,2012-06-21T03:00:00.000Z,Tropical Storm,Chris,38.9,-46.4,60,994,22,75,,
+AL032012,2012-06-21T09:00:00.000Z,Tropical Storm,Chris,39.9,-44.8,60,995,20,65,,
+AL032012,2012-06-21T15:00:00.000Z,Hurricane,Chris,41.1,-43.2,75,987,20,45,25,105
+AL032012,2012-06-21T21:00:00.000Z,Tropical Storm,Chris,42.4,-42.9,70,990,14,15,,
+AL032012,2012-06-22T03:00:00.000Z,Tropical Storm,Chris,43.6,-42.9,65,987,14,0,,
+AL032012,2012-06-22T09:00:00.000Z,Tropical Storm,Chris,44.8,-44.5,50,989,14,315,,
+AL032012,2012-06-22T15:00:00.000Z,Post-tropical Cyclone,Chris,44.6,-46.9,45,990,16,255,,

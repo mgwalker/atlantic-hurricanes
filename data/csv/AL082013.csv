@@ -1,0 +1,5 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL082013,2013-09-06T18:30:00.000Z,Tropical Depression,Eight,22.3,-97.8,35,1009,6,250,,
+AL082013,2013-09-06T21:00:00.000Z,Tropical Depression,Eight,22.2,-98.2,35,1009,6,250,,
+AL082013,2013-09-07T03:00:00.000Z,Tropical Depression,Eight,21.7,-98.8,30,1009,8,235,,
+AL082013,2013-09-07T09:00:00.000Z,Post-tropical Cyclone,Eight,21.4,-99.3,30,1009,7,250,,

@@ -1,0 +1,13 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL182019,2019-10-25T21:00:00.000Z,Tropical Storm,Pablo,35.8,-32.2,45,990,10,115,,
+AL182019,2019-10-26T03:00:00.000Z,Tropical Storm,Pablo,35.5,-31.1,45,990,9,120,,
+AL182019,2019-10-26T09:00:00.000Z,Tropical Storm,Pablo,35.3,-30.3,45,990,9,110,,
+AL182019,2019-10-26T15:00:00.000Z,Tropical Storm,Pablo,35.2,-28.1,50,989,16,90,,
+AL182019,2019-10-26T21:00:00.000Z,Tropical Storm,Pablo,36.3,-25.6,60,987,25,55,,
+AL182019,2019-10-27T03:00:00.000Z,Tropical Storm,Pablo,38.2,-22.6,65,985,29,50,,
+AL182019,2019-10-27T09:00:00.000Z,Tropical Storm,Pablo,40.7,-20,70,983,40,45,,
+AL182019,2019-10-27T15:00:00.000Z,Hurricane,Pablo,42.8,-18.3,75,983,32,30,10,80
+AL182019,2019-10-27T21:00:00.000Z,Hurricane,Pablo,44.7,-17.2,80,977,25,20,10,80
+AL182019,2019-10-28T03:00:00.000Z,Tropical Storm,Pablo,46,-17.1,70,982,14,360,,
+AL182019,2019-10-28T09:00:00.000Z,Tropical Storm,Pablo,46.6,-17.5,50,990,5,360,,
+AL182019,2019-10-28T15:00:00.000Z,Post-tropical Cyclone,Pablo,46.8,-17.7,40,995,5,360,,

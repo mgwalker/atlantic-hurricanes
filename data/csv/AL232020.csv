@@ -1,0 +1,12 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL232020,2020-09-18T15:00:00.000Z,Tropical Storm,Wilfred,11.9,-32.4,40,1008,17,285,,
+AL232020,2020-09-18T21:00:00.000Z,Tropical Storm,Wilfred,12.5,-34.4,40,1008,18,285,,
+AL232020,2020-09-19T03:00:00.000Z,Tropical Storm,Wilfred,12.8,-36,40,1008,18,285,,
+AL232020,2020-09-19T09:00:00.000Z,Tropical Storm,Wilfred,13.1,-36.9,40,1007,17,285,,
+AL232020,2020-09-19T15:00:00.000Z,Tropical Storm,Wilfred,13.4,-38.1,40,1007,14,285,,
+AL232020,2020-09-19T21:00:00.000Z,Tropical Storm,Wilfred,14,-39.2,40,1007,14,290,,
+AL232020,2020-09-20T03:00:00.000Z,Tropical Storm,Wilfred,14.5,-40.5,40,1007,16,295,,
+AL232020,2020-09-20T09:00:00.000Z,Tropical Storm,Wilfred,15,-42,40,1007,16,295,,
+AL232020,2020-09-20T15:00:00.000Z,Tropical Depression,Wilfred,15.7,-44.2,35,1008,20,290,,
+AL232020,2020-09-20T21:00:00.000Z,Tropical Depression,Wilfred,15.9,-45.8,35,1008,20,285,,
+AL232020,2020-09-21T03:00:00.000Z,Remnants Of,Wilfred,15.9,-47.4,35,1008,17,275,,

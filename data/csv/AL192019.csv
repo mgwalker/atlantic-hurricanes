@@ -1,0 +1,8 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL192019,2019-10-30T21:00:00.000Z,Tropical Storm,Rebekah,38.3,-40.7,45,987,13,80,,
+AL192019,2019-10-31T03:00:00.000Z,Tropical Storm,Rebekah,38.5,-38.8,45,987,17,80,,
+AL192019,2019-10-31T09:00:00.000Z,Tropical Storm,Rebekah,39.7,-36.7,45,987,21,65,,
+AL192019,2019-10-31T15:00:00.000Z,Tropical Storm,Rebekah,40.7,-35.3,45,990,18,70,,
+AL192019,2019-10-31T21:00:00.000Z,Tropical Storm,Rebekah,41.1,-33.5,45,990,20,85,,
+AL192019,2019-11-01T03:00:00.000Z,Tropical Storm,Rebekah,40.8,-31.3,40,995,21,90,,
+AL192019,2019-11-01T09:00:00.000Z,Post-tropical Cyclone,Rebekah,40.6,-29,35,1005,20,95,,

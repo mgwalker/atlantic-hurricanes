@@ -1,0 +1,9 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL102011,2011-08-25T09:00:00.000Z,Tropical Depression,Ten,12.4,-30.4,35,1007,13,285,,
+AL102011,2011-08-25T15:00:00.000Z,Tropical Depression,Ten,13.3,-31.8,35,1010,12,290,,
+AL102011,2011-08-25T21:00:00.000Z,Tropical Depression,Ten,13.8,-32.4,35,1009,9,300,,
+AL102011,2011-08-26T03:00:00.000Z,Tropical Depression,Ten,14.1,-33.1,35,1009,9,295,,
+AL102011,2011-08-26T09:00:00.000Z,Tropical Depression,Ten,14.5,-33.7,35,1009,9,295,,
+AL102011,2011-08-26T15:00:00.000Z,Tropical Depression,Ten,14.9,-34.2,35,1009,8,305,,
+AL102011,2011-08-26T21:00:00.000Z,Tropical Depression,Ten,15.6,-34.3,35,1009,8,315,,
+AL102011,2011-08-27T03:00:00.000Z,Remnants Of,Ten,16,-34,30,1010,7,330,,

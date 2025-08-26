@@ -1,0 +1,22 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL282020,2020-10-24T21:00:00.000Z,Tropical Depression,Twenty,18.7,-83,30,1005,2,345,,
+AL282020,2020-10-25T03:00:00.000Z,Tropical Depression,Twenty,18.9,-83.1,35,1004,NaN,0,,
+AL282020,2020-10-25T09:00:00.000Z,Tropical Storm,Zeta,17.7,-83.5,40,1005,1,360,,
+AL282020,2020-10-25T15:00:00.000Z,Tropical Storm,Zeta,17.8,-83.8,40,1005,NaN,0,,
+AL282020,2020-10-25T21:00:00.000Z,Tropical Storm,Zeta,17.7,-83.4,50,999,NaN,0,,
+AL282020,2020-10-26T03:00:00.000Z,Tropical Storm,Zeta,18.1,-83.8,60,997,2,330,,
+AL282020,2020-10-26T09:00:00.000Z,Tropical Storm,Zeta,18.7,-84.3,70,990,9,315,,
+AL282020,2020-10-26T15:00:00.000Z,Tropical Storm,Zeta,19.1,-85.3,70,992,10,305,,
+AL282020,2020-10-26T21:00:00.000Z,Hurricane,Zeta,19.5,-86,80,981,10,305,25,115
+AL282020,2020-10-27T03:00:00.000Z,Hurricane,Zeta,20.2,-87.1,80,982,13,305,45,140
+AL282020,2020-10-27T09:00:00.000Z,Tropical Storm,Zeta,21,-88.4,70,984,14,305,,
+AL282020,2020-10-27T15:00:00.000Z,Tropical Storm,Zeta,21.6,-89.5,65,985,14,305,,
+AL282020,2020-10-27T21:00:00.000Z,Tropical Storm,Zeta,22.7,-90.3,65,984,14,310,,
+AL282020,2020-10-28T03:00:00.000Z,Tropical Storm,Zeta,23.8,-91.2,70,990,15,325,,
+AL282020,2020-10-28T09:00:00.000Z,Hurricane,Zeta,25.1,-91.8,85,982,17,345,35,150
+AL282020,2020-10-28T15:00:00.000Z,Hurricane,Zeta,26.9,-91.7,90,976,18,10,35,150
+AL282020,2020-10-28T21:00:00.000Z,Hurricane,Zeta,29.2,-90.6,110,970,24,25,35,150
+AL282020,2020-10-29T03:00:00.000Z,Hurricane,Zeta,31.5,-88.7,80,979,31,40,25,150
+AL282020,2020-10-29T09:00:00.000Z,Tropical Storm,Zeta,34,-85.5,60,988,39,40,,
+AL282020,2020-10-29T15:00:00.000Z,Tropical Storm,Zeta,36.5,-81.5,50,990,48,55,,
+AL282020,2020-10-29T21:00:00.000Z,Post-tropical Cyclone,Zeta,38.8,-75.3,50,992,55,60,,

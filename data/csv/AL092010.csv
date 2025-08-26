@@ -1,0 +1,7 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL092010,2010-09-01T15:00:00.000Z,Tropical Depression,Nine,12.4,-35.8,35,1006,15,275,,
+AL092010,2010-09-01T21:00:00.000Z,Tropical Storm,Gaston,12.9,-37,40,1005,15,280,,
+AL092010,2010-09-02T03:00:00.000Z,Tropical Storm,Gaston,13.4,-37.7,40,1005,12,280,,
+AL092010,2010-09-02T09:00:00.000Z,Tropical Storm,Gaston,13.5,-38.2,40,1005,9,280,,
+AL092010,2010-09-02T15:00:00.000Z,Tropical Depression,Gaston,14,-38.9,35,1008,7,290,,
+AL092010,2010-09-02T21:00:00.000Z,Tropical Depression,Gaston,13.5,-39.5,30,1009,5,270,,

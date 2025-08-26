@@ -1,0 +1,13 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL012013,2013-06-05T22:00:00.000Z,Tropical Storm,Andrea,25.3,-86.5,40,1002,3,360,,
+AL012013,2013-06-06T03:00:00.000Z,Tropical Storm,Andrea,26,-86.3,40,1002,6,10,,
+AL012013,2013-06-06T09:00:00.000Z,Tropical Storm,Andrea,27,-85.9,60,997,13,20,,
+AL012013,2013-06-06T15:00:00.000Z,Tropical Storm,Andrea,28.2,-84.3,60,997,15,35,,
+AL012013,2013-06-06T21:00:00.000Z,Tropical Storm,Andrea,29.5,-83.4,65,993,17,40,,
+AL012013,2013-06-07T03:00:00.000Z,Tropical Storm,Andrea,30.3,-82.4,45,993,15,45,,
+AL012013,2013-06-07T09:00:00.000Z,Tropical Storm,Andrea,32.4,-80.7,45,996,28,40,,
+AL012013,2013-06-07T15:00:00.000Z,Tropical Storm,Andrea,34.4,-79.5,45,996,28,35,,
+AL012013,2013-06-07T21:00:00.000Z,Post-tropical Cyclone,Andrea,36.1,-77.8,45,996,28,40,,
+AL012013,2013-06-08T03:00:00.000Z,Post-tropical Cyclone,Andrea,38.5,-75,45,997,35,45,,
+AL012013,2013-06-08T09:00:00.000Z,Post-tropical Cyclone,Andrea,40.9,-72.5,45,998,35,45,,
+AL012013,2013-06-08T15:00:00.000Z,Post-tropical Cyclone,Andrea,43.6,-68.8,45,1000,39,50,,

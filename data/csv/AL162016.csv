@@ -1,0 +1,24 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL162016,2016-11-21T09:00:00.000Z,Tropical Depression,Sixteen,11.5,-79.4,35,1002,NaN,0,,
+AL162016,2016-11-21T15:00:00.000Z,Tropical Depression,Sixteen,11.5,-79.3,35,1002,NaN,0,,
+AL162016,2016-11-21T18:00:00.000Z,Tropical Storm,Otto,11.5,-79.3,50,1000,NaN,0,,
+AL162016,2016-11-21T21:00:00.000Z,Tropical Storm,Otto,11.3,-79.2,50,1000,NaN,0,,
+AL162016,2016-11-22T03:00:00.000Z,Tropical Storm,Otto,10.9,-79.1,60,998,2,180,,
+AL162016,2016-11-22T09:00:00.000Z,Tropical Storm,Otto,10.7,-79,60,998,NaN,0,,
+AL162016,2016-11-22T15:00:00.000Z,Tropical Storm,Otto,10.4,-79.2,70,986,NaN,0,,
+AL162016,2016-11-22T21:00:00.000Z,Hurricane,Otto,10.5,-79.6,75,984,2,275,10,70
+AL162016,2016-11-23T03:00:00.000Z,Hurricane,Otto,10.7,-79.8,75,988,3,285,10,60
+AL162016,2016-11-23T09:00:00.000Z,Hurricane,Otto,10.9,-80.4,75,988,5,290,10,60
+AL162016,2016-11-23T15:00:00.000Z,Tropical Storm,Otto,11.1,-80.7,70,994,5,290,,
+AL162016,2016-11-23T21:00:00.000Z,Tropical Storm,Otto,11.2,-81.3,70,994,7,280,,
+AL162016,2016-11-24T03:00:00.000Z,Hurricane,Otto,11.2,-82.2,85,981,9,275,10,70
+AL162016,2016-11-24T09:00:00.000Z,Hurricane,Otto,11.2,-82.9,85,981,8,270,10,70
+AL162016,2016-11-24T15:00:00.000Z,Hurricane,Otto,11,-83.4,110,975,9,270,15,70
+AL162016,2016-11-24T21:00:00.000Z,Hurricane,Otto,11,-84.3,100,979,12,270,15,70
+AL162016,2016-11-25T03:00:00.000Z,Tropical Storm,Otto,10.9,-85.6,70,990,13,265,,
+AL162016,2016-11-25T15:00:00.000Z,Tropical Storm,Otto,10.3,-88.2,65,994,16,265,,
+AL162016,2016-11-25T21:00:00.000Z,Tropical Storm,Otto,9.9,-89.3,60,996,16,260,,
+AL162016,2016-11-26T03:00:00.000Z,Tropical Storm,Otto,9.7,-90.7,60,997,16,255,,
+AL162016,2016-11-26T09:00:00.000Z,Tropical Storm,Otto,9.2,-92.5,50,1000,18,260,,
+AL162016,2016-11-26T15:00:00.000Z,Tropical Storm,Otto,9,-94,45,1000,16,260,,
+AL162016,2016-11-26T21:00:00.000Z,Remnants Of,Otto,8.7,-96,35,1008,16,260,,

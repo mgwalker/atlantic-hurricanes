@@ -1,0 +1,7 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL062011,2011-08-12T21:00:00.000Z,Tropical Depression,Six,36,-63.9,35,1011,16,65,,
+AL062011,2011-08-13T03:00:00.000Z,Tropical Depression,Six,36.6,-61.3,35,1010,22,65,,
+AL062011,2011-08-13T09:00:00.000Z,Tropical Storm,Franklin,37.9,-60.4,40,1006,20,55,,
+AL062011,2011-08-13T15:00:00.000Z,Tropical Storm,Franklin,39,-57.9,45,1004,22,60,,
+AL062011,2011-08-13T21:00:00.000Z,Tropical Storm,Franklin,39.7,-55.5,40,1004,22,70,,
+AL062011,2011-08-14T03:00:00.000Z,Post-tropical Cyclone,Franklin,40.5,-51.8,40,1005,26,65,,

@@ -1,0 +1,13 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL032013,2013-07-08T03:00:00.000Z,Tropical Storm,Chantal,9.8,-47.2,40,1008,26,275,,
+AL032013,2013-07-08T09:00:00.000Z,Tropical Storm,Chantal,10.4,-49.5,40,1007,26,280,,
+AL032013,2013-07-08T15:00:00.000Z,Tropical Storm,Chantal,10.9,-51.7,45,1005,25,285,,
+AL032013,2013-07-08T21:00:00.000Z,Tropical Storm,Chantal,11.8,-53.9,45,1005,26,290,,
+AL032013,2013-07-09T03:00:00.000Z,Tropical Storm,Chantal,12.4,-56.1,50,1010,26,285,,
+AL032013,2013-07-09T09:00:00.000Z,Tropical Storm,Chantal,13.3,-58.4,50,1010,26,290,,
+AL032013,2013-07-09T15:00:00.000Z,Tropical Storm,Chantal,14.4,-61.5,60,1006,29,295,,
+AL032013,2013-07-09T21:00:00.000Z,Tropical Storm,Chantal,15.2,-63.7,65,1006,26,295,,
+AL032013,2013-07-10T03:00:00.000Z,Tropical Storm,Chantal,15.3,-66.2,60,1009,28,285,,
+AL032013,2013-07-10T09:00:00.000Z,Tropical Storm,Chantal,16.5,-69.5,45,1011,29,285,,
+AL032013,2013-07-10T15:00:00.000Z,Tropical Storm,Chantal,16.5,-72,45,1011,29,280,,
+AL032013,2013-07-10T21:00:00.000Z,Remnants Of,Chantal,16.5,-73.7,45,1012,23,270,,

@@ -1,0 +1,6 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL012019,2019-05-20T22:30:00.000Z,Tropical Storm,Andrea,28.8,-68.7,40,1006,14,350,,
+AL012019,2019-05-21T03:00:00.000Z,Tropical Storm,Andrea,29.5,-68.7,40,1006,12,360,,
+AL012019,2019-05-21T09:00:00.000Z,Tropical Storm,Andrea,30,-69,40,1007,6,360,,
+AL012019,2019-05-21T15:00:00.000Z,Tropical Depression,Andrea,30.8,-69.2,35,1009,8,360,,
+AL012019,2019-05-21T21:00:00.000Z,Post-tropical Cyclone,Andrea,30.8,-68.3,35,1009,8,70,,

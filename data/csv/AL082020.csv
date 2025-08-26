@@ -1,0 +1,19 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL082020,2020-07-23T03:00:00.000Z,Tropical Depression,Eight,25.9,-88.2,30,1009,6,285,,
+AL082020,2020-07-23T09:00:00.000Z,Tropical Depression,Eight,26,-90,30,1009,9,290,,
+AL082020,2020-07-23T15:00:00.000Z,Tropical Depression,Eight,26.3,-90.7,35,1007,9,285,,
+AL082020,2020-07-23T21:00:00.000Z,Tropical Depression,Eight,26.1,-90.7,35,1006,8,285,,
+AL082020,2020-07-24T03:00:00.000Z,Tropical Storm,Hanna,26.2,-91.4,40,1002,7,285,,
+AL082020,2020-07-24T09:00:00.000Z,Tropical Storm,Hanna,26.7,-92.4,40,1002,9,290,,
+AL082020,2020-07-24T15:00:00.000Z,Tropical Storm,Hanna,27.2,-93.2,45,1000,9,285,,
+AL082020,2020-07-24T21:00:00.000Z,Tropical Storm,Hanna,27.3,-94.3,50,999,10,275,,
+AL082020,2020-07-25T03:00:00.000Z,Tropical Storm,Hanna,27.1,-94.8,65,992,8,270,,
+AL082020,2020-07-25T09:00:00.000Z,Tropical Storm,Hanna,27,-95.8,70,988,9,265,,
+AL082020,2020-07-25T15:00:00.000Z,Hurricane,Hanna,27.1,-96.3,80,978,7,270,25,90
+AL082020,2020-07-25T21:00:00.000Z,Hurricane,Hanna,26.8,-97.2,90,973,8,255,30,90
+AL082020,2020-07-26T03:00:00.000Z,Hurricane,Hanna,26.6,-98,75,979,9,250,,
+AL082020,2020-07-26T09:00:00.000Z,Tropical Storm,Hanna,26.3,-98.9,60,988,9,250,,
+AL082020,2020-07-26T15:00:00.000Z,Tropical Storm,Hanna,26.1,-99.7,45,995,9,250,,
+AL082020,2020-07-26T21:00:00.000Z,Tropical Depression,Hanna,25.6,-100.6,35,1002,9,245,,
+AL082020,2020-07-27T03:00:00.000Z,Tropical Depression,Hanna,24.6,-101.7,30,1003,7,250,,
+AL082020,2020-07-27T09:00:00.000Z,Tropical Depression,Hanna,24.1,-102.9,25,1004,5,270,,

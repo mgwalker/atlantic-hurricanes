@@ -1,0 +1,9 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL072019,2019-09-03T09:00:00.000Z,Potential Tropical Cyclone,Seven,23.5,-94.3,35,1006,7,260,,
+AL072019,2019-09-03T15:00:00.000Z,Tropical Depression,Seven,23.6,-94.9,35,1004,7,260,,
+AL072019,2019-09-03T21:00:00.000Z,Tropical Storm,Fernand,23.4,-95.9,40,1004,7,265,,
+AL072019,2019-09-04T03:00:00.000Z,Tropical Storm,Fernand,23.2,-96.4,50,1000,3,270,,
+AL072019,2019-09-04T09:00:00.000Z,Tropical Storm,Fernand,23.1,-96.8,50,1000,6,275,,
+AL072019,2019-09-04T15:00:00.000Z,Tropical Storm,Fernand,24.2,-97.3,45,1002,8,295,,
+AL072019,2019-09-04T21:00:00.000Z,Tropical Depression,Fernand,24.4,-98.3,35,1005,9,290,,
+AL072019,2019-09-05T03:00:00.000Z,Remnants Of,Fernand,25,-99,30,1007,8,300,,

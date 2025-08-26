@@ -1,0 +1,24 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL032014,2014-08-01T03:00:00.000Z,Tropical Storm,Bertha,12.3,-55.5,45,1008,20,290,,
+AL032014,2014-08-01T09:00:00.000Z,Tropical Storm,Bertha,13,-57,45,1008,20,290,,
+AL032014,2014-08-01T15:00:00.000Z,Tropical Storm,Bertha,14,-58.9,50,1008,21,295,,
+AL032014,2014-08-01T21:00:00.000Z,Tropical Storm,Bertha,14.9,-61.2,50,1007,24,290,,
+AL032014,2014-08-02T03:00:00.000Z,Tropical Storm,Bertha,15.7,-63,50,1007,22,290,,
+AL032014,2014-08-02T09:00:00.000Z,Tropical Storm,Bertha,16.3,-64.9,50,1008,22,295,,
+AL032014,2014-08-02T15:00:00.000Z,Tropical Storm,Bertha,17.2,-66.7,50,1008,22,295,,
+AL032014,2014-08-02T21:00:00.000Z,Tropical Storm,Bertha,18.4,-68.5,45,1010,22,300,,
+AL032014,2014-08-03T03:00:00.000Z,Tropical Storm,Bertha,19.5,-69.7,45,1010,22,310,,
+AL032014,2014-08-03T09:00:00.000Z,Tropical Storm,Bertha,20.9,-71.1,45,1012,21,320,,
+AL032014,2014-08-03T15:00:00.000Z,Tropical Storm,Bertha,22.2,-72.6,45,1012,21,320,,
+AL032014,2014-08-03T21:00:00.000Z,Tropical Storm,Bertha,23.3,-73.2,45,1012,18,325,,
+AL032014,2014-08-04T03:00:00.000Z,Tropical Storm,Bertha,24.9,-73.2,65,1007,17,335,,
+AL032014,2014-08-04T09:00:00.000Z,Tropical Storm,Bertha,26.1,-73.6,70,999,16,350,,
+AL032014,2014-08-04T15:00:00.000Z,Hurricane,Bertha,27.6,-73.6,80,998,17,360,25,160
+AL032014,2014-08-04T21:00:00.000Z,Hurricane,Bertha,29.4,-73.6,75,998,18,360,25,140
+AL032014,2014-08-05T03:00:00.000Z,Hurricane,Bertha,31.3,-73.1,75,1001,20,15,25,125
+AL032014,2014-08-05T09:00:00.000Z,Tropical Storm,Bertha,33.4,-72.9,65,1005,22,15,,
+AL032014,2014-08-05T15:00:00.000Z,Tropical Storm,Bertha,34.8,-71.9,60,1006,22,25,,
+AL032014,2014-08-05T21:00:00.000Z,Tropical Storm,Bertha,36.2,-70.3,50,1007,21,30,,
+AL032014,2014-08-06T03:00:00.000Z,Tropical Storm,Bertha,37.5,-68.1,50,1007,23,45,,
+AL032014,2014-08-06T09:00:00.000Z,Tropical Storm,Bertha,39,-65.4,50,1007,28,55,,
+AL032014,2014-08-06T15:00:00.000Z,Post-tropical Cyclone,Bertha,40.2,-62.7,50,1006,31,55,,

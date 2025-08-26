@@ -1,0 +1,4 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL172019,2019-10-25T15:00:00.000Z,Tropical Depression,Seventeen,25.6,-94.4,35,1006,16,10,,
+AL172019,2019-10-25T21:00:00.000Z,Tropical Storm,Olga,26.3,-93.2,40,998,18,30,,
+AL172019,2019-10-26T03:00:00.000Z,Post-tropical Cyclone,Olga,27.8,-92.2,50,999,17,40,,

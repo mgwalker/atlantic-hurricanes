@@ -1,0 +1,9 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL062020,2020-07-09T21:00:00.000Z,Tropical Storm,Fay,35.5,-74.9,45,1005,7,360,,
+AL062020,2020-07-10T03:00:00.000Z,Tropical Storm,Fay,36.3,-74.8,45,1005,8,10,,
+AL062020,2020-07-10T09:00:00.000Z,Tropical Storm,Fay,37.4,-74.8,50,1002,10,360,,
+AL062020,2020-07-10T12:00:00.000Z,Tropical Storm,Fay,37.6,-74.7,50,999,10,5,,
+AL062020,2020-07-10T15:00:00.000Z,Tropical Storm,Fay,38.4,-74.5,60,999,12,5,,
+AL062020,2020-07-10T21:00:00.000Z,Tropical Storm,Fay,39.5,-74.3,50,998,14,10,,
+AL062020,2020-07-11T03:00:00.000Z,Tropical Storm,Fay,41,-74.2,40,1001,17,5,,
+AL062020,2020-07-11T09:00:00.000Z,Post-tropical Cyclone,Fay,42.4,-73.9,35,1001,17,10,,

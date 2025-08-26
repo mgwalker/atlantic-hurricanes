@@ -1,0 +1,21 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL102013,2013-09-12T21:00:00.000Z,Tropical Depression,Ten,19.7,-93.6,35,1003,7,270,,
+AL102013,2013-09-13T03:00:00.000Z,Tropical Depression,Ten,19.7,-94,35,1003,2,270,,
+AL102013,2013-09-13T09:00:00.000Z,Tropical Depression,Ten,19.7,-94.5,35,1002,3,270,,
+AL102013,2013-09-13T15:00:00.000Z,Tropical Storm,Ingrid,19.4,-95.3,45,1000,2,270,,
+AL102013,2013-09-13T21:00:00.000Z,Tropical Storm,Ingrid,19.2,-95.4,45,999,NaN,0,,
+AL102013,2013-09-14T00:00:00.000Z,Tropical Storm,Ingrid,19.2,-95.3,60,993,NaN,0,,
+AL102013,2013-09-14T03:00:00.000Z,Tropical Storm,Ingrid,19.3,-95.2,60,993,NaN,0,,
+AL102013,2013-09-14T09:00:00.000Z,Tropical Storm,Ingrid,19.8,-95,60,991,3,15,,
+AL102013,2013-09-14T15:00:00.000Z,Tropical Storm,Ingrid,20.6,-94.5,70,988,8,10,,
+AL102013,2013-09-14T21:00:00.000Z,Hurricane,Ingrid,21.3,-94.4,75,987,7,360,25,80
+AL102013,2013-09-15T03:00:00.000Z,Hurricane,Ingrid,22,-95,85,986,7,335,35,90
+AL102013,2013-09-15T09:00:00.000Z,Hurricane,Ingrid,22.4,-95.4,85,986,7,315,35,90
+AL102013,2013-09-15T15:00:00.000Z,Hurricane,Ingrid,22.5,-95.8,75,990,6,290,25,105
+AL102013,2013-09-15T21:00:00.000Z,Hurricane,Ingrid,22.7,-96.3,75,990,6,290,25,105
+AL102013,2013-09-16T03:00:00.000Z,Hurricane,Ingrid,23.1,-96.5,75,989,6,290,15,105
+AL102013,2013-09-16T09:00:00.000Z,Hurricane,Ingrid,23.4,-97.1,75,989,7,285,15,105
+AL102013,2013-09-16T15:00:00.000Z,Tropical Storm,Ingrid,23.8,-98.2,60,993,8,285,,
+AL102013,2013-09-16T21:00:00.000Z,Tropical Depression,Ingrid,23.7,-99,35,1002,6,270,,
+AL102013,2013-09-17T03:00:00.000Z,Tropical Depression,Ingrid,23.7,-99.4,30,1006,5,270,,
+AL102013,2013-09-17T09:00:00.000Z,Remnants Of,Ingrid,23.7,-99.9,25,1008,5,270,,
