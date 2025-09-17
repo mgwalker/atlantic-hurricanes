@@ -1,3 +1,4 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL072025,2025-09-17T09:00:00.000Z,Tropical Depression,Seven,13.7,-45.9,35,1007,13,280,,
 AL072025,2025-09-17T15:00:00.000Z,Tropical Storm,Gabrielle,17.5,-46.6,45,1006,22,330,,
+AL072025,2025-09-17T21:00:00.000Z,Tropical Storm,Gabrielle,19.4,-48,50,1005,14,310,,
