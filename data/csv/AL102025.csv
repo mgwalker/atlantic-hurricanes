@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL102025,2025-10-07T15:00:00.000Z,Tropical Storm,Jerry,11.5,-44.6,45,1006,24,280,,
+AL102025,2025-10-07T21:00:00.000Z,Tropical Storm,Jerry,12,-46.4,50,1003,23,280,,
