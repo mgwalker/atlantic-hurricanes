@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL112025,2025-10-10T03:00:00.000Z,Tropical Storm,Karen,44.5,-33,45,998,9,50,,
