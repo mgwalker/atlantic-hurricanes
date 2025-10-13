@@ -1,2 +1,3 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL122025,2025-10-13T09:00:00.000Z,Tropical Storm,Lorenzo,14.2,-40.3,45,1006,17,305,,
+AL122025,2025-10-13T15:00:00.000Z,Tropical Storm,Lorenzo,14.8,-41.2,50,1002,16,310,,
