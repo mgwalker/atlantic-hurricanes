@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL132025,2025-10-21T15:00:00.000Z,Tropical Storm,Melissa,14.3,-71.7,50,1003,14,280,,
