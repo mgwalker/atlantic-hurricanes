@@ -1,25 +1,25 @@
+import dotenv from "dotenv";
 import fs from "fs/promises";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
-import dotenv from "dotenv";
 
 dotenv.config();
 
-export const year = 2025;
+export const year = 2026;
 
 export const cachePath = join(
   dirname(fileURLToPath(import.meta.url)),
-  "../cache"
+  "../cache",
 );
 
 export const dataPath = join(
   dirname(fileURLToPath(import.meta.url)),
-  "../data"
+  "../data",
 );
 
 export const docsPath = join(
   dirname(fileURLToPath(import.meta.url)),
-  "../docs"
+  "../docs",
 );
 
 export const srcPath = dirname(fileURLToPath(import.meta.url));
