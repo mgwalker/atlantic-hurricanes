@@ -1,0 +1,10 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL042020,2020-06-22T21:00:00.000Z,Tropical Depression,Four,38.2,-65.7,35,1009,9,75,,
+AL042020,2020-06-23T03:00:00.000Z,Tropical Depression,Four,38.7,-64.6,35,1009,10,60,,
+AL042020,2020-06-23T09:00:00.000Z,Tropical Depression,Four,39.3,-63.4,35,1008,13,55,,
+AL042020,2020-06-23T15:00:00.000Z,Tropical Depression,Four,39.5,-62.1,35,1007,13,65,,
+AL042020,2020-06-23T17:00:00.000Z,Tropical Storm,Dolly,39.4,-61.7,45,1002,13,65,,
+AL042020,2020-06-23T21:00:00.000Z,Tropical Storm,Dolly,40.1,-61.1,45,1002,12,60,,
+AL042020,2020-06-24T03:00:00.000Z,Tropical Storm,Dolly,40.5,-60.3,40,1004,10,60,,
+AL042020,2020-06-24T09:00:00.000Z,Tropical Depression,Dolly,41.7,-59,35,1005,12,45,,
+AL042020,2020-06-24T15:00:00.000Z,Post-tropical Cyclone,Dolly,42.5,-57.8,35,1007,16,45,,

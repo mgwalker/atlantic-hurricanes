@@ -1,0 +1,7 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL022015,2015-06-16T03:00:00.000Z,Tropical Storm,Bill,27.1,-94.2,50,1005,12,320,,
+AL022015,2015-06-16T09:00:00.000Z,Tropical Storm,Bill,27.9,-95.7,50,1004,13,310,,
+AL022015,2015-06-16T15:00:00.000Z,Tropical Storm,Bill,28.2,-96.4,60,997,10,305,,
+AL022015,2015-06-16T21:00:00.000Z,Tropical Storm,Bill,28.4,-96.8,50,999,9,330,,
+AL022015,2015-06-17T03:00:00.000Z,Tropical Storm,Bill,29.5,-97,40,1000,12,350,,
+AL022015,2015-06-17T09:00:00.000Z,Tropical Depression,Bill,31,-97.1,35,1000,13,360,,

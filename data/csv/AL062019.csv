@@ -1,0 +1,12 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL062019,2019-08-26T21:00:00.000Z,Tropical Depression,Six,31.7,-72.5,35,1010,2,80,,
+AL062019,2019-08-27T03:00:00.000Z,Tropical Depression,Six,31.5,-72.2,35,1010,3,100,,
+AL062019,2019-08-27T09:00:00.000Z,Tropical Depression,Six,31,-71.6,35,1010,2,125,,
+AL062019,2019-08-27T15:00:00.000Z,Tropical Depression,Six,31.2,-71.2,35,1008,2,360,,
+AL062019,2019-08-27T21:00:00.000Z,Tropical Depression,Six,31.8,-71.8,35,1008,7,344,,
+AL062019,2019-08-28T03:00:00.000Z,Tropical Storm,Erin,31.9,-72.1,40,1005,2,270,,
+AL062019,2019-08-28T09:00:00.000Z,Tropical Storm,Erin,32.5,-72.4,40,1005,6,330,,
+AL062019,2019-08-28T15:00:00.000Z,Tropical Depression,Erin,33.6,-72.8,35,1006,13,340,,
+AL062019,2019-08-28T21:00:00.000Z,Tropical Depression,Erin,34.5,-72.7,35,1006,13,360,,
+AL062019,2019-08-29T03:00:00.000Z,Tropical Depression,Erin,35.6,-72.1,35,1005,21,25,,
+AL062019,2019-08-29T09:00:00.000Z,Post-tropical Cyclone,Erin,36.1,-71.6,35,1005,15,25,,

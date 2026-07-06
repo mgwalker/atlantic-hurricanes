@@ -1,0 +1,5 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL032019,2019-07-22T21:00:00.000Z,Tropical Depression,Three,25.6,-78.6,30,1013,13,305,,
+AL032019,2019-07-23T03:00:00.000Z,Tropical Depression,Three,26.1,-79.3,30,1013,10,315,,
+AL032019,2019-07-23T09:00:00.000Z,Tropical Depression,Three,27,-79.5,35,1012,12,360,,
+AL032019,2019-07-23T15:00:00.000Z,Remnants Of,Three,29,-80,35,1014,17,360,,

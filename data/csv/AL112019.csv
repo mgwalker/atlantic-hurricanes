@@ -1,0 +1,11 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL112019,2019-09-17T17:00:00.000Z,Tropical Depression,Eleven,28.7,-95.4,35,1009,7,5,,
+AL112019,2019-09-17T21:00:00.000Z,Tropical Storm,Imelda,29.3,-95.3,40,1006,7,360,,
+AL112019,2019-09-18T03:00:00.000Z,Tropical Depression,Imelda,29.8,-95.5,35,1007,6,360,,
+AL112019,2019-09-18T09:00:00.000Z,Tropical Depression,Imelda,30,-95.6,30,1007,5,360,,
+AL112019,2019-09-18T15:00:00.000Z,Tropical Depression,Imelda,30.6,-95.6,30,1009,5,360,,
+AL112019,2019-09-18T21:00:00.000Z,Tropical Depression,Imelda,30.8,-95,30,1010,5,360,,
+AL112019,2019-09-19T03:00:00.000Z,Tropical Depression,Imelda,31.2,-94.9,30,1008,3,320,,
+AL112019,2019-09-19T09:00:00.000Z,Tropical Depression,Imelda,31.3,-95.5,30,1009,5,335,,
+AL112019,2019-09-19T15:00:00.000Z,Tropical Depression,Imelda,30.5,-95.5,25,1009,6,319,,
+AL112019,2019-09-19T21:00:00.000Z,Remnants Of,Imelda,31.4,-96.4,15,1010,14,300,,

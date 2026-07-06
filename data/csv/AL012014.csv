@@ -1,0 +1,20 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL012014,2014-07-01T03:00:00.000Z,Tropical Depression,One,27.6,-79.1,35,1009,2,225,,
+AL012014,2014-07-01T09:00:00.000Z,Tropical Depression,One,27.6,-79.3,35,1008,2,260,,
+AL012014,2014-07-01T15:00:00.000Z,Tropical Storm,Arthur,27.6,-79.3,40,1007,2,315,,
+AL012014,2014-07-01T21:00:00.000Z,Tropical Storm,Arthur,27.8,-79.4,50,1003,2,325,,
+AL012014,2014-07-02T03:00:00.000Z,Tropical Storm,Arthur,27.9,-79.2,50,1003,2,360,,
+AL012014,2014-07-02T09:00:00.000Z,Tropical Storm,Arthur,28.4,-79.1,60,996,6,360,,
+AL012014,2014-07-02T15:00:00.000Z,Tropical Storm,Arthur,29.1,-79.1,60,997,7,360,,
+AL012014,2014-07-02T21:00:00.000Z,Tropical Storm,Arthur,29.7,-79.1,70,992,7,360,,
+AL012014,2014-07-03T03:00:00.000Z,Tropical Storm,Arthur,30.6,-79.1,70,988,8,360,,
+AL012014,2014-07-03T09:00:00.000Z,Hurricane,Arthur,31.3,-79.1,75,985,9,10,25,90
+AL012014,2014-07-03T15:00:00.000Z,Hurricane,Arthur,32.4,-78.5,90,981,10,15,25,115
+AL012014,2014-07-03T21:00:00.000Z,Hurricane,Arthur,33.4,-77.9,90,977,13,20,35,150
+AL012014,2014-07-04T03:00:00.000Z,Hurricane,Arthur,34.6,-76.6,100,976,18,35,40,150
+AL012014,2014-07-04T09:00:00.000Z,Hurricane,Arthur,36,-75.3,100,973,23,40,40,125
+AL012014,2014-07-04T15:00:00.000Z,Hurricane,Arthur,37.7,-73.4,90,976,24,40,40,125
+AL012014,2014-07-04T21:00:00.000Z,Hurricane,Arthur,39.4,-71.1,80,979,26,45,70,160
+AL012014,2014-07-05T03:00:00.000Z,Hurricane,Arthur,41.2,-68.7,75,976,31,45,,
+AL012014,2014-07-05T09:00:00.000Z,Tropical Storm,Arthur,43.1,-66.9,70,981,22,35,,
+AL012014,2014-07-05T15:00:00.000Z,Post-tropical Cyclone,Arthur,45,-65.5,60,983,24,35,,

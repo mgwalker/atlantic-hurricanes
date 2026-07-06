@@ -1,0 +1,24 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL142018,2018-10-06T21:00:00.000Z,Potential Tropical Cyclone,Fourteen,18,-86.6,30,1006,6,325,,
+AL142018,2018-10-07T03:00:00.000Z,Potential Tropical Cyclone,Fourteen,18.8,-86.6,30,1004,7,360,,
+AL142018,2018-10-07T09:00:00.000Z,Tropical Depression,Fourteen,18.6,-86.9,35,1004,3,340,,
+AL142018,2018-10-07T15:00:00.000Z,Tropical Depression,Fourteen,19.2,-86.9,35,1004,6,360,,
+AL142018,2018-10-07T21:00:00.000Z,Tropical Storm,Michael,19.2,-85.5,50,999,3,20,,
+AL142018,2018-10-08T03:00:00.000Z,Tropical Storm,Michael,20,-85.4,60,997,5,5,,
+AL142018,2018-10-08T09:00:00.000Z,Tropical Storm,Michael,20.6,-85.5,70,983,7,360,,
+AL142018,2018-10-08T15:00:00.000Z,Hurricane,Michael,21.2,-84.9,75,982,7,10,30,175
+AL142018,2018-10-08T21:00:00.000Z,Hurricane,Michael,22.2,-85.2,80,978,9,355,35,175
+AL142018,2018-10-09T03:00:00.000Z,Hurricane,Michael,23.2,-85.3,90,970,12,350,35,175
+AL142018,2018-10-09T09:00:00.000Z,Hurricane,Michael,24.1,-85.9,90,973,12,345,40,195
+AL142018,2018-10-09T15:00:00.000Z,Hurricane,Michael,25,-86.2,110,965,12,350,35,185
+AL142018,2018-10-09T21:00:00.000Z,Hurricane,Michael,26,-86.4,120,957,12,350,45,175
+AL142018,2018-10-10T03:00:00.000Z,Hurricane,Michael,27.1,-86.5,125,947,12,355,45,175
+AL142018,2018-10-10T09:00:00.000Z,Hurricane,Michael,28.3,-86.5,140,943,13,360,45,185
+AL142018,2018-10-10T15:00:00.000Z,Hurricane,Michael,29.4,-86,145,928,14,15,45,175
+AL142018,2018-10-10T21:00:00.000Z,Hurricane,Michael,30.9,-85.1,125,932,16,25,40,160
+AL142018,2018-10-11T03:00:00.000Z,Hurricane,Michael,32.1,-83.8,75,970,20,45,30,160
+AL142018,2018-10-11T09:00:00.000Z,Tropical Storm,Michael,33.5,-82.5,50,983,21,45,,
+AL142018,2018-10-11T15:00:00.000Z,Tropical Storm,Michael,34.7,-80.8,50,990,23,50,,
+AL142018,2018-10-11T21:00:00.000Z,Tropical Storm,Michael,36.1,-78.8,50,990,24,50,,
+AL142018,2018-10-12T03:00:00.000Z,Tropical Storm,Michael,37.1,-76.1,50,988,25,55,,
+AL142018,2018-10-12T09:00:00.000Z,Post-tropical Cyclone,Michael,38,-73.1,65,983,29,65,,

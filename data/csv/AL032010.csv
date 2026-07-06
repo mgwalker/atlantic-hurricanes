@@ -1,0 +1,11 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL032010,2010-07-22T15:00:00.000Z,Tropical Depression,Three,21.9,-75,35,1008,15,295,,
+AL032010,2010-07-22T21:00:00.000Z,Tropical Depression,Three,22.7,-75.4,35,1006,14,310,,
+AL032010,2010-07-23T03:00:00.000Z,Tropical Storm,Bonnie,23.4,-76.5,40,1007,14,305,,
+AL032010,2010-07-23T09:00:00.000Z,Tropical Storm,Bonnie,24.1,-78.6,40,1008,18,295,,
+AL032010,2010-07-23T15:00:00.000Z,Tropical Storm,Bonnie,25.4,-80.3,40,1008,18,300,,
+AL032010,2010-07-23T21:00:00.000Z,Tropical Depression,Bonnie,26.2,-81.9,35,1009,18,300,,
+AL032010,2010-07-24T03:00:00.000Z,Tropical Depression,Bonnie,26.4,-83.4,35,1010,17,295,,
+AL032010,2010-07-24T09:00:00.000Z,Tropical Depression,Bonnie,27,-85.1,35,1013,17,295,,
+AL032010,2010-07-24T15:00:00.000Z,Tropical Depression,Bonnie,28,-86.7,30,1014,17,300,,
+AL032010,2010-07-24T21:00:00.000Z,Tropical Depression,Bonnie,28.5,-87.6,30,1011,14,300,,

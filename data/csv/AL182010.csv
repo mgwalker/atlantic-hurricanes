@@ -1,0 +1,18 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL182010,2010-10-11T21:00:00.000Z,Tropical Storm,Paula,16,-84,60,1000,9,315,,
+AL182010,2010-10-12T03:00:00.000Z,Tropical Storm,Paula,16.8,-84.6,70,994,10,315,,
+AL182010,2010-10-12T09:00:00.000Z,Hurricane,Paula,17.6,-85.2,75,992,10,325,10,60
+AL182010,2010-10-12T15:00:00.000Z,Hurricane,Paula,18.6,-85.7,75,991,10,330,10,60
+AL182010,2010-10-12T17:45:00.000Z,Hurricane,Paula,18.8,-85.8,100,981,10,335,10,60
+AL182010,2010-10-12T21:00:00.000Z,Hurricane,Paula,19.2,-86,100,981,9,345,,
+AL182010,2010-10-13T03:00:00.000Z,Hurricane,Paula,19.9,-86,100,981,9,355,,
+AL182010,2010-10-13T09:00:00.000Z,Hurricane,Paula,20.7,-86,100,984,9,360,15,60
+AL182010,2010-10-13T15:00:00.000Z,Hurricane,Paula,21.3,-85.8,100,984,5,5,,
+AL182010,2010-10-13T21:00:00.000Z,Hurricane,Paula,21.7,-85.6,85,992,5,25,10,60
+AL182010,2010-10-14T03:00:00.000Z,Hurricane,Paula,21.9,-85.4,80,993,3,35,,
+AL182010,2010-10-14T09:00:00.000Z,Hurricane,Paula,22.3,-84.9,75,999,5,50,,
+AL182010,2010-10-14T15:00:00.000Z,Tropical Storm,Paula,22.8,-84.1,70,1000,6,70,,
+AL182010,2010-10-14T21:00:00.000Z,Tropical Storm,Paula,22.8,-82.8,60,1002,9,90,,
+AL182010,2010-10-15T03:00:00.000Z,Tropical Storm,Paula,23.1,-81.4,45,1002,14,85,,
+AL182010,2010-10-15T09:00:00.000Z,Tropical Depression,Paula,23.1,-80.2,35,1008,14,85,,
+AL182010,2010-10-15T15:00:00.000Z,Tropical Depression,Paula,22.8,-79.5,25,1009,9,95,,

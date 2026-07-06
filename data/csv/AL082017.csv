@@ -1,0 +1,21 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL082017,2017-08-13T03:00:00.000Z,Tropical Depression,Eight,25.3,-70.3,35,1011,13,330,,
+AL082017,2017-08-13T09:00:00.000Z,Tropical Depression,Eight,26.5,-70.9,35,1011,14,335,,
+AL082017,2017-08-13T15:00:00.000Z,Tropical Depression,Eight,27.4,-71.5,35,1011,13,335,,
+AL082017,2017-08-13T21:00:00.000Z,Tropical Storm,Gert,28.1,-71.7,40,1011,10,335,,
+AL082017,2017-08-14T03:00:00.000Z,Tropical Storm,Gert,28.8,-71.9,45,1009,9,345,,
+AL082017,2017-08-14T09:00:00.000Z,Tropical Storm,Gert,29.7,-72.2,45,1009,9,345,,
+AL082017,2017-08-14T15:00:00.000Z,Tropical Storm,Gert,30.3,-72.2,60,1002,8,360,,
+AL082017,2017-08-14T21:00:00.000Z,Tropical Storm,Gert,30.6,-72.3,70,992,8,360,,
+AL082017,2017-08-15T03:00:00.000Z,Hurricane,Gert,31.2,-72.3,75,986,8,360,25,105
+AL082017,2017-08-15T09:00:00.000Z,Hurricane,Gert,31.8,-72.5,75,986,12,360,25,105
+AL082017,2017-08-15T15:00:00.000Z,Hurricane,Gert,32.8,-72,75,986,10,15,25,105
+AL082017,2017-08-15T21:00:00.000Z,Hurricane,Gert,33.7,-71.2,80,981,12,20,25,115
+AL082017,2017-08-16T03:00:00.000Z,Hurricane,Gert,34.8,-70.3,85,979,15,35,25,115
+AL082017,2017-08-16T09:00:00.000Z,Hurricane,Gert,36,-68.4,90,975,21,45,35,115
+AL082017,2017-08-16T15:00:00.000Z,Hurricane,Gert,37.4,-65.7,90,975,25,55,35,125
+AL082017,2017-08-16T21:00:00.000Z,Hurricane,Gert,38.7,-62.4,100,970,31,55,35,140
+AL082017,2017-08-17T03:00:00.000Z,Hurricane,Gert,40.1,-58.4,105,967,37,65,35,140
+AL082017,2017-08-17T09:00:00.000Z,Hurricane,Gert,41.7,-54,100,968,39,65,35,175
+AL082017,2017-08-17T15:00:00.000Z,Hurricane,Gert,43.2,-50,80,975,40,60,35,175
+AL082017,2017-08-17T21:00:00.000Z,Post-tropical Cyclone,Gert,44.8,-46,65,985,39,60,,

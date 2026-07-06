@@ -1,0 +1,6 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL092009,2009-10-05T03:00:00.000Z,Tropical Storm,Grace,41.2,-20.3,65,990,25,55,,
+AL092009,2009-10-05T09:00:00.000Z,Tropical Storm,Grace,43,-18,70,989,28,45,,
+AL092009,2009-10-05T15:00:00.000Z,Tropical Storm,Grace,45.4,-16.4,65,990,31,30,,
+AL092009,2009-10-05T21:00:00.000Z,Tropical Storm,Grace,47.7,-14.8,60,990,30,25,,
+AL092009,2009-10-06T03:00:00.000Z,Tropical Storm,Grace,49.7,-13.4,50,986,26,25,,

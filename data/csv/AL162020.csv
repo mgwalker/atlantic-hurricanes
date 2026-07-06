@@ -1,0 +1,13 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL162020,2020-09-01T15:00:00.000Z,Potential Tropical Cyclone,Sixteen,16.1,-77.5,40,1005,18,285,,
+AL162020,2020-09-01T17:00:00.000Z,Tropical Storm,Nana,16.6,-77.9,50,1004,16,280,,
+AL162020,2020-09-01T21:00:00.000Z,Tropical Storm,Nana,16.8,-79.3,50,1002,18,275,,
+AL162020,2020-09-02T03:00:00.000Z,Tropical Storm,Nana,17,-80.9,60,999,18,270,,
+AL162020,2020-09-02T09:00:00.000Z,Tropical Storm,Nana,17,-82.7,60,997,18,270,,
+AL162020,2020-09-02T15:00:00.000Z,Tropical Storm,Nana,17.1,-84.6,60,998,17,270,,
+AL162020,2020-09-02T21:00:00.000Z,Tropical Storm,Nana,17,-85.9,60,999,15,270,,
+AL162020,2020-09-03T03:00:00.000Z,Hurricane,Nana,17,-87.5,75,994,16,265,,
+AL162020,2020-09-03T09:00:00.000Z,Tropical Storm,Nana,16.7,-88.8,70,997,15,255,,
+AL162020,2020-09-03T15:00:00.000Z,Tropical Storm,Nana,16.4,-90.3,45,1004,15,260,,
+AL162020,2020-09-03T21:00:00.000Z,Tropical Depression,Nana,16,-91.1,35,1006,14,255,,
+AL162020,2020-09-04T03:00:00.000Z,Remnants Of,Nana,15.6,-92,30,1007,14,250,,

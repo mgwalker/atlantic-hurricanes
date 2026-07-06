@@ -1,0 +1,10 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL012016,2016-01-13T21:00:00.000Z,Tropical Storm,Alex,27.1,-30.8,50,990,14,55,,
+AL012016,2016-01-14T03:00:00.000Z,Tropical Storm,Alex,28.7,-30,60,988,17,35,,
+AL012016,2016-01-14T09:00:00.000Z,Tropical Storm,Alex,30.1,-29.3,70,984,18,20,,
+AL012016,2016-01-14T15:00:00.000Z,Hurricane,Alex,31.5,-28.4,85,981,20,20,25,150
+AL012016,2016-01-14T21:00:00.000Z,Hurricane,Alex,33.6,-27.8,85,981,23,15,25,175
+AL012016,2016-01-15T03:00:00.000Z,Hurricane,Alex,34.7,-27.6,80,984,22,10,25,175
+AL012016,2016-01-15T09:00:00.000Z,Hurricane,Alex,36.8,-27,75,986,23,5,25,205
+AL012016,2016-01-15T15:00:00.000Z,Tropical Storm,Alex,39.3,-27,70,986,28,360,,
+AL012016,2016-01-15T21:00:00.000Z,Post-tropical Cyclone,Alex,43,-27.8,70,986,40,350,,

@@ -1,0 +1,10 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL162012,2012-10-11T15:00:00.000Z,Tropical Depression,Sixteen,25.4,-72.6,35,1009,1,180,,
+AL162012,2012-10-11T21:00:00.000Z,Tropical Storm,Patty,25.8,-72.5,40,1007,NaN,0,,
+AL162012,2012-10-12T03:00:00.000Z,Tropical Storm,Patty,25.9,-72.5,45,1005,NaN,0,,
+AL162012,2012-10-12T09:00:00.000Z,Tropical Storm,Patty,25.1,-72.5,40,1006,3,200,,
+AL162012,2012-10-12T15:00:00.000Z,Tropical Storm,Patty,25.5,-72,40,1006,2,50,,
+AL162012,2012-10-12T21:00:00.000Z,Tropical Depression,Patty,25.5,-72.1,35,1007,NaN,0,,
+AL162012,2012-10-13T03:00:00.000Z,Tropical Depression,Patty,25.4,-72.1,35,1008,NaN,0,,
+AL162012,2012-10-13T09:00:00.000Z,Tropical Depression,Patty,25.5,-71.9,35,1008,NaN,0,,
+AL162012,2012-10-13T15:00:00.000Z,Remnants Of,Patty,24.8,-72.6,30,1010,5,250,,

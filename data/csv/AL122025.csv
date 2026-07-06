@@ -1,0 +1,12 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL122025,2025-10-13T09:00:00.000Z,Tropical Storm,Lorenzo,14.2,-40.3,45,1006,17,305,,
+AL122025,2025-10-13T15:00:00.000Z,Tropical Storm,Lorenzo,14.8,-41.2,50,1002,16,310,,
+AL122025,2025-10-13T21:00:00.000Z,Tropical Storm,Lorenzo,15.2,-41.7,50,1002,12,305,,
+AL122025,2025-10-14T03:00:00.000Z,Tropical Storm,Lorenzo,16.2,-42.8,60,999,13,310,,
+AL122025,2025-10-14T09:00:00.000Z,Tropical Storm,Lorenzo,17.3,-44.1,60,1000,15,310,,
+AL122025,2025-10-14T15:00:00.000Z,Tropical Storm,Lorenzo,18.2,-44.9,45,1003,15,310,,
+AL122025,2025-10-14T21:00:00.000Z,Tropical Storm,Lorenzo,18.7,-45.5,40,1005,12,315,,
+AL122025,2025-10-15T03:00:00.000Z,Tropical Storm,Lorenzo,19.6,-45.6,40,1005,12,345,,
+AL122025,2025-10-15T09:00:00.000Z,Tropical Storm,Lorenzo,20.5,-45.1,40,1004,13,10,,
+AL122025,2025-10-15T15:00:00.000Z,Tropical Storm,Lorenzo,21.5,-44.1,40,1005,14,15,,
+AL122025,2025-10-15T21:00:00.000Z,Remnants Of,Lorenzo,23.1,-42.5,35,1006,18,35,,

@@ -1,0 +1,7 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL022020,2020-05-27T12:30:00.000Z,Tropical Storm,Bertha,32.7,-79.4,45,1009,9,320,,
+AL022020,2020-05-27T15:00:00.000Z,Tropical Storm,Bertha,33.3,-79.5,50,1005,15,350,,
+AL022020,2020-05-27T21:00:00.000Z,Tropical Depression,Bertha,34.4,-80.3,30,1008,15,340,,
+AL022020,2020-05-28T03:00:00.000Z,Tropical Depression,Bertha,36,-80.5,30,1009,23,350,,
+AL022020,2020-05-28T09:00:00.000Z,Post-tropical Cyclone,Bertha,38.3,-80.8,25,1012,28,10,,
+AL022020,2020-05-28T15:00:00.000Z,Post-tropical Cyclone,Bertha,40.8,-80.2,25,1012,30,10,,

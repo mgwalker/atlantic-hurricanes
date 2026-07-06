@@ -1,0 +1,25 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL032018,2018-07-06T21:00:00.000Z,Tropical Depression,Three,32.2,-73.8,30,1016,5,335,,
+AL032018,2018-07-07T03:00:00.000Z,Tropical Depression,Three,32.6,-74.1,30,1015,6,330,,
+AL032018,2018-07-07T09:00:00.000Z,Tropical Depression,Three,33.2,-74.6,30,1015,5,345,,
+AL032018,2018-07-07T15:00:00.000Z,Tropical Depression,Three,33.1,-74.8,30,1015,2,360,,
+AL032018,2018-07-07T21:00:00.000Z,Tropical Depression,Three,32.9,-75.3,35,1014,NaN,0,,
+AL032018,2018-07-08T03:00:00.000Z,Tropical Depression,Three,32.9,-75.1,35,1014,NaN,0,,
+AL032018,2018-07-08T09:00:00.000Z,Tropical Storm,Chris,33,-75.5,40,1010,NaN,0,,
+AL032018,2018-07-08T15:00:00.000Z,Tropical Storm,Chris,32.9,-75,45,1006,NaN,0,,
+AL032018,2018-07-08T21:00:00.000Z,Tropical Storm,Chris,32.7,-74.6,50,1008,NaN,0,,
+AL032018,2018-07-09T03:00:00.000Z,Tropical Storm,Chris,32.5,-74.5,60,1005,2,110,,
+AL032018,2018-07-09T09:00:00.000Z,Tropical Storm,Chris,32.4,-74.6,60,999,1,180,,
+AL032018,2018-07-09T15:00:00.000Z,Tropical Storm,Chris,32.2,-74.5,60,999,NaN,0,,
+AL032018,2018-07-09T21:00:00.000Z,Tropical Storm,Chris,32.2,-74.4,70,996,NaN,0,,
+AL032018,2018-07-10T03:00:00.000Z,Tropical Storm,Chris,32.3,-74.3,70,995,NaN,0,,
+AL032018,2018-07-10T09:00:00.000Z,Tropical Storm,Chris,32.6,-73.9,70,993,2,45,,
+AL032018,2018-07-10T15:00:00.000Z,Tropical Storm,Chris,33.1,-73.1,70,993,9,50,,
+AL032018,2018-07-10T21:00:00.000Z,Hurricane,Chris,33.7,-72.4,85,980,10,50,15,90
+AL032018,2018-07-11T03:00:00.000Z,Hurricane,Chris,34.2,-71.4,105,970,10,50,25,90
+AL032018,2018-07-11T09:00:00.000Z,Hurricane,Chris,35.3,-69.9,105,970,22,50,25,90
+AL032018,2018-07-11T15:00:00.000Z,Hurricane,Chris,36.4,-67.8,100,974,22,50,25,90
+AL032018,2018-07-11T21:00:00.000Z,Hurricane,Chris,37.8,-65.7,90,976,25,50,35,160
+AL032018,2018-07-12T03:00:00.000Z,Hurricane,Chris,39.6,-63,85,980,29,50,40,175
+AL032018,2018-07-12T09:00:00.000Z,Tropical Storm,Chris,42.1,-60.1,70,985,35,45,,
+AL032018,2018-07-12T15:00:00.000Z,Post-tropical Cyclone,Chris,44.4,-57.7,70,987,36,45,,

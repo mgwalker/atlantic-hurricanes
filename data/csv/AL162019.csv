@@ -1,0 +1,11 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL162019,2019-10-17T15:00:00.000Z,Potential Tropical Cyclone,Sixteen,22.4,-95.7,35,1007,8,355,,
+AL162019,2019-10-17T21:00:00.000Z,Potential Tropical Cyclone,Sixteen,22.9,-95.2,40,1005,9,20,,
+AL162019,2019-10-18T03:00:00.000Z,Potential Tropical Cyclone,Sixteen,24.1,-93.7,40,1004,12,45,,
+AL162019,2019-10-18T09:00:00.000Z,Potential Tropical Cyclone,Sixteen,24.3,-92.5,40,1004,14,45,,
+AL162019,2019-10-18T15:00:00.000Z,Potential Tropical Cyclone,Sixteen,25.9,-90,60,1001,22,55,,
+AL162019,2019-10-18T21:00:00.000Z,Tropical Storm,Nestor,27,-88.5,60,999,22,50,,
+AL162019,2019-10-19T03:00:00.000Z,Tropical Storm,Nestor,28.5,-87,60,996,23,45,,
+AL162019,2019-10-19T09:00:00.000Z,Tropical Storm,Nestor,29,-86,50,998,17,45,,
+AL162019,2019-10-19T15:00:00.000Z,Post-tropical Cyclone,Nestor,29.3,-86.3,50,996,9,75,,
+AL162019,2019-10-19T21:00:00.000Z,Post-tropical Cyclone,Nestor,30.4,-84.1,40,999,23,55,,

@@ -1,0 +1,9 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL092014,2014-10-22T03:00:00.000Z,Tropical Depression,Nine,19.4,-92.9,35,1000,6,90,,
+AL092014,2014-10-22T09:00:00.000Z,Tropical Depression,Nine,19.4,-92.3,35,1000,6,90,,
+AL092014,2014-10-22T15:00:00.000Z,Tropical Depression,Nine,19.4,-92.4,35,1002,NaN,0,,
+AL092014,2014-10-22T21:00:00.000Z,Tropical Depression,Nine,19.2,-91.7,35,1003,5,115,,
+AL092014,2014-10-23T03:00:00.000Z,Post-tropical Cyclone,Nine,18.9,-90.9,30,1004,6,105,,
+AL092014,2014-10-27T15:00:00.000Z,Tropical Storm,Hanna,14.5,-83.2,40,1005,7,250,,
+AL092014,2014-10-27T21:00:00.000Z,Tropical Storm,Hanna,14.6,-83.9,40,1005,7,260,,
+AL092014,2014-10-28T03:00:00.000Z,Remnants Of,Hanna,14.5,-84.5,35,1006,5,270,,

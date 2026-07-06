@@ -1,0 +1,19 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL172010,2010-10-06T09:00:00.000Z,Tropical Depression,Seventeen,22.2,-67,35,1001,8,325,,
+AL172010,2010-10-06T15:00:00.000Z,Tropical Depression,Seventeen,23,-68,35,1001,9,325,,
+AL172010,2010-10-06T21:00:00.000Z,Tropical Storm,Otto,23.2,-68.3,60,990,5,360,,
+AL172010,2010-10-07T03:00:00.000Z,Tropical Storm,Otto,23.5,-68.2,65,990,3,360,,
+AL172010,2010-10-07T09:00:00.000Z,Tropical Storm,Otto,23.6,-68.2,60,992,2,360,,
+AL172010,2010-10-07T15:00:00.000Z,Tropical Storm,Otto,23.8,-68,60,992,2,35,,
+AL172010,2010-10-07T21:00:00.000Z,Tropical Storm,Otto,24,-67.6,60,992,6,50,,
+AL172010,2010-10-08T03:00:00.000Z,Tropical Storm,Otto,24.1,-66.6,60,992,9,70,,
+AL172010,2010-10-08T09:00:00.000Z,Tropical Storm,Otto,24.8,-65.5,70,986,14,60,,
+AL172010,2010-10-08T15:00:00.000Z,Hurricane,Otto,25.9,-64,75,979,17,60,25,195
+AL172010,2010-10-08T21:00:00.000Z,Hurricane,Otto,26.8,-62.3,80,976,21,55,,
+AL172010,2010-10-09T03:00:00.000Z,Hurricane,Otto,27.8,-60.8,85,972,21,60,,
+AL172010,2010-10-09T09:00:00.000Z,Hurricane,Otto,29.2,-58.5,85,977,24,55,35,220
+AL172010,2010-10-09T15:00:00.000Z,Hurricane,Otto,30.7,-55.7,75,984,29,55,35,220
+AL172010,2010-10-09T21:00:00.000Z,Hurricane,Otto,32.4,-52.6,75,984,32,55,35,220
+AL172010,2010-10-10T03:00:00.000Z,Tropical Storm,Otto,33.9,-48.7,70,988,38,60,,
+AL172010,2010-10-10T09:00:00.000Z,Tropical Storm,Otto,35.3,-45,65,987,39,65,,
+AL172010,2010-10-10T15:00:00.000Z,Tropical Storm,Otto,37.3,-41.1,65,987,43,55,,

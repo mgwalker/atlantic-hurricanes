@@ -1,0 +1,21 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL162018,2018-10-27T03:00:00.000Z,Tropical Storm,Oscar,26.7,-45.7,45,1005,9,330,,
+AL162018,2018-10-27T09:00:00.000Z,Tropical Storm,Oscar,27.3,-47,50,998,12,300,,
+AL162018,2018-10-27T15:00:00.000Z,Tropical Storm,Oscar,27.3,-48.4,60,995,13,270,,
+AL162018,2018-10-27T21:00:00.000Z,Tropical Storm,Oscar,26.9,-50.7,60,995,17,265,,
+AL162018,2018-10-28T03:00:00.000Z,Tropical Storm,Oscar,25.7,-51.4,65,994,20,240,,
+AL162018,2018-10-28T09:00:00.000Z,Tropical Storm,Oscar,25,-52.6,65,994,15,235,,
+AL162018,2018-10-28T15:00:00.000Z,Tropical Storm,Oscar,25.5,-53.8,70,991,12,270,,
+AL162018,2018-10-28T21:00:00.000Z,Hurricane,Oscar,25.7,-55.5,75,989,16,270,15,115
+AL162018,2018-10-29T03:00:00.000Z,Hurricane,Oscar,25.6,-57,75,989,16,270,,
+AL162018,2018-10-29T09:00:00.000Z,Hurricane,Oscar,25.7,-57.8,80,984,12,270,15,70
+AL162018,2018-10-29T15:00:00.000Z,Hurricane,Oscar,25.8,-58.4,85,981,7,285,15,70
+AL162018,2018-10-29T21:00:00.000Z,Hurricane,Oscar,26.5,-58.5,90,978,7,355,15,70
+AL162018,2018-10-30T03:00:00.000Z,Hurricane,Oscar,27.4,-58.3,105,970,9,10,15,70
+AL162018,2018-10-30T09:00:00.000Z,Hurricane,Oscar,28.6,-58.2,105,970,13,10,15,70
+AL162018,2018-10-30T15:00:00.000Z,Hurricane,Oscar,29.7,-57.7,100,972,14,20,25,90
+AL162018,2018-10-30T21:00:00.000Z,Hurricane,Oscar,31.3,-56.6,85,979,20,25,25,115
+AL162018,2018-10-31T03:00:00.000Z,Hurricane,Oscar,32.8,-55.2,80,979,22,35,30,150
+AL162018,2018-10-31T09:00:00.000Z,Hurricane,Oscar,34.1,-53.6,75,982,22,35,30,150
+AL162018,2018-10-31T15:00:00.000Z,Hurricane,Oscar,36.6,-51.6,75,979,29,35,35,275
+AL162018,2018-10-31T21:00:00.000Z,Post-tropical Cyclone,Oscar,39.3,-49.6,75,976,35,30,80,320

@@ -8,7 +8,6 @@ import mapsForCurrentStorms from "./mapsForCurrentStorms.js";
 import mapsForFinishedStorms from "./mapsForFinishedStorms.js";
 import main from "./parse.js";
 import sql from "./sqlite.js";
-import toots from "./toots.js";
 import { cachePath, docsPath, sleep } from "./util.js";
 import web from "./web.js";
 
@@ -68,4 +67,3 @@ await fs.writeFile(
 await mapsForFinishedStorms();
 await mapsForCurrentStorms();
 await web();
-await toots(updatedStorms, positions);

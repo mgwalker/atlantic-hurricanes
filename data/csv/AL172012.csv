@@ -1,0 +1,22 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL172012,2012-10-12T23:30:00.000Z,Tropical Storm,Rafael,15,-63.1,40,1006,12,330,,
+AL172012,2012-10-13T03:00:00.000Z,Tropical Storm,Rafael,15.4,-63.4,40,1007,10,325,,
+AL172012,2012-10-13T09:00:00.000Z,Tropical Storm,Rafael,15.7,-64.2,40,1006,9,320,,
+AL172012,2012-10-13T15:00:00.000Z,Tropical Storm,Rafael,15.9,-64.1,40,1006,9,330,,
+AL172012,2012-10-13T21:00:00.000Z,Tropical Storm,Rafael,17.3,-63.3,50,1004,12,15,,
+AL172012,2012-10-14T03:00:00.000Z,Tropical Storm,Rafael,18.4,-63.6,50,1004,14,355,,
+AL172012,2012-10-14T09:00:00.000Z,Tropical Storm,Rafael,19.4,-63.8,50,1003,13,340,,
+AL172012,2012-10-14T15:00:00.000Z,Tropical Storm,Rafael,20,-64.1,60,997,12,335,,
+AL172012,2012-10-14T21:00:00.000Z,Tropical Storm,Rafael,20.7,-64.7,60,996,10,330,,
+AL172012,2012-10-15T03:00:00.000Z,Tropical Storm,Rafael,21.6,-64.8,70,989,10,330,,
+AL172012,2012-10-15T09:00:00.000Z,Tropical Storm,Rafael,22.5,-65.3,70,988,10,335,,
+AL172012,2012-10-15T15:00:00.000Z,Tropical Storm,Rafael,23,-65.7,70,985,9,345,,
+AL172012,2012-10-15T21:00:00.000Z,Tropical Storm,Rafael,24.1,-65.8,70,985,10,350,,
+AL172012,2012-10-16T03:00:00.000Z,Hurricane,Rafael,25.1,-65.5,85,974,12,10,45,205
+AL172012,2012-10-16T09:00:00.000Z,Hurricane,Rafael,26.6,-65,85,974,16,15,,
+AL172012,2012-10-16T15:00:00.000Z,Hurricane,Rafael,28.6,-64.5,90,971,24,20,35,205
+AL172012,2012-10-16T21:00:00.000Z,Hurricane,Rafael,30.6,-63.8,85,969,26,20,35,205
+AL172012,2012-10-17T03:00:00.000Z,Hurricane,Rafael,32.4,-62.5,85,970,29,30,35,205
+AL172012,2012-10-17T09:00:00.000Z,Hurricane,Rafael,35.2,-60.7,80,974,33,30,70,275
+AL172012,2012-10-17T15:00:00.000Z,Hurricane,Rafael,37.5,-59.1,75,975,35,30,70,310
+AL172012,2012-10-17T21:00:00.000Z,Post-tropical Cyclone,Rafael,40.2,-56.5,75,972,35,35,,

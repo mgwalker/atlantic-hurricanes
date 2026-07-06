@@ -1,0 +1,9 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL052014,2014-09-01T21:00:00.000Z,Tropical Depression,Five,20.1,-93.6,30,1009,13,295,,
+AL052014,2014-09-02T03:00:00.000Z,Tropical Depression,Five,21,-93.9,30,1007,10,310,,
+AL052014,2014-09-02T09:00:00.000Z,Tropical Storm,Dolly,22.6,-94.8,45,1005,13,305,,
+AL052014,2014-09-02T15:00:00.000Z,Tropical Storm,Dolly,23.4,-96.5,50,1005,16,300,,
+AL052014,2014-09-02T21:00:00.000Z,Tropical Storm,Dolly,22,-97,45,1004,12,270,,
+AL052014,2014-09-03T03:00:00.000Z,Tropical Storm,Dolly,21.9,-97.7,45,1002,9,270,,
+AL052014,2014-09-03T09:00:00.000Z,Tropical Storm,Dolly,21.8,-98.4,40,1004,8,265,,
+AL052014,2014-09-03T15:00:00.000Z,Remnants Of,Dolly,21.7,-99.2,30,1005,8,260,,

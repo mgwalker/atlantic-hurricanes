@@ -1,0 +1,25 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL092025,2025-09-26T21:00:00.000Z,Potential Tropical Cyclone,Nine,20.9,-74.6,35,1008,9,305,,
+AL092025,2025-09-27T03:00:00.000Z,Potential Tropical Cyclone,Nine,21.5,-76,35,1007,9,305,,
+AL092025,2025-09-27T09:00:00.000Z,Potential Tropical Cyclone,Nine,21.9,-75.8,35,1007,7,315,,
+AL092025,2025-09-27T15:00:00.000Z,Tropical Depression,Nine,22,-76.2,35,1005,6,320,,
+AL092025,2025-09-27T21:00:00.000Z,Tropical Depression,Nine,22.2,-76.5,35,1005,5,315,,
+AL092025,2025-09-28T03:00:00.000Z,Tropical Depression,Nine,22.4,-76.7,35,1004,2,310,,
+AL092025,2025-09-28T09:00:00.000Z,Tropical Depression,Nine,23,-77.2,35,1003,7,345,,
+AL092025,2025-09-28T15:00:00.000Z,Tropical Depression,Nine,23.5,-77.3,35,1002,7,350,,
+AL092025,2025-09-28T21:00:00.000Z,Tropical Storm,Imelda,24.2,-77.3,40,998,9,360,,
+AL092025,2025-09-29T03:00:00.000Z,Tropical Storm,Imelda,25,-77.1,40,998,9,360,,
+AL092025,2025-09-29T09:00:00.000Z,Tropical Storm,Imelda,25.5,-77.1,45,996,8,360,,
+AL092025,2025-09-29T15:00:00.000Z,Tropical Storm,Imelda,26.9,-77.1,60,988,9,360,,
+AL092025,2025-09-29T21:00:00.000Z,Tropical Storm,Imelda,27.7,-77.3,65,986,9,360,,
+AL092025,2025-09-30T03:00:00.000Z,Tropical Storm,Imelda,28.4,-77.2,65,987,8,10,,
+AL092025,2025-09-30T09:00:00.000Z,Tropical Storm,Imelda,28.8,-76.8,70,981,7,35,,
+AL092025,2025-09-30T15:00:00.000Z,Hurricane,Imelda,29.1,-76.6,80,980,7,40,45,185
+AL092025,2025-09-30T21:00:00.000Z,Hurricane,Imelda,29.4,-75.5,85,978,12,60,60,160
+AL092025,2025-10-01T03:00:00.000Z,Hurricane,Imelda,29.7,-73.9,85,977,15,70,60,160
+AL092025,2025-10-01T09:00:00.000Z,Hurricane,Imelda,30.2,-72.1,90,974,20,70,60,230
+AL092025,2025-10-01T15:00:00.000Z,Hurricane,Imelda,31,-70.4,100,966,20,65,60,230
+AL092025,2025-10-01T21:00:00.000Z,Hurricane,Imelda,31.6,-67.9,100,966,22,70,60,255
+AL092025,2025-10-02T03:00:00.000Z,Hurricane,Imelda,32.1,-65,100,971,29,75,45,255
+AL092025,2025-10-02T09:00:00.000Z,Hurricane,Imelda,32.8,-61.9,85,975,30,75,45,255
+AL092025,2025-10-02T15:00:00.000Z,Post-tropical Cyclone,Imelda,33.2,-59.5,75,980,29,75,,

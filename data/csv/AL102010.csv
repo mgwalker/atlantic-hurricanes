@@ -1,0 +1,10 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL102010,2010-09-06T03:00:00.000Z,Tropical Depression,Ten,20.7,-95.2,30,1003,7,5,,
+AL102010,2010-09-06T09:00:00.000Z,Tropical Storm,Hermine,21.6,-95,40,1001,8,360,,
+AL102010,2010-09-06T15:00:00.000Z,Tropical Storm,Hermine,23.4,-95.8,50,998,13,340,,
+AL102010,2010-09-06T21:00:00.000Z,Tropical Storm,Hermine,24.5,-97,60,992,15,330,,
+AL102010,2010-09-07T03:00:00.000Z,Tropical Storm,Hermine,25.5,-97.5,60,991,14,330,,
+AL102010,2010-09-07T09:00:00.000Z,Tropical Storm,Hermine,27,-98,50,993,17,340,,
+AL102010,2010-09-07T15:00:00.000Z,Tropical Storm,Hermine,28.3,-98.2,40,991,17,350,,
+AL102010,2010-09-07T21:00:00.000Z,Tropical Storm,Hermine,29.9,-98.7,40,996,18,345,,
+AL102010,2010-09-08T03:00:00.000Z,Tropical Depression,Hermine,31.6,-99.5,35,1003,16,350,,

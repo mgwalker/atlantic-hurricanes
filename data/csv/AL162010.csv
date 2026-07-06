@@ -1,0 +1,7 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL162010,2010-09-28T15:00:00.000Z,Tropical Depression,Sixteen,20.6,-82.5,35,1001,10,20,,
+AL162010,2010-09-28T21:00:00.000Z,Tropical Depression,Sixteen,21.5,-82.4,35,999,10,20,,
+AL162010,2010-09-29T03:00:00.000Z,Tropical Depression,Sixteen,21.9,-81.9,35,997,8,35,,
+AL162010,2010-09-29T09:00:00.000Z,Tropical Depression,Sixteen,23.3,-81.4,35,997,14,20,,
+AL162010,2010-09-29T15:00:00.000Z,Tropical Storm,Nicole,22.6,-80.6,40,996,9,40,,
+AL162010,2010-09-29T21:00:00.000Z,Tropical Storm,Nicole,24.5,-80,40,996,12,20,,

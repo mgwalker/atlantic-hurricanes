@@ -1,0 +1,7 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL052017,2017-07-17T21:00:00.000Z,Tropical Storm,Don,11.2,-52.6,40,1009,17,275,,
+AL052017,2017-07-18T03:00:00.000Z,Tropical Storm,Don,11.3,-54.6,45,1009,18,280,,
+AL052017,2017-07-18T09:00:00.000Z,Tropical Storm,Don,11.5,-56.2,50,1007,18,280,,
+AL052017,2017-07-18T15:00:00.000Z,Tropical Storm,Don,11.5,-58,40,1011,20,275,,
+AL052017,2017-07-18T21:00:00.000Z,Tropical Storm,Don,11.7,-60,40,1010,22,275,,
+AL052017,2017-07-19T03:00:00.000Z,Remnants Of,Don,11.9,-62.5,40,1012,25,275,,

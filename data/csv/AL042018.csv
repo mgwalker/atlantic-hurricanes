@@ -1,0 +1,11 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL042018,2018-08-07T15:00:00.000Z,Tropical Storm,Debby,38.9,-48.5,40,1008,16,355,,
+AL042018,2018-08-07T21:00:00.000Z,Tropical Storm,Debby,39.7,-49.2,40,1008,15,350,,
+AL042018,2018-08-08T03:00:00.000Z,Tropical Storm,Debby,40.3,-49.1,40,1008,13,360,,
+AL042018,2018-08-08T09:00:00.000Z,Tropical Storm,Debby,40.8,-48.8,45,1003,9,15,,
+AL042018,2018-08-08T15:00:00.000Z,Tropical Storm,Debby,41.2,-48.3,45,1003,12,35,,
+AL042018,2018-08-08T21:00:00.000Z,Tropical Storm,Debby,42,-47.2,40,1004,15,40,,
+AL042018,2018-08-09T03:00:00.000Z,Tropical Storm,Debby,42.8,-46.5,50,1000,13,40,,
+AL042018,2018-08-09T09:00:00.000Z,Tropical Storm,Debby,43.6,-45.1,45,1002,17,55,,
+AL042018,2018-08-09T15:00:00.000Z,Tropical Storm,Debby,44.5,-43.1,45,1002,17,55,,
+AL042018,2018-08-09T21:00:00.000Z,Post-tropical Cyclone,Debby,45.5,-40.5,40,1004,23,55,,

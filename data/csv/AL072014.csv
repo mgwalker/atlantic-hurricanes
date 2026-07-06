@@ -1,0 +1,16 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL072014,2014-10-10T15:00:00.000Z,Tropical Depression,Seven,23.8,-63.7,35,1005,10,320,,
+AL072014,2014-10-10T21:00:00.000Z,Tropical Storm,Fay,24.7,-64.2,40,1002,12,330,,
+AL072014,2014-10-10T23:30:00.000Z,Tropical Storm,Fay,25.2,-64.2,60,1000,12,340,,
+AL072014,2014-10-11T03:00:00.000Z,Tropical Storm,Fay,25.9,-64.5,60,1000,13,345,,
+AL072014,2014-10-11T09:00:00.000Z,Tropical Storm,Fay,26.7,-64.7,60,1000,12,355,,
+AL072014,2014-10-11T15:00:00.000Z,Tropical Storm,Fay,27.9,-65.3,70,991,16,355,,
+AL072014,2014-10-11T21:00:00.000Z,Tropical Storm,Fay,29.5,-65.4,70,990,18,360,,
+AL072014,2014-10-12T03:00:00.000Z,Tropical Storm,Fay,30.9,-65,70,989,17,10,,
+AL072014,2014-10-12T09:00:00.000Z,Tropical Storm,Fay,32.4,-64.6,70,986,20,15,,
+AL072014,2014-10-12T15:00:00.000Z,Tropical Storm,Fay,34,-62.8,70,986,24,55,,
+AL072014,2014-10-12T21:00:00.000Z,Hurricane,Fay,34.7,-60.7,75,986,25,70,30,175
+AL072014,2014-10-13T03:00:00.000Z,Tropical Storm,Fay,34.1,-58.2,65,988,24,80,,
+AL072014,2014-10-13T09:00:00.000Z,Tropical Storm,Fay,34.3,-55.3,65,988,26,80,,
+AL072014,2014-10-13T15:00:00.000Z,Tropical Storm,Fay,34.1,-52.2,60,990,29,90,,
+AL072014,2014-10-13T21:00:00.000Z,Remnants Of,Fay,33.7,-49.9,50,993,25,100,,

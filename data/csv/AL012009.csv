@@ -1,0 +1,7 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL012009,2009-05-28T15:00:00.000Z,Tropical Depression,One,37.3,-71,35,1007,17,50,,
+AL012009,2009-05-28T21:00:00.000Z,Tropical Depression,One,37.7,-69.4,35,1006,16,55,,
+AL012009,2009-05-29T03:00:00.000Z,Tropical Depression,One,38.1,-67.8,35,1006,16,70,,
+AL012009,2009-05-29T09:00:00.000Z,Tropical Depression,One,38.9,-66.3,35,1006,15,70,,
+AL012009,2009-05-29T15:00:00.000Z,Tropical Depression,One,39.6,-64,35,1006,18,65,,
+AL012009,2009-05-29T21:00:00.000Z,Tropical Depression,One,40.3,-62.3,30,1006,18,65,,

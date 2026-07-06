@@ -1,0 +1,7 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL062013,2013-08-25T21:00:00.000Z,Tropical Depression,Six,19.5,-95.5,35,1006,12,270,,
+AL062013,2013-08-25T23:00:00.000Z,Tropical Storm,Fernand,19.2,-95.8,45,1003,9,280,,
+AL062013,2013-08-26T03:00:00.000Z,Tropical Storm,Fernand,19.3,-96.2,50,1001,9,280,,
+AL062013,2013-08-26T09:00:00.000Z,Tropical Storm,Fernand,19.8,-96.9,45,1004,9,300,,
+AL062013,2013-08-26T15:00:00.000Z,Tropical Depression,Fernand,20.3,-97.7,35,1007,9,305,,
+AL062013,2013-08-26T21:00:00.000Z,Remnants Of,Fernand,20.6,-98.5,30,1009,9,295,,

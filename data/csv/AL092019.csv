@@ -1,0 +1,31 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL092019,2019-09-12T21:00:00.000Z,Potential Tropical Cyclone,Nine,23.7,-74.8,30,1008,8,305,,
+AL092019,2019-09-13T03:00:00.000Z,Potential Tropical Cyclone,Nine,23.8,-74.5,30,1009,2,310,,
+AL092019,2019-09-13T09:00:00.000Z,Potential Tropical Cyclone,Nine,24.6,-75.2,30,1009,6,315,,
+AL092019,2019-09-13T15:00:00.000Z,Potential Tropical Cyclone,Nine,25,-74.5,30,1009,1,305,,
+AL092019,2019-09-13T21:00:00.000Z,Tropical Depression,Nine,25.6,-75,30,1009,8,305,,
+AL092019,2019-09-14T03:00:00.000Z,Tropical Storm,Humberto,25.6,-75.2,40,1008,6,320,,
+AL092019,2019-09-14T09:00:00.000Z,Tropical Storm,Humberto,26.3,-76,40,1007,7,315,,
+AL092019,2019-09-14T15:00:00.000Z,Tropical Storm,Humberto,26.6,-76.7,50,1005,NaN,0,,
+AL092019,2019-09-14T21:00:00.000Z,Tropical Storm,Humberto,27.4,-77.3,50,1005,7,330,,
+AL092019,2019-09-15T03:00:00.000Z,Tropical Storm,Humberto,27.6,-77.3,60,1000,6,335,,
+AL092019,2019-09-15T09:00:00.000Z,Tropical Storm,Humberto,28.3,-77.7,60,1000,7,335,,
+AL092019,2019-09-15T15:00:00.000Z,Tropical Storm,Humberto,28.9,-77.9,65,997,7,350,,
+AL092019,2019-09-15T21:00:00.000Z,Tropical Storm,Humberto,29.3,-78,70,989,6,360,,
+AL092019,2019-09-16T03:00:00.000Z,Hurricane,Humberto,29.4,-77.6,75,988,3,40,25,150
+AL092019,2019-09-16T09:00:00.000Z,Hurricane,Humberto,29.7,-77.3,85,980,5,50,30,150
+AL092019,2019-09-16T15:00:00.000Z,Hurricane,Humberto,29.9,-76.5,85,978,7,70,30,150
+AL092019,2019-09-16T21:00:00.000Z,Hurricane,Humberto,30.2,-75.9,90,972,7,70,30,150
+AL092019,2019-09-17T03:00:00.000Z,Hurricane,Humberto,30.3,-75.1,90,966,8,75,30,150
+AL092019,2019-09-17T09:00:00.000Z,Hurricane,Humberto,30.6,-74.3,90,966,8,75,30,150
+AL092019,2019-09-17T15:00:00.000Z,Hurricane,Humberto,30.7,-73.5,100,961,8,75,,
+AL092019,2019-09-17T21:00:00.000Z,Hurricane,Humberto,31,-72.3,105,960,12,75,,
+AL092019,2019-09-18T03:00:00.000Z,Hurricane,Humberto,31.3,-71,115,951,12,75,60,175
+AL092019,2019-09-18T09:00:00.000Z,Hurricane,Humberto,31.7,-69.6,115,951,16,65,60,175
+AL092019,2019-09-18T15:00:00.000Z,Hurricane,Humberto,32.2,-68.1,120,952,16,65,,
+AL092019,2019-09-18T21:00:00.000Z,Hurricane,Humberto,33,-66.3,120,952,20,60,80,195
+AL092019,2019-09-19T03:00:00.000Z,Hurricane,Humberto,34,-63.9,120,952,23,55,90,220
+AL092019,2019-09-19T09:00:00.000Z,Hurricane,Humberto,35.2,-62.2,125,952,22,45,90,405
+AL092019,2019-09-19T15:00:00.000Z,Hurricane,Humberto,36.8,-60,110,955,24,50,90,405
+AL092019,2019-09-19T21:00:00.000Z,Hurricane,Humberto,38.5,-58.7,105,960,24,35,80,380
+AL092019,2019-09-20T03:00:00.000Z,Post-tropical Cyclone,Humberto,40,-58,100,965,20,30,80,380

@@ -1,0 +1,13 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL082015,2015-09-09T04:00:00.000Z,Tropical Depression,Eight,30.8,-61.5,35,1011,NaN,0,,
+AL082015,2015-09-09T09:00:00.000Z,Tropical Depression,Eight,30.9,-61.4,35,1011,NaN,0,,
+AL082015,2015-09-09T15:00:00.000Z,Tropical Depression,Eight,30.7,-60.8,35,1011,3,120,,
+AL082015,2015-09-09T21:00:00.000Z,Tropical Depression,Eight,30.6,-60.4,35,1009,3,115,,
+AL082015,2015-09-10T03:00:00.000Z,Tropical Storm,Henri,31.3,-60.7,40,1008,5,355,,
+AL082015,2015-09-10T09:00:00.000Z,Tropical Storm,Henri,31.4,-61,40,1008,3,350,,
+AL082015,2015-09-10T15:00:00.000Z,Tropical Storm,Henri,32.6,-60.8,40,1008,9,360,,
+AL082015,2015-09-10T21:00:00.000Z,Tropical Storm,Henri,33.9,-60.7,40,1008,15,5,,
+AL082015,2015-09-11T03:00:00.000Z,Tropical Storm,Henri,34.8,-60.7,40,1008,14,5,,
+AL082015,2015-09-11T09:00:00.000Z,Tropical Storm,Henri,36.2,-60.3,40,1008,16,10,,
+AL082015,2015-09-11T15:00:00.000Z,Tropical Storm,Henri,38,-59.4,40,1008,20,20,,
+AL082015,2015-09-11T21:00:00.000Z,Remnants Of,Henri,40,-58.5,40,1008,24,20,,

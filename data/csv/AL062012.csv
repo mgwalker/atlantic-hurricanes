@@ -1,0 +1,12 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL062012,2012-08-04T03:00:00.000Z,Tropical Depression,Six,13.8,-27.8,35,1009,16,290,,
+AL062012,2012-08-04T09:00:00.000Z,Tropical Depression,Six,14.2,-29.1,35,1008,16,295,,
+AL062012,2012-08-04T15:00:00.000Z,Tropical Storm,Florence,14.8,-30.6,45,1002,16,295,,
+AL062012,2012-08-04T21:00:00.000Z,Tropical Storm,Florence,15.3,-31.7,50,1001,15,295,,
+AL062012,2012-08-05T03:00:00.000Z,Tropical Storm,Florence,16.1,-33,60,1000,15,295,,
+AL062012,2012-08-05T09:00:00.000Z,Tropical Storm,Florence,16.6,-34.2,60,1000,15,295,,
+AL062012,2012-08-05T15:00:00.000Z,Tropical Storm,Florence,16.5,-35.6,60,1001,14,280,,
+AL062012,2012-08-05T21:00:00.000Z,Tropical Storm,Florence,16.3,-36.7,50,1005,14,275,,
+AL062012,2012-08-06T03:00:00.000Z,Tropical Storm,Florence,16.2,-37.9,40,1008,13,270,,
+AL062012,2012-08-06T09:00:00.000Z,Tropical Depression,Florence,16.2,-38.8,35,1009,12,270,,
+AL062012,2012-08-06T15:00:00.000Z,Post-tropical Cyclone,Florence,16.4,-40.2,35,1009,15,275,,

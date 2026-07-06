@@ -1,0 +1,7 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL112011,2011-08-28T12:00:00.000Z,Tropical Storm,Jose,30.8,-65.7,40,1008,16,350,,
+AL112011,2011-08-28T15:00:00.000Z,Tropical Storm,Jose,31.5,-65.7,40,1008,15,350,,
+AL112011,2011-08-28T21:00:00.000Z,Tropical Storm,Jose,33.2,-65.7,45,1007,17,360,,
+AL112011,2011-08-29T03:00:00.000Z,Tropical Storm,Jose,35,-65.5,40,1008,21,10,,
+AL112011,2011-08-29T09:00:00.000Z,Tropical Storm,Jose,37.2,-64.7,40,1008,23,10,,
+AL112011,2011-08-29T15:00:00.000Z,Remnants Of,Jose,39.5,-63.1,30,1009,29,30,,
