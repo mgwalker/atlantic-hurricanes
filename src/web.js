@@ -1,18 +1,19 @@
 import fs from "fs/promises";
 import sqlite from "sqlite3";
+import { fileURLToPath } from "url";
 
 import {
   dataPath,
+  sqlite as dbUtils,
   docsPath,
   getStormCategory,
   headingFriendly,
-  sqlite as dbUtils,
   year,
 } from "./util.js";
 
 const { getAll } = dbUtils;
 
-export default async () => {
+export const makeWeb = async () => {
   const db = new sqlite.Database(`${dataPath}/storms.${year}.sqlite`);
 
   const ids = (await getAll(db, "SELECT DISTINCT id FROM storms")).map(
@@ -123,6 +124,10 @@ export default async () => {
         color: #888;
         font-size: 0.8rem;
         margin: 0;
+      }
+
+      table {
+        width: 100%;
       }
 
       table th.spacer, table td.spacer {
@@ -295,3 +300,9 @@ export default async () => {
 
   fs.writeFile(`${docsPath}/index.html`, html);
 };
+
+export default makeWeb;
+
+if (fileURLToPath(import.meta.url) === process.argv[1]) {
+  makeWeb();
+}
