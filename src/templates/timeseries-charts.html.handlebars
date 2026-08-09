@@ -1,0 +1,21 @@
+{{#if series.wind }}
+  <h3>Maximum sustained winds</h3>
+  <div style="width:100%;"><canvas id="chart_wind_{{id}}"></canvas></div>
+{{/if}}
+{{#if series.pressure }}
+  <h3>Minimum central pressure</h3>
+  <div style="width:100%;"><canvas id="chart_pressure_{{id}}"></canvas></div>
+{{/if}}
+
+<script type="module">
+  const data = JSON.parse(document.getElementById("storm_data_{{ id }}").textContent);
+  
+  if(data.wind){
+    const canvas = document.getElementById("chart_wind_{{ id }}");
+    createChart(canvas, data.wind, "mph");
+  }
+  if(data.pressure){
+    const canvas = document.getElementById("chart_pressure_{{ id }}");
+    createChart(canvas, data.pressure, "mb");
+  }
+</script>

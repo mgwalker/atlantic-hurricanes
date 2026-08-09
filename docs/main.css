@@ -1,0 +1,112 @@
+@media only screen and (max-width:40rem) {
+  main {
+    margin: 0;
+  }
+
+  h1 {
+    margin: 1rem;
+  }
+
+  p {
+    margin: 1rem;
+  }
+
+  figure {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width:40rem) {
+ 
+}
+
+@media only screen and (min-width:64rem) {
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.finished {
+  border: 2px solid #def;
+  border-bottom-color: #ace;
+
+  > grid-row:first-of-type {
+    cursor: pointer;
+    background: #def;
+    padding: 1rem;
+
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+canvas {
+  width: 100%!important;
+}
+
+h2 .updated {
+  color: #888;
+  font-size: 0.8rem;
+  margin: 0;
+}
+table {
+  width: 100%;
+}
+table th.spacer,
+table td.spacer {
+  padding-left: 2em;
+}
+table td.storm {
+  border-top: 4px solid black;
+  border-bottom: 1px solid #bbb;
+}
+table td.storm.category-1 {
+  background-color: #ffffcc;
+}
+table td.storm.category-2 {
+  background-color: #ffe775;
+}
+table td.storm.category-3 {
+  background-color: #ffc140;
+}
+table td.storm.category-4 {
+  background-color: #ff8f20;
+}
+table td.storm.category-4 h2 .updated {
+  color: #eee;
+}
+table td.storm.category-5 {
+  background-color: #ff6060;
+}
+table td.storm.category-5 h2 .updated {
+  color: #ddd;
+}
+table th,
+table td {
+  text-align: left;
+  vertical-align: top;
+}
+table th + th,
+table td + td {
+  padding-left: 1em;
+}
+figcaption {
+  font-size: 0.7em;
+  text-align: right;
+}

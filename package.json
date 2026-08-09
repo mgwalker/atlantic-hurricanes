@@ -16,6 +16,7 @@
     "dayjs": "^1.10.6",
     "dotenv": "^16.4.5",
     "formdata-node": "^6.0.3",
+    "handlebars": "^4.7.9",
     "playwright": "^1.14.1",
     "sqlite3": "^5.0.2"
   },

@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Atlantic Hurricanes, 2026</title>
@@ -7,7 +5,10 @@
     <meta charset="utf-8" />
     <!-- Search Engine -->
     <meta name="description" content="Atlantic Hurricanes, 2026" />
-    <meta name="image" content="https://mgwalker.github.io/atlantic-hurricanes/" />
+    <meta
+      name="image"
+      content="https://mgwalker.github.io/atlantic-hurricanes/"
+    />
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="Atlantic Hurricanes, 2026" />
     <meta itemprop="description" content="Atlantic Hurricanes, 2026" />
@@ -18,158 +19,162 @@
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta name="og:title" content="Atlantic Hurricanes, 2026" />
     <meta name="og:description" content="Atlantic Hurricanes, 2026" />
-    <meta name="og:url" content="https://mgwalker.github.io/atlantic-hurricanes/" />
+    <meta
+      name="og:url"
+      content="https://mgwalker.github.io/atlantic-hurricanes/"
+    />
     <meta name="og:site_name" content="Atlantic Hurricanes, 2026" />
     <meta name="og:locale" content="en_US" />
     <meta name="og:type" content="website" />
 
-    <style type="text/css">
-      body {
-        font-family: monospace;
-        padding: 0 3em;
-      }
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://suddenlygreg.com/static-assets/main.css"
+    />
 
-      h2 .updated {
-        color: #888;
-        font-size: 0.8rem;
-        margin: 0;
-      }
-
-      table {
-        width: 100%;
-      }
-
-      table th.spacer, table td.spacer {
-        padding-left: 2em;
-      }
-
-      table td.storm {
-        border-top: 4px solid black;
-        border-bottom: 1px solid #bbb;
-      }
-
-      table td.storm.category-1 {
-        background-color: #ffffcc;
-      }
-
-      table td.storm.category-2 {
-        background-color: #ffe775;
-      }
-
-      table td.storm.category-3 {
-        background-color: #ffc140;
-      }
-
-      table td.storm.category-4 {
-        background-color: #ff8f20;
-      }
-
-      table td.storm.category-4 h2 .updated {
-        color: #eee;
-      }
-
-      table td.storm.category-5 {
-        background-color: #ff6060;
-      }
-
-      table td.storm.category-5 h2 .updated {
-        color: #ddd;
-      }
-
-      table th, table td {
-        text-align: left;
-        vertical-align: top;
-      }
-
-      table th + th, table td + td {
-        padding-left: 1em;
-      }
-
-      figcaption {
-        font-size: 0.7em;
-        text-align: right;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="main.css"
+    />
   </head>
   <body>
-    <h1>Atlantic Storms, 2026</h1>
+    <main>
+      <h1>Atlantic Storms, 2026</h1>
 
-    <p>
-      Data of all storms:
-      <a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/storms.2026.sqlite">sqlite</a>
-    </p>
+      <p>
+        Data of all storms:
+        <a
+          href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/storms.2026.sqlite"
+        >sqlite</a>
+      </p>
 
-    
 
-    <table>
-      <tr>
-        <td colspan="6" class="storm " style="cursor:pointer;" onClick="toggle('AL022026')">
-          <h2>🏁 Bertha
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL022026" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL022026.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
+      <grid-container>
+          <grid-row>
+            <script type="text/json" id="storm_data_AL022026">
+              {"pressure":[{"timestamp":"2026-07-19T15:00:00.000Z","value":1011},{"timestamp":"2026-07-19T21:00:00.000Z","value":1010},{"timestamp":"2026-07-20T03:00:00.000Z","value":1008},{"timestamp":"2026-07-20T09:00:00.000Z","value":1006},{"timestamp":"2026-07-20T15:00:00.000Z","value":1007},{"timestamp":"2026-07-20T21:00:00.000Z","value":1005},{"timestamp":"2026-07-21T03:00:00.000Z","value":999},{"timestamp":"2026-07-21T09:00:00.000Z","value":998},{"timestamp":"2026-07-21T15:00:00.000Z","value":995},{"timestamp":"2026-07-21T21:00:00.000Z","value":995},{"timestamp":"2026-07-22T03:00:00.000Z","value":995},{"timestamp":"2026-07-22T09:00:00.000Z","value":998},{"timestamp":"2026-07-22T15:00:00.000Z","value":998},{"timestamp":"2026-07-22T21:00:00.000Z","value":1000},{"timestamp":"2026-07-23T03:00:00.000Z","value":1002},{"timestamp":"2026-07-23T09:00:00.000Z","value":1003},{"timestamp":"2026-07-23T15:00:00.000Z","value":1004},{"timestamp":"2026-07-23T21:00:00.000Z","value":1006},{"timestamp":"2026-07-24T03:00:00.000Z","value":1008}],"wind":[{"timestamp":"2026-07-19T15:00:00.000Z","value":30},{"timestamp":"2026-07-19T21:00:00.000Z","value":30},{"timestamp":"2026-07-20T03:00:00.000Z","value":30},{"timestamp":"2026-07-20T09:00:00.000Z","value":35},{"timestamp":"2026-07-20T15:00:00.000Z","value":35},{"timestamp":"2026-07-20T21:00:00.000Z","value":35},{"timestamp":"2026-07-21T03:00:00.000Z","value":40},{"timestamp":"2026-07-21T09:00:00.000Z","value":50},{"timestamp":"2026-07-21T15:00:00.000Z","value":60},{"timestamp":"2026-07-21T21:00:00.000Z","value":60},{"timestamp":"2026-07-22T03:00:00.000Z","value":60},{"timestamp":"2026-07-22T09:00:00.000Z","value":50},{"timestamp":"2026-07-22T15:00:00.000Z","value":50},{"timestamp":"2026-07-22T21:00:00.000Z","value":45},{"timestamp":"2026-07-23T03:00:00.000Z","value":45},{"timestamp":"2026-07-23T09:00:00.000Z","value":45},{"timestamp":"2026-07-23T15:00:00.000Z","value":45},{"timestamp":"2026-07-23T21:00:00.000Z","value":40},{"timestamp":"2026-07-24T03:00:00.000Z","value":35}],"extents":{}}
+            </script>              <grid-container class="finished">
+                <grid-row onClick="toggle('storm_AL022026')">
+                  <h2>🏁 Bertha</h2>
+                </grid-row>
+                <grid-row id="storm_AL022026" class="display-none">
+                  <grid-row>
+                    <figure>
+                      <img src="AL022026.png">
+                      <figcaption>
+                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                      </figcaption>
+                    </figure>
+                  </grid-row>
+                  <grid-row>
+                      <h3>Maximum sustained winds</h3>
+                      <div style="width:100%;"><canvas id="chart_wind_AL022026"></canvas></div>
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;"><canvas id="chart_pressure_AL022026"></canvas></div>
+                    
+                    <script type="module">
+                      const data = JSON.parse(document.getElementById("storm_data_AL022026").textContent);
+                      
+                      if(data.wind){
+                        const canvas = document.getElementById("chart_wind_AL022026");
+                        createChart(canvas, data.wind, "mph");
+                      }
+                      if(data.pressure){
+                        const canvas = document.getElementById("chart_pressure_AL022026");
+                        createChart(canvas, data.pressure, "mb");
+                      }
+                    </script>
+                  </grid-row>
+                </grid-row>
+              </grid-container>          </grid-row>
+          <grid-row>
+            <script type="text/json" id="storm_data_AL012026">
+              {"pressure":[{"timestamp":"2026-06-16T15:00:00.000Z","value":1007},{"timestamp":"2026-06-16T21:00:00.000Z","value":1005},{"timestamp":"2026-06-17T03:00:00.000Z","value":1004},{"timestamp":"2026-06-17T09:00:00.000Z","value":1003},{"timestamp":"2026-06-17T15:00:00.000Z","value":1001},{"timestamp":"2026-06-17T16:30:00.000Z","value":999},{"timestamp":"2026-06-17T21:00:00.000Z","value":1001},{"timestamp":"2026-06-18T03:00:00.000Z","value":1000}],"wind":[{"timestamp":"2026-06-16T15:00:00.000Z","value":30},{"timestamp":"2026-06-16T21:00:00.000Z","value":30},{"timestamp":"2026-06-17T03:00:00.000Z","value":30},{"timestamp":"2026-06-17T09:00:00.000Z","value":30},{"timestamp":"2026-06-17T15:00:00.000Z","value":40},{"timestamp":"2026-06-17T16:30:00.000Z","value":45},{"timestamp":"2026-06-17T21:00:00.000Z","value":45},{"timestamp":"2026-06-18T03:00:00.000Z","value":35}],"extents":{}}
+            </script>              <grid-container class="finished">
+                <grid-row onClick="toggle('storm_AL012026')">
+                  <h2>🏁 Arthur</h2>
+                </grid-row>
+                <grid-row id="storm_AL012026" class="display-none">
+                  <grid-row>
+                    <figure>
+                      <img src="AL012026.png">
+                      <figcaption>
+                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                      </figcaption>
+                    </figure>
+                  </grid-row>
+                  <grid-row>
+                      <h3>Maximum sustained winds</h3>
+                      <div style="width:100%;"><canvas id="chart_wind_AL012026"></canvas></div>
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;"><canvas id="chart_pressure_AL012026"></canvas></div>
+                    
+                    <script type="module">
+                      const data = JSON.parse(document.getElementById("storm_data_AL012026").textContent);
+                      
+                      if(data.wind){
+                        const canvas = document.getElementById("chart_wind_AL012026");
+                        createChart(canvas, data.wind, "mph");
+                      }
+                      if(data.pressure){
+                        const canvas = document.getElementById("chart_pressure_AL012026");
+                        createChart(canvas, data.pressure, "mb");
+                      }
+                    </script>
+                  </grid-row>
+                </grid-row>
+              </grid-container>          </grid-row>
+      </grid-container>
 
-      <tr>
-        <td colspan="6" class="storm " style="cursor:pointer;" onClick="toggle('AL012026')">
-          <h2>🏁 Arthur
-          </h2>
-        </td>
-      </tr>
-      
-      <tr id="storm_AL012026" style="display:none;">
-        <td class="spacer">
-        <td colspan="5">
-          <figure>
-            <img src="AL012026.png">
-            <figcaption>
-              Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-              Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-              <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-            </figcaption>
-          </figure>
-        </td>
-      </tr>
-      
-    </table>
-    <script type="text/javascript">
-      const formatter = new Intl.DateTimeFormat([], {
-        day: "numeric",
-        hour: "numeric",
-        minute: "numeric",
-        month: "long",
-        timeZoneName: "short",
-        weekday: "long",
-        year: "numeric"
-      });
-
-      Array.from(document.querySelectorAll("[data-time]")).forEach((e) => {
-        const d = new Date(Date.parse(e.innerText));
-        e.innerText = formatter.format(d);
-      });
-
-      const toggle = (id) => {
-        const el = document.querySelector(`#storm_${id}`);
-        if(el.style.display === "none") {
-          el.style.display = "";
-        } else {
-          el.style.display = "none";
+      <script type="text/javascript">
+        const toggle = id => {
+          document.getElementById(id).classList.toggle("display-none");
         }
-      }
-    </script>
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+      <script type="text/javascript">
+        const createChart = (canvas, data, units) => {
+          const values = data.map(({ value }) => value);
+          const padding = Math.round((Math.max(...values) - Math.min(...values)) / 10);
+
+          new Chart(canvas, {
+            type: 'line',
+            data: {
+              labels: data.map(({timestamp}) => new Date(timestamp)),
+              datasets: [{
+                data: values,
+                borderWidth: 3,
+                lineTension: 0.3
+              }]
+            },
+
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                },
+              },
+              responsive:true,
+              aspectRatio: 4,
+              scales: {
+                x: { type: "timeseries" },
+                y: {
+                  min: Math.min(...data.map(({ value }) => value)) - padding,
+                  max: Math.max(...data.map(({ value }) => value)) + padding,
+                  ticks: {
+                    callback: label => `${label} ${units}`,
+                  }
+                }
+              }
+            }
+          });
+        }
+      </script>
+    </main>
   </body>
 </html>

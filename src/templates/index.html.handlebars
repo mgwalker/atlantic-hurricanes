@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <title>Atlantic Hurricanes, {{ year }}</title>
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8" />
+    <!-- Search Engine -->
+    <meta name="description" content="Atlantic Hurricanes, {{ year }}" />
+    <meta
+      name="image"
+      content="https://mgwalker.github.io/atlantic-hurricanes/"
+    />
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Atlantic Hurricanes, {{ year }}" />
+    <meta itemprop="description" content="Atlantic Hurricanes, {{ year }}" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Atlantic Hurricanes, {{ year }}" />
+    <meta name="twitter:description" content="Atlantic Hurricanes, {{ year }}" />
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Atlantic Hurricanes, {{ year }}" />
+    <meta name="og:description" content="Atlantic Hurricanes, {{ year }}" />
+    <meta
+      name="og:url"
+      content="https://mgwalker.github.io/atlantic-hurricanes/"
+    />
+    <meta name="og:site_name" content="Atlantic Hurricanes, {{ year }}" />
+    <meta name="og:locale" content="en_US" />
+    <meta name="og:type" content="website" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://suddenlygreg.com/static-assets/main.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="main.css"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Atlantic Storms, {{ year }}</h1>
+
+      <p>
+        Data of all storms:
+        <a
+          href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/storms.{{ year }}.sqlite"
+        >sqlite</a>
+      </p>
+
+      {{#if multipleActive }}
+        <h2>${active.length} active storms</h2>
+        <img src="active.png">
+      {{/if}}
+
+      <grid-container>
+        {{#each storms }}
+          <grid-row>
+            {{> stormData }}
+            {{#if final}}
+              {{> finishedStorm }}
+            {{/if}}
+          </grid-row>
+        {{/each}}
+      </grid-container>
+
+      <script type="text/javascript">
+        const toggle = id => {
+          document.getElementById(id).classList.toggle("display-none");
+        }
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+      <script type="text/javascript">
+        const createChart = (canvas, data, units) => {
+          const values = data.map(({ value }) => value);
+          const padding = Math.round((Math.max(...values) - Math.min(...values)) / 10);
+
+          new Chart(canvas, {
+            type: 'line',
+            data: {
+              labels: data.map(({timestamp}) => new Date(timestamp)),
+              datasets: [{
+                data: values,
+                borderWidth: 3,
+                lineTension: 0.3
+              }]
+            },
+
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                },
+              },
+              responsive:true,
+              aspectRatio: 4,
+              scales: {
+                x: { type: "timeseries" },
+                y: {
+                  min: Math.min(...data.map(({ value }) => value)) - padding,
+                  max: Math.max(...data.map(({ value }) => value)) + padding,
+                  ticks: {
+                    callback: label => `${label} ${units}`,
+                  }
+                }
+              }
+            }
+          });
+        }
+      </script>
+    </main>
+  </body>
+</html>
