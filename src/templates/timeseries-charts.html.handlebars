@@ -1,21 +1,42 @@
 {{#if series.wind }}
-  <h3>Maximum sustained winds</h3>
-  <div style="width:100%;"><canvas id="chart_wind_{{id}}"></canvas></div>
+  <grid-row class="chart-container">
+    <h3>Maximum sustained winds</h3>
+    <div>
+      <canvas id="chart_wind_{{id}}"></canvas>
+    </div>
+  </grid-row>
 {{/if}}
 {{#if series.pressure }}
-  <h3>Minimum central pressure</h3>
-  <div style="width:100%;"><canvas id="chart_pressure_{{id}}"></canvas></div>
+  <grid-row class="chart-container"></div>
+    <h3>Minimum central pressure</h3>
+    <div style="width:100%;">
+      <canvas id="chart_pressure_{{id}}"></canvas>
+    </div>
+  </grid-row>
 {{/if}}
+{{#if series.extents }}
+  <grid-row class="chart-container"></div>
+    <h3>Storm wind extents</h3>
+    <div style="width:100%;">
+      <canvas id="chart_extents_{{id}}"></canvas>
+    </div>
+  </grid-row>
+{{/if}}
+
 
 <script type="module">
   const data = JSON.parse(document.getElementById("storm_data_{{ id }}").textContent);
   
-  if(data.wind){
+  if(data.wind) {
     const canvas = document.getElementById("chart_wind_{{ id }}");
     createChart(canvas, data.wind, "mph");
   }
-  if(data.pressure){
+  if(data.pressure) {
     const canvas = document.getElementById("chart_pressure_{{ id }}");
     createChart(canvas, data.pressure, "mb");
+  }
+  if(data.extents) {
+    const canvas = document.getElementById("chart_extents_{{ id }}");
+    createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
   }
 </script>

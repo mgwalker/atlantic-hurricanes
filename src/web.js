@@ -78,13 +78,13 @@ export const makeWeb = async () => {
             value: maximum_sustained_wind_mph,
           })),
           extents: {
-            tropical: storm.map(
+            hurricane: storm.map(
               ({ timestamp, hurricane_wind_extent_miles }) => ({
                 timestamp,
                 value: hurricane_wind_extent_miles,
               })
             ),
-            hurricane: storm.map(
+            tropical: storm.map(
               ({ timestamp, tropical_storm_wind_extent_miles }) => ({
                 timestamp,
                 value: tropical_storm_wind_extent_miles,
@@ -101,6 +101,12 @@ export const makeWeb = async () => {
       // Same with hurricane.
       if (!stormData.series.extents.hurricane.some(({ value }) => value)) {
         delete stormData.series.extents.hurricane;
+      }
+      if (
+        !stormData.series.extents.tropical &&
+        !stormData.series.extents.hurricane
+      ) {
+        delete stormData.series.extents;
       }
 
       storms.push(stormData);
@@ -341,6 +347,7 @@ export const makeWeb = async () => {
   // `;
 
   fs.writeFile(`${docsPath}/index.html`, html);
+  fs.writeFile(`${docsPath}/${year}.html`, html);
 };
 
 export default makeWeb;
