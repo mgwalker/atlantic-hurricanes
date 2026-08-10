@@ -1,0 +1,64 @@
+<grid-container class="storm">
+  <grid-row class="category-3" onClick="toggle('storm_{{ id }}')">
+    <grid-row>
+      <h2>
+        {{ classification}} {{ name }}{{#if category }} - category {{ category }}{{/if}}
+        <div class="updated">
+          last updated <time datetime="{{ updated }}">{{ updated }}</time>
+        </div>
+      </h2>
+    </grid-row>
+    <grid-row>
+      
+    </grid-row>
+  </grid-row>
+  <grid-row id="storm_{{ id }}">
+    <grid-row>
+      <table>
+        <tr>
+          <th>wind speed</th>
+          <th>central pressure</th>
+          <th>movement</th>
+          <th>data (CSV)</th>
+          <th>National Hurricane Center</th>
+        </tr>
+        <tr>
+          <td>
+            {{ maximum_sustained_wind_mph }} mph
+            <br>
+            {{ deltaWind }}
+          </td>
+          <td>
+            {{ minimum_central_pressure_mb }} mb
+            <br>
+            {{ deltaPressure }}
+          </td>
+          <td>
+            {{ heading }}
+            <br>
+            <span style="display: inline-block; font-size: 1.5em; transform: rotate({{ movement_direction_degrees }}deg);">↑</span>
+          </td>
+          <td>
+            <a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/{{ id }}.csv">{{ id }}.csv</a>
+          </td>
+          <td>
+            <a href="https://www.nhc.noaa.gov/archive/{{ year }}/{{ ucname }}.shtml?">NHC advisories</a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5">
+          </td>
+        </tr>
+      </table>
+      <figure>
+        <img src="{{ id }}.png">
+        <figcaption>
+          Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+        </figcaption>
+      </figure>
+    </grid-row>
+    <grid-row>
+      {{>timeSeriesCharts }}
+    </grid-row>
+  </grid-row>
+</grid-container>

@@ -36,99 +36,96 @@ p {
   display: none !important;
 }
 
-.finished {
+grid-container.storm {
   border: 2px solid #def;
   border-bottom-color: #ace;
 
-  > grid-row:first-of-type {
-    cursor: pointer;
-    background: #def;
-    padding: 1rem;
+  h2 {
+    margin: 0;
+    padding: 0;
 
-    h2 {
-      margin: 0;
-      padding: 0;
+    .updated {
+      color: black;
+      font-size: 0.8rem;
     }
   }
 
   img {
     max-width: 100%;
   }
-}
 
-.chart-container {
-  box-sizing: border-box;
-  margin: 0 2rem;
-  margin-top: 1rem;
+  > grid-row:first-of-type {
+    background: #def;
+    padding: 1rem;
 
-  h3 {
-    margin: 0;
-    margin-bottom: 1rem;
-  }
-
-  div {
-    width: 100%;
-    height: 250px;
-
-    canvas {
-      height: 250px;
-      width: 100%!important;
+    &.category-1 {
+      background-color: #ffffcc;
+    }
+    &.category-2 {
+      background-color: #ffe775;
+    }
+    &.category-3 {
+      background-color: #ffc140;
+    }
+    &.category-4 {
+      background-color: #ff8f20;
+    }
+    &.category-5 {
+      background-color: #ff6060;
     }
   }
 
-  + .chart-container {
-    padding-top: 1rem;
-    border-top: 1px solid #ace;
+  &.finished {
+    > grid-row:first-of-type {
+      cursor: pointer;
+    }
   }
-}
 
-h2 .updated {
-  color: #888;
-  font-size: 0.8rem;
-  margin: 0;
-}
-table {
-  width: 100%;
-}
-table th.spacer,
-table td.spacer {
-  padding-left: 2em;
-}
-table td.storm {
-  border-top: 4px solid black;
-  border-bottom: 1px solid #bbb;
-}
-table td.storm.category-1 {
-  background-color: #ffffcc;
-}
-table td.storm.category-2 {
-  background-color: #ffe775;
-}
-table td.storm.category-3 {
-  background-color: #ffc140;
-}
-table td.storm.category-4 {
-  background-color: #ff8f20;
-}
-table td.storm.category-4 h2 .updated {
-  color: #eee;
-}
-table td.storm.category-5 {
-  background-color: #ff6060;
-}
-table td.storm.category-5 h2 .updated {
-  color: #ddd;
-}
-table th,
-table td {
-  text-align: left;
-  vertical-align: top;
-}
-table th + th,
-table td + td {
-  padding-left: 1em;
-}
-figcaption {
-  font-size: 0.7em;
-  text-align: right;
+  figcaption {
+    margin-top: 4px;
+    font-size: 0.7em;
+    text-align: right;
+  }
+
+
+  .chart-container {
+    box-sizing: border-box;
+    margin: 0 2rem;
+    margin-top: 1rem;
+
+    h3 {
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+
+    div {
+      width: 100%;
+      height: 250px;
+
+      canvas {
+        height: 250px;
+        width: 100%!important;
+      }
+    }
+
+    + .chart-container {
+      padding-top: 1rem;
+      border-top: 1px solid #ace;
+    }
+  }
+
+  table {
+    width: 100%;
+    margin: 0 2rem;
+    font-family: monospace;
+
+    th,td {
+      text-align: left;
+      vertical-align: top;
+
+      & + th,& + td {
+        padding-left: 1rem;
+      }
+    }
+  }
 }

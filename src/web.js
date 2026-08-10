@@ -51,6 +51,8 @@ export const makeWeb = async () => {
       const stormData = {
         ...last,
         id,
+        year,
+        ucname: last.name.toUpperCase(),
         category: getStormCategory(last.maximum_sustained_wind_mph),
         heading: `${last.movement_speed_mph} mph to the ${headingFriendly(
           last.movement_direction_degrees
@@ -94,6 +96,10 @@ export const makeWeb = async () => {
         },
       };
 
+      if (stormData.classification.toLowerCase() !== "hurricane") {
+        stormData.category = false;
+      }
+
       // If there aren't any tropical storm wind extents, remove it
       if (!stormData.series.extents.tropical.some(({ value }) => value)) {
         delete stormData.series.extents.tropical;
@@ -134,217 +140,6 @@ export const makeWeb = async () => {
     multipleActive: active > 1,
     storms,
   });
-
-  //   const html = `
-  // <!DOCTYPE html>
-  // <html lang="en">
-  //   <head>
-  //     <title>Atlantic Hurricanes, ${year}</title>
-  //     <!-- COMMON TAGS -->
-  //     <meta charset="utf-8" />
-  //     <!-- Search Engine -->
-  //     <meta name="description" content="Atlantic Hurricanes, ${year}" />
-  //     <meta name="image" content="https://mgwalker.github.io/atlantic-hurricanes/" />
-  //     <!-- Schema.org for Google -->
-  //     <meta itemprop="name" content="Atlantic Hurricanes, ${year}" />
-  //     <meta itemprop="description" content="Atlantic Hurricanes, ${year}" />
-  //     <!-- Twitter -->
-  //     <meta name="twitter:card" content="summary" />
-  //     <meta name="twitter:title" content="Atlantic Hurricanes, ${year}" />
-  //     <meta name="twitter:description" content="Atlantic Hurricanes, ${year}" />
-  //     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-  //     <meta name="og:title" content="Atlantic Hurricanes, ${year}" />
-  //     <meta name="og:description" content="Atlantic Hurricanes, ${year}" />
-  //     <meta name="og:url" content="https://mgwalker.github.io/atlantic-hurricanes/" />
-  //     <meta name="og:site_name" content="Atlantic Hurricanes, ${year}" />
-  //     <meta name="og:locale" content="en_US" />
-  //     <meta name="og:type" content="website" />
-
-  //     <link rel="stylesheet" type="text/css" href="http://suddenlygreg.com/static-assets/main.css">
-
-  //     <style type="text/css">
-  //       body {
-  //         font-family: monospace;
-  //         padding: 0 3em;
-  //       }
-
-  //       h2 .updated {
-  //         color: #888;
-  //         font-size: 0.8rem;
-  //         margin: 0;
-  //       }
-
-  //       table {
-  //         width: 100%;
-  //       }
-
-  //       table th.spacer, table td.spacer {
-  //         padding-left: 2em;
-  //       }
-
-  //       table td.storm {
-  //         border-top: 4px solid black;
-  //         border-bottom: 1px solid #bbb;
-  //       }
-
-  //       table td.storm.category-1 {
-  //         background-color: #ffffcc;
-  //       }
-
-  //       table td.storm.category-2 {
-  //         background-color: #ffe775;
-  //       }
-
-  //       table td.storm.category-3 {
-  //         background-color: #ffc140;
-  //       }
-
-  //       table td.storm.category-4 {
-  //         background-color: #ff8f20;
-  //       }
-
-  //       table td.storm.category-4 h2 .updated {
-  //         color: #eee;
-  //       }
-
-  //       table td.storm.category-5 {
-  //         background-color: #ff6060;
-  //       }
-
-  //       table td.storm.category-5 h2 .updated {
-  //         color: #ddd;
-  //       }
-
-  //       table th, table td {
-  //         text-align: left;
-  //         vertical-align: top;
-  //       }
-
-  //       table th + th, table td + td {
-  //         padding-left: 1em;
-  //       }
-
-  //       figcaption {
-  //         font-size: 0.7em;
-  //         text-align: right;
-  //       }
-  //     </style>
-  //   </head>
-  //   <body>
-  //     <h1>Atlantic Storms, ${year}</h1>
-
-  //     <p>
-  //       Data of all storms:
-  //       <a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/storms.${year}.sqlite">sqlite</a>
-  //     </p>
-
-  //     ${
-  //       active.length < 2
-  //         ? ""
-  //         : `
-  //     <h2>${active.length} active storms</h2>
-  //     <img src="active.png">`
-  //     }
-
-  //     <table>${storms
-  //       .map(
-  //         (storm) => `
-  //       <tr>
-  //         <td colspan="6" class="storm ${
-  //           storm.final ? "" : `category-${storm.category}`
-  //         }" ${
-  //           storm.final
-  //             ? `style="cursor:pointer;" onClick="toggle('${storm.id}')"`
-  //             : ""
-  //         }>
-  //           <h2>${
-  //             storm.final
-  //               ? `🏁 ${storm.name}`
-  //               : `
-  //             ${storm.classification} ${storm.name}${
-  //                   storm.category > 0 ? ` - Category ${storm.category}` : ""
-  //                 }
-  //             <p class="updated">last updated <span data-time>${
-  //               storm.updated
-  //             }</span></p>`
-  //           }
-  //           </h2>
-  //         </td>
-  //       </tr>
-  //       ${
-  //         storm.final
-  //           ? ""
-  //           : `
-  //       <tr>
-  //         <th class="spacer"></th>
-  //         <th>wind speed</th>
-  //         <th>central pressure</th>
-  //         <th>movement</th>
-  //         <th>data (CSV)</th>
-  //         <th>National Hurricane Center</th>
-  //       </tr>
-  //       <tr>
-  //         <td class="spacer"></td>
-  //         <td>${storm.maximum_sustained_wind_mph} mph${storm.deltaWind}</td>
-  //         <td>${storm.minimum_central_pressure_mb} mb${storm.deltaPressure}</td>
-  //         <td>
-  //           ${storm.heading}
-  //           <br/>
-  //           <span style="display: inline-block; font-size: 1.5em; transform: rotate(${
-  //             storm.movement_direction_degrees
-  //           }deg);">↑</span>
-  //         </td>
-  //         <td><a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/${
-  //           storm.id
-  //         }.csv">${storm.id}.csv</a></td>
-  //         <td><a href="https://www.nhc.noaa.gov/archive/${year}/${storm.name.toUpperCase()}.shtml?">NHC advisories</a></td>
-  //       </tr>`
-  //       }
-  //       <tr id="storm_${storm.id}" ${storm.final ? 'style="display:none;"' : ""}>
-  //         <td class="spacer">
-  //         <td colspan="5">
-  //           <figure>
-  //             <img src="${storm.id}.png">
-  //             <figcaption>
-  //               Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors,
-  //               Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> |
-  //               <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-  //             </figcaption>
-  //           </figure>
-  //         </td>
-  //       </tr>
-  //       `
-  //       )
-  //       .join("\n")}
-  //     </table>
-  //     <script type="text/javascript">
-  //       const formatter = new Intl.DateTimeFormat([], {
-  //         day: "numeric",
-  //         hour: "numeric",
-  //         minute: "numeric",
-  //         month: "long",
-  //         timeZoneName: "short",
-  //         weekday: "long",
-  //         year: "numeric"
-  //       });
-
-  //       Array.from(document.querySelectorAll("[data-time]")).forEach((e) => {
-  //         const d = new Date(Date.parse(e.innerText));
-  //         e.innerText = formatter.format(d);
-  //       });
-
-  //       const toggle = (id) => {
-  //         const el = document.querySelector(\`#storm_\${id}\`);
-  //         if(el.style.display === "none") {
-  //           el.style.display = "";
-  //         } else {
-  //           el.style.display = "none";
-  //         }
-  //       }
-  //     </script>
-  //   </body>
-  // </html>
-  // `;
 
   fs.writeFile(`${docsPath}/index.html`, html);
   fs.writeFile(`${docsPath}/${year}.html`, html);

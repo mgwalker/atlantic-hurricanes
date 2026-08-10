@@ -59,6 +59,9 @@
         {{#each storms }}
           <grid-row>
             {{> stormData }}
+            {{#unless final}}
+              {{> activeStorm }}
+            {{/unless}}
             {{#if final}}
               {{> finishedStorm }}
             {{/if}}
@@ -77,6 +80,21 @@
 
       <script type="text/javascript">
         const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+        const formatter = new Intl.DateTimeFormat([], {
+          day: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+          month: "long",
+          timeZoneName: "short",
+          weekday: "long",
+          year: "numeric"
+        });
+
+        Array.from(document.querySelectorAll("time[datetime]")).forEach((e) => {
+          const d = new Date(Date.parse(e.innerText));
+          e.innerText = formatter.format(d);
+        });
 
         const createChart = (canvas, data, units) => {
           const values = data.map(({ value }) => value);
