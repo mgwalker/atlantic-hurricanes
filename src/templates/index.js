@@ -8,6 +8,7 @@ const registeredTemplates = {
   finishedStorm: "finished-storm.html.handlebars",
   stormData: "storm-data.json.handlebars",
   timeSeriesCharts: "timeseries-charts.html.handlebars",
+  mainJs: "main.js",
 };
 
 const templatePromise = Promise.all(
