@@ -2,17 +2,13 @@
   <grid-row onClick="toggle('storm_{{ id }}')">
     <h2>🏁 {{ name }}</h2>
   </grid-row>
-  <grid-row id="storm_{{ id }}" class="display-none">
-    <grid-row>
-      <figure>
-        <img src="{{ id }}.png">
-        <figcaption>
-          Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-        </figcaption>
-      </figure>
-    </grid-row>
-    <grid-row>
-      {{>timeSeriesCharts }}
-    </grid-row>
-  </grid-row>
+  <grid-column id="storm_{{ id }}" class="display-none flex-align--center">
+    <figure>
+      <img src="{{ id }}.png">
+      <figcaption>
+        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+      </figcaption>
+    </figure>
+    {{>timeSeriesCharts }}
+  </grid-column>
 </grid-container>

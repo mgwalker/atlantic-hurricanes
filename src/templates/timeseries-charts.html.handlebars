@@ -1,26 +1,26 @@
 {{#if series.wind }}
-  <grid-row class="chart-container">
+  <div class="chart-container">
     <h3>Maximum sustained winds</h3>
     <div>
       <canvas id="chart_wind_{{id}}"></canvas>
     </div>
-  </grid-row>
+  </div>
 {{/if}}
 {{#if series.pressure }}
-  <grid-row class="chart-container"></div>
+  <div class="chart-container">
     <h3>Minimum central pressure</h3>
     <div style="width:100%;">
       <canvas id="chart_pressure_{{id}}"></canvas>
     </div>
-  </grid-row>
+  </div>
 {{/if}}
 {{#if series.extents }}
-  <grid-row class="chart-container"></div>
+  <div class="chart-container">
     <h3>Storm wind extents</h3>
     <div style="width:100%;">
       <canvas id="chart_extents_{{id}}"></canvas>
     </div>
-  </grid-row>
+  </div>
 {{/if}}
 
 

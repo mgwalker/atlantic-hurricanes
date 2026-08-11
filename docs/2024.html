@@ -50,48 +50,44 @@
                 <grid-row onClick="toggle('storm_AL192024')">
                   <h2>🏁 Sara</h2>
                 </grid-row>
-                <grid-row id="storm_AL192024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL192024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL192024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL192024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL192024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL192024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL192024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL192024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL192024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL192024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL192024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL192024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL192024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL192024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL192024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL192024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL182024">
@@ -100,54 +96,50 @@
                 <grid-row onClick="toggle('storm_AL182024')">
                   <h2>🏁 Rafael</h2>
                 </grid-row>
-                <grid-row id="storm_AL182024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL182024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL182024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL182024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Storm wind extents</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_extents_AL182024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL182024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL182024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL182024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL182024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Storm wind extents</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_extents_AL182024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL182024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL182024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL182024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL182024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL182024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL182024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL182024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL182024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL172024">
@@ -156,48 +148,44 @@
                 <grid-row onClick="toggle('storm_AL172024')">
                   <h2>🏁 Patty</h2>
                 </grid-row>
-                <grid-row id="storm_AL172024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL172024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL172024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL172024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL172024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL172024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL172024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL172024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL172024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL172024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL172024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL172024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL172024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL172024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL172024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL172024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL162024">
@@ -206,54 +194,50 @@
                 <grid-row onClick="toggle('storm_AL162024')">
                   <h2>🏁 Oscar</h2>
                 </grid-row>
-                <grid-row id="storm_AL162024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL162024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL162024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL162024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Storm wind extents</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_extents_AL162024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL162024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL162024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL162024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL162024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Storm wind extents</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_extents_AL162024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL162024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL162024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL162024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL162024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL162024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL162024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL162024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL162024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL152024">
@@ -262,48 +246,44 @@
                 <grid-row onClick="toggle('storm_AL152024')">
                   <h2>🏁 Nadine</h2>
                 </grid-row>
-                <grid-row id="storm_AL152024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL152024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL152024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL152024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL152024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL152024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL152024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL152024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL152024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL152024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL152024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL152024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL152024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL152024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL152024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL152024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL132024">
@@ -312,54 +292,50 @@
                 <grid-row onClick="toggle('storm_AL132024')">
                   <h2>🏁 Leslie</h2>
                 </grid-row>
-                <grid-row id="storm_AL132024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL132024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL132024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL132024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Storm wind extents</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_extents_AL132024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL132024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL132024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL132024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL132024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Storm wind extents</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_extents_AL132024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL132024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL132024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL132024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL132024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL132024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL132024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL132024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL132024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL142024">
@@ -368,54 +344,50 @@
                 <grid-row onClick="toggle('storm_AL142024')">
                   <h2>🏁 Milton</h2>
                 </grid-row>
-                <grid-row id="storm_AL142024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL142024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL142024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL142024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Storm wind extents</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_extents_AL142024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL142024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL142024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL142024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL142024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Storm wind extents</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_extents_AL142024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL142024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL142024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL142024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL142024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL142024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL142024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL142024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL142024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL122024">
@@ -424,54 +396,50 @@
                 <grid-row onClick="toggle('storm_AL122024')">
                   <h2>🏁 Kirk</h2>
                 </grid-row>
-                <grid-row id="storm_AL122024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL122024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL122024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL122024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Storm wind extents</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_extents_AL122024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL122024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL122024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL122024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL122024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Storm wind extents</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_extents_AL122024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL122024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL122024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL122024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL122024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL122024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL122024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL122024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL122024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL112024">
@@ -480,48 +448,44 @@
                 <grid-row onClick="toggle('storm_AL112024')">
                   <h2>🏁 Joyce</h2>
                 </grid-row>
-                <grid-row id="storm_AL112024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL112024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL112024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL112024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL112024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL112024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL112024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL112024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL112024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL112024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL112024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL112024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL112024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL112024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL112024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL112024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL102024">
@@ -530,54 +494,50 @@
                 <grid-row onClick="toggle('storm_AL102024')">
                   <h2>🏁 Isaac</h2>
                 </grid-row>
-                <grid-row id="storm_AL102024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL102024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL102024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL102024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Storm wind extents</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_extents_AL102024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL102024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL102024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL102024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL102024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Storm wind extents</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_extents_AL102024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL102024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL102024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL102024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL102024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL102024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL102024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL102024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL102024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL092024">
@@ -586,54 +546,50 @@
                 <grid-row onClick="toggle('storm_AL092024')">
                   <h2>🏁 Helene</h2>
                 </grid-row>
-                <grid-row id="storm_AL092024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL092024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL092024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL092024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Storm wind extents</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_extents_AL092024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL092024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL092024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL092024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL092024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Storm wind extents</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_extents_AL092024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL092024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL092024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL092024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL092024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL092024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL092024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL092024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL092024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL072024">
@@ -642,48 +598,44 @@
                 <grid-row onClick="toggle('storm_AL072024')">
                   <h2>🏁 Gordon</h2>
                 </grid-row>
-                <grid-row id="storm_AL072024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL072024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL072024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL072024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL072024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL072024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL072024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL072024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL072024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL072024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL072024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL072024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL072024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL072024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL072024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL072024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL082024">
@@ -692,48 +644,44 @@
                 <grid-row onClick="toggle('storm_AL082024')">
                   <h2>🏁 Eight</h2>
                 </grid-row>
-                <grid-row id="storm_AL082024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL082024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL082024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL082024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL082024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL082024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL082024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL082024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL082024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL082024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL082024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL082024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL082024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL082024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL082024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL082024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL062024">
@@ -742,54 +690,50 @@
                 <grid-row onClick="toggle('storm_AL062024')">
                   <h2>🏁 Francine</h2>
                 </grid-row>
-                <grid-row id="storm_AL062024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL062024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL062024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL062024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Storm wind extents</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_extents_AL062024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL062024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL062024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL062024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL062024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Storm wind extents</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_extents_AL062024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL062024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL062024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL062024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL062024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL062024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL062024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL062024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL062024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL052024">
@@ -798,54 +742,50 @@
                 <grid-row onClick="toggle('storm_AL052024')">
                   <h2>🏁 Ernesto</h2>
                 </grid-row>
-                <grid-row id="storm_AL052024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL052024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL052024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL052024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Storm wind extents</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_extents_AL052024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL052024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL052024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL052024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL052024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Storm wind extents</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_extents_AL052024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL052024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL052024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL052024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL052024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL052024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL052024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL052024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL052024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL042024">
@@ -854,54 +794,50 @@
                 <grid-row onClick="toggle('storm_AL042024')">
                   <h2>🏁 Debby</h2>
                 </grid-row>
-                <grid-row id="storm_AL042024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL042024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL042024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL042024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Storm wind extents</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_extents_AL042024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL042024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL042024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL042024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL042024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Storm wind extents</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_extents_AL042024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL042024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL042024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL042024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL042024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL042024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL042024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL042024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL042024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL022024">
@@ -910,54 +846,50 @@
                 <grid-row onClick="toggle('storm_AL022024')">
                   <h2>🏁 Beryl</h2>
                 </grid-row>
-                <grid-row id="storm_AL022024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL022024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL022024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL022024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Storm wind extents</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_extents_AL022024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL022024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL022024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL022024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL022024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Storm wind extents</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_extents_AL022024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL022024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL022024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL022024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL022024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL022024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL022024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL022024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL022024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL032024">
@@ -966,48 +898,44 @@
                 <grid-row onClick="toggle('storm_AL032024')">
                   <h2>🏁 Chris</h2>
                 </grid-row>
-                <grid-row id="storm_AL032024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL032024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL032024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL032024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL032024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL032024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL032024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL032024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL032024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL032024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL032024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL032024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL032024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL032024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL032024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL032024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL012024">
@@ -1016,48 +944,44 @@
                 <grid-row onClick="toggle('storm_AL012024')">
                   <h2>🏁 Alberto</h2>
                 </grid-row>
-                <grid-row id="storm_AL012024" class="display-none">
-                  <grid-row>
-                    <figure>
-                      <img src="AL012024.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                  </grid-row>
-                  <grid-row>
-                      <grid-row class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL012024"></canvas>
-                        </div>
-                      </grid-row>
-                      <grid-row class="chart-container"></div>
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL012024"></canvas>
-                        </div>
-                      </grid-row>
+                <grid-column id="storm_AL012024" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL012024.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL012024"></canvas>
+                      </div>
+                    </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL012024"></canvas>
+                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL012024").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL012024").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL012024");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL012024");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL012024");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-row>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL012024");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL012024");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL012024");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
       </grid-container>
 
