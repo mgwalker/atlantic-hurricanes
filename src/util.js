@@ -9,17 +9,17 @@ export const year = 2026;
 
 export const cachePath = join(
   dirname(fileURLToPath(import.meta.url)),
-  "../cache",
+  "../cache"
 );
 
 export const dataPath = join(
   dirname(fileURLToPath(import.meta.url)),
-  "../data",
+  "../data"
 );
 
 export const docsPath = join(
   dirname(fileURLToPath(import.meta.url)),
-  "../docs",
+  "../docs"
 );
 
 export const srcPath = dirname(fileURLToPath(import.meta.url));

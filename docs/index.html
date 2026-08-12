@@ -47,21 +47,16 @@
             <script type="text/json" id="storm_data_AL032026">
               {"pressure":[{"timestamp":"2026-08-12T15:00:00.000Z","value":1008}],"wind":[{"timestamp":"2026-08-12T15:00:00.000Z","value":45}]}
             </script>              <grid-container class="storm">
-                <grid-row class="category-3" onClick="toggle('storm_AL032026')">
-                  <grid-row>
-                    <h2>
-                      Tropical Storm Cristobal
-                      <div class="updated">
-                        last updated <time datetime="2026-08-12T15:00:00.000Z">2026-08-12T15:00:00.000Z</time>
-                      </div>
-                    </h2>
-                  </grid-row>
-                  <grid-row>
-                    
-                  </grid-row>
+                <grid-row onClick="toggle('storm_AL032026')">
+                  <h2>
+                    Tropical Storm Cristobal
+                    <div class="updated">
+                      last updated <time datetime="2026-08-12T15:00:00.000Z">2026-08-12T15:00:00.000Z</time>
+                    </div>
+                  </h2>
                 </grid-row>
                 <grid-row id="storm_AL032026">
-                  <grid-row>
+                  <grid-column>
                     <table>
                       <tr>
                         <th>wind speed</th>
@@ -104,8 +99,6 @@
                         Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
                       </figcaption>
                     </figure>
-                  </grid-row>
-                  <grid-row>
                       <div class="chart-container">
                         <h3>Maximum sustained winds</h3>
                         <div>
@@ -136,7 +129,7 @@
                         createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
                       }
                     </script>
-                  </grid-row>
+                  </grid-column>
                 </grid-row>
               </grid-container>          </grid-row>
           <grid-row>

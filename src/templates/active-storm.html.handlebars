@@ -1,19 +1,14 @@
 <grid-container class="storm">
-  <grid-row class="category-3" onClick="toggle('storm_{{ id }}')">
-    <grid-row>
-      <h2>
-        {{ classification}} {{ name }}{{#if category }} - category {{ category }}{{/if}}
-        <div class="updated">
-          last updated <time datetime="{{ updated }}">{{ updated }}</time>
-        </div>
-      </h2>
-    </grid-row>
-    <grid-row>
-      
-    </grid-row>
+  <grid-row{{#if category }}class="category-{{ category }}"{{/if}} onClick="toggle('storm_{{ id }}')">
+    <h2>
+      {{ classification}} {{ name }}{{#if category }} - category {{ category }}{{/if}}
+      <div class="updated">
+        last updated <time datetime="{{ updated }}">{{ updated }}</time>
+      </div>
+    </h2>
   </grid-row>
   <grid-row id="storm_{{ id }}">
-    <grid-row>
+    <grid-column>
       <table>
         <tr>
           <th>wind speed</th>
@@ -56,9 +51,7 @@
           Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
         </figcaption>
       </figure>
-    </grid-row>
-    <grid-row>
       {{>timeSeriesCharts }}
-    </grid-row>
+    </grid-column>
   </grid-row>
 </grid-container>

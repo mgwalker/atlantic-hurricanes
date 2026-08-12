@@ -53,6 +53,7 @@ grid-container.storm {
   > grid-row:first-of-type {
     background: #def;
     padding: 1rem;
+    cursor: pointer;
 
     &.category-1 {
       background-color: #ffffcc;
@@ -68,12 +69,6 @@ grid-container.storm {
     }
     &.category-5 {
       background-color: #ff6060;
-    }
-  }
-
-  &.finished {
-    > grid-row:first-of-type {
-      cursor: pointer;
     }
   }
 
