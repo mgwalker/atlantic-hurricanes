@@ -45,92 +45,49 @@
       <grid-container>
           <grid-row>
             <script type="text/json" id="storm_data_AL032026">
-              {"pressure":[{"timestamp":"2026-08-12T15:00:00.000Z","value":1008},{"timestamp":"2026-08-12T21:00:00.000Z","value":1008},{"timestamp":"2026-08-13T03:00:00.000Z","value":1010},{"timestamp":"2026-08-13T09:00:00.000Z","value":1014}],"wind":[{"timestamp":"2026-08-12T15:00:00.000Z","value":45},{"timestamp":"2026-08-12T21:00:00.000Z","value":45},{"timestamp":"2026-08-13T03:00:00.000Z","value":40},{"timestamp":"2026-08-13T09:00:00.000Z","value":35}]}
-            </script>              <grid-container class="storm">
+              {"pressure":[{"timestamp":"2026-08-12T15:00:00.000Z","value":1008},{"timestamp":"2026-08-12T21:00:00.000Z","value":1008},{"timestamp":"2026-08-13T03:00:00.000Z","value":1010},{"timestamp":"2026-08-13T09:00:00.000Z","value":1014},{"timestamp":"2026-08-13T15:00:00.000Z","value":1018}],"wind":[{"timestamp":"2026-08-12T15:00:00.000Z","value":45},{"timestamp":"2026-08-12T21:00:00.000Z","value":45},{"timestamp":"2026-08-13T03:00:00.000Z","value":40},{"timestamp":"2026-08-13T09:00:00.000Z","value":35},{"timestamp":"2026-08-13T15:00:00.000Z","value":30}]}
+            </script>              <grid-container class="finished storm">
                 <grid-row onClick="toggle('storm_AL032026')">
-                  <h2>
-                    Tropical Depression Cristobal
-                    <div class="updated">
-                      last updated <time datetime="2026-08-13T09:00:00.000Z">2026-08-13T09:00:00.000Z</time>
+                  <h2>🏁 Cristobal</h2>
+                </grid-row>
+                <grid-column id="storm_AL032026" class="display-none flex-align--center">
+                  <figure>
+                    <img src="AL032026.png">
+                    <figcaption>
+                      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
+                    </figcaption>
+                  </figure>
+                    <div class="chart-container">
+                      <h3>Maximum sustained winds</h3>
+                      <div>
+                        <canvas id="chart_wind_AL032026"></canvas>
+                      </div>
                     </div>
-                  </h2>
-                </grid-row>
-                <grid-row id="storm_AL032026">
-                  <grid-column>
-                    <table>
-                      <tr>
-                        <th>wind speed</th>
-                        <th>central pressure</th>
-                        <th>movement</th>
-                        <th>data (CSV)</th>
-                        <th>National Hurricane Center</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          35 mph
-                          <br>
-                          -5 mph since last update
-                        </td>
-                        <td>
-                          1014 mb
-                          <br>
-                          +4 mb since last update
-                        </td>
-                        <td>
-                          16 mph to the northeast
-                          <br>
-                          <span style="display: inline-block; font-size: 1.5em; transform: rotate(45deg);">↑</span>
-                        </td>
-                        <td>
-                          <a href="https://raw.githubusercontent.com/mgwalker/atlantic-hurricanes/main/data/csv/AL032026.csv">AL032026.csv</a>
-                        </td>
-                        <td>
-                          <a href="https://www.nhc.noaa.gov/archive/2026/CRISTOBAL.shtml?">NHC advisories</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="5">
-                        </td>
-                      </tr>
-                    </table>
-                    <figure>
-                      <img src="AL032026.png">
-                      <figcaption>
-                        Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>
-                      </figcaption>
-                    </figure>
-                      <div class="chart-container">
-                        <h3>Maximum sustained winds</h3>
-                        <div>
-                          <canvas id="chart_wind_AL032026"></canvas>
-                        </div>
+                    <div class="chart-container">
+                      <h3>Minimum central pressure</h3>
+                      <div style="width:100%;">
+                        <canvas id="chart_pressure_AL032026"></canvas>
                       </div>
-                      <div class="chart-container">
-                        <h3>Minimum central pressure</h3>
-                        <div style="width:100%;">
-                          <canvas id="chart_pressure_AL032026"></canvas>
-                        </div>
-                      </div>
+                    </div>
+                  
+                  
+                  <script type="module">
+                    const data = JSON.parse(document.getElementById("storm_data_AL032026").textContent);
                     
-                    
-                    <script type="module">
-                      const data = JSON.parse(document.getElementById("storm_data_AL032026").textContent);
-                      
-                      if(data.wind) {
-                        const canvas = document.getElementById("chart_wind_AL032026");
-                        createChart(canvas, data.wind, "mph");
-                      }
-                      if(data.pressure) {
-                        const canvas = document.getElementById("chart_pressure_AL032026");
-                        createChart(canvas, data.pressure, "mb");
-                      }
-                      if(data.extents) {
-                        const canvas = document.getElementById("chart_extents_AL032026");
-                        createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
-                      }
-                    </script>
-                  </grid-column>
-                </grid-row>
+                    if(data.wind) {
+                      const canvas = document.getElementById("chart_wind_AL032026");
+                      createChart(canvas, data.wind, "mph");
+                    }
+                    if(data.pressure) {
+                      const canvas = document.getElementById("chart_pressure_AL032026");
+                      createChart(canvas, data.pressure, "mb");
+                    }
+                    if(data.extents) {
+                      const canvas = document.getElementById("chart_extents_AL032026");
+                      createExtentChart(canvas, data.extents.tropical, data.extents.hurricane, "miles");
+                    }
+                  </script>
+                </grid-column>
               </grid-container>          </grid-row>
           <grid-row>
             <script type="text/json" id="storm_data_AL022026">
