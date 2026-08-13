@@ -1,3 +1,4 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL032026,2026-08-12T15:00:00.000Z,Tropical Storm,Cristobal,36.7,-43,45,1008,25,90,,
 AL032026,2026-08-12T21:00:00.000Z,Tropical Storm,Cristobal,37.2,-41,45,1008,21,90,,
+AL032026,2026-08-13T03:00:00.000Z,Tropical Storm,Cristobal,37.7,-39.5,40,1010,16,75,,
