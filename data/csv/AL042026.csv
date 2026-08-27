@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL042026,2026-08-27T15:00:00.000Z,Tropical Storm,Dolly,13.6,-38.7,40,1007,24,275,,
