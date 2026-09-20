@@ -1,3 +1,4 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL062026,2026-09-19T15:00:00.000Z,Tropical Depression,Six,32.6,-33.6,35,1009,2,360,,
 AL062026,2026-09-19T21:00:00.000Z,Tropical Depression,Six,32.9,-33.4,35,1007,5,25,,
+AL062026,2026-09-20T03:00:00.000Z,Tropical Depression,Six,33.3,-33.2,35,1007,5,20,,
