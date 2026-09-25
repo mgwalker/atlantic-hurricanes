@@ -1,3 +1,4 @@
 "id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
 AL072026,2026-09-25T03:00:00.000Z,Tropical Storm,Gonzalo,13.2,-22.1,45,1004,8,330,,
 AL072026,2026-09-25T09:00:00.000Z,Tropical Storm,Gonzalo,14.2,-22.4,45,1004,9,340,,
+AL072026,2026-09-25T21:00:00.000Z,Tropical Storm,Gonzalo,16.2,-22.7,50,1000,12,350,,
