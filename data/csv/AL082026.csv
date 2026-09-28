@@ -1,0 +1,2 @@
+"id","timestamp","classification","name","latitude","longitude","maximum sustained wind (mph)","minimum central pressure (mb)","movement speed (mph)","movement direction (degrees)","hurricane wind extent (miles)","tropical storm wind extent (miles)"
+AL082026,2026-09-28T15:00:00.000Z,Tropical Storm,Hanna,36.6,-50.4,45,1006,17,100,,
