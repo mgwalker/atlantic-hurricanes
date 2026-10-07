@@ -141,8 +141,10 @@ export const makeWeb = async () => {
     storms,
   });
 
-  fs.writeFile(`${docsPath}/index.html`, html);
-  fs.writeFile(`${docsPath}/${year}.html`, html);
+  await Promise.all([
+    fs.writeFile(`${docsPath}/index.html`, html),
+    fs.writeFile(`${docsPath}/${year}.html`, html),
+  ]);
 };
 
 export default makeWeb;

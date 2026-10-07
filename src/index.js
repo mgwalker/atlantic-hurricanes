@@ -13,6 +13,9 @@ import web from "./web.js";
 
 dotenv.config();
 
+await web();
+process.exit(0);
+
 const urls = await getUrls();
 
 const visited = JSON.parse(

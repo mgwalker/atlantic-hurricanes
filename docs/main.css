@@ -36,7 +36,7 @@ p {
   display: none !important;
 }
 
-grid-container.storm {
+.grid-container.storm {
   border: 2px solid #def;
   border-bottom-color: #ace;
 
@@ -50,7 +50,7 @@ grid-container.storm {
     }
   }
 
-  > grid-row:first-of-type {
+  > .grid-row:first-of-type {
     background: #def;
     padding: 1rem;
     cursor: pointer;
@@ -72,7 +72,7 @@ grid-container.storm {
     }
   }
 
-  grid-column {
+  .grid-column {
     padding: 1rem 2rem;
   }
 

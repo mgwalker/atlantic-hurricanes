@@ -1,14 +1,14 @@
-<grid-container class="storm">
-  <grid-row{{#if category }}class="category-{{ category }}"{{/if}} onClick="toggle('storm_{{ id }}')">
+<div class="grid-container storm">
+  <div class="grid-row {{#if category }}category-{{ category }}{{/if}}" onClick="toggle('storm_{{ id }}')">
     <h2>
       {{ classification}} {{ name }}{{#if category }} - category {{ category }}{{/if}}
       <div class="updated">
         last updated <time datetime="{{ updated }}">{{ updated }}</time>
       </div>
     </h2>
-  </grid-row>
-  <grid-row id="storm_{{ id }}">
-    <grid-column>
+  </div>
+  <div class="grid-row" id="storm_{{ id }}">
+    <div class="grid-column">
       <table>
         <tr>
           <th>wind speed</th>
@@ -52,6 +52,6 @@
         </figcaption>
       </figure>
       {{>timeSeriesCharts }}
-    </grid-column>
-  </grid-row>
-</grid-container>
+    </div>
+  </div>
+</div>

@@ -1,8 +1,8 @@
-<grid-container class="finished storm">
-  <grid-row onClick="toggle('storm_{{ id }}')">
+<div class="grid-container finished storm">
+  <div class="grid-row" onClick="toggle('storm_{{ id }}')">
     <h2>🏁 {{ name }}</h2>
-  </grid-row>
-  <grid-column id="storm_{{ id }}" class="display-none flex-align--center">
+  </div>
+  <div id="storm_{{ id }}" class="grid-column display-none flex-align--center">
     <figure>
       <img src="{{ id }}.png">
       <figcaption>
@@ -10,5 +10,5 @@
       </figcaption>
     </figure>
     {{>timeSeriesCharts }}
-  </grid-column>
-</grid-container>
+  </div>
+</div>

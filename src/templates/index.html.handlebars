@@ -46,9 +46,9 @@
         <img src="active.png">
       {{/if}}
 
-      <grid-container>
+      <div class="grid-container">
         {{#each storms }}
-          <grid-row>
+          <div class="grid-row">
             {{> stormData }}
             {{#unless final}}
               {{> activeStorm }}
@@ -56,9 +56,9 @@
             {{#if final}}
               {{> finishedStorm }}
             {{/if}}
-          </grid-row>
+          </div>
         {{/each}}
-      </grid-container>
+      </div>
 
       <script type="text/javascript">
         const toggle = id => {
