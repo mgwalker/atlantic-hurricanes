@@ -79,7 +79,7 @@ const createChart = (canvas, data, units) => {
                 return hour24;
               })();
 
-              const ampm = hour24 > 11 ? "AM" : "PM";
+              const ampm = hour24 > 11 ? "PM" : "AM";
 
               return `${
                 months[date.getMonth()]
